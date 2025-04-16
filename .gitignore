@@ -177,6 +177,5 @@ cython_debug/
 .python-version
 testing.ipynb
 
-.streamlit
 uploads*
 .gitignore
