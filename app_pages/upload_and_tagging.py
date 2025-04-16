@@ -73,7 +73,6 @@ def select_ner_config():
         st.number_input("Chunk Size (for large texts)", min_value=1, max_value=100, value=40, step=5, key="chunk_size")
 
 
-st.set_page_config(page_title="Marsiya NER", layout="centered")
 st.title("📜 LLM-based Marsiya Named Entity Tagging")
 
 select_ner_config()
