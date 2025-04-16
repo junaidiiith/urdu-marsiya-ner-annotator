@@ -5,7 +5,7 @@ from tqdm import tqdm
 from ner_annotator.constants import (
     URDU_LETTERS_THRESHOLD,
     CHUNK_SIZE,
-    MAX_CONCURRENT_REQUESTS
+    MAX_CONCURRENT_REQUESTS,
 )
 import enum
 from typing import Dict, List
@@ -14,8 +14,8 @@ import concurrent.futures
 
 
 class NERMode(enum.Enum):
-    GENERAL = 'general'
-    MARSIYA = 'marsiya'
+    GENERAL = "general"
+    MARSIYA = "marsiya"
 
 
 class TaggedElement(BaseModel):
@@ -26,6 +26,7 @@ class TaggedElement(BaseModel):
 
 class TaggedElements(BaseModel):
     """List of tagged elements"""
+
     tagged_elements: List[TaggedElement] = Field(description="List of tagged elements")
 
 
@@ -67,7 +68,7 @@ You also need to provide the English translation of the original string in the o
 Return a list with original string, string with tagged entities and its english translation. Make sure you return the output for each line without missing any line in the text:
 For example, below is the response for a text with a single line - 
 {
-    "tagged_entities": [
+    "tagged_elements": [
         {
             "original" : "امام حسینؑ کربلا میں 10 محرم کو شہید ہوئے۔",
             "tagged" : "<PERSON>امام حسینؑ</PERSON> <LOCATION>کربلا</LOCATION> میں <DATE>10 محرم</DATE> کو شہید ہوئے۔",
@@ -134,7 +135,7 @@ Input:
 
 Output:
 {
-    "tagged_entities": [
+    "tagged_elements": [
         {
             "original": "پنڈلیاں سوجی ہیں اور طوق سے چھلتا ہے گلا",
             "tagged": "پنڈلیاں سوجی ہیں اور طوق سے چھلتا ہے گلا",
@@ -203,34 +204,35 @@ Output:
 def is_mostly_urdu(text: str, threshold=URDU_LETTERS_THRESHOLD) -> bool:
     """
     Improved version that correctly identifies Urdu text
-    
+
     Args:
         text (str): Input text to check
         threshold (float): Percentage threshold (0-1) for Urdu characters
-    
+
     Returns:
         bool: True if Urdu characters meet/exceed the threshold
     """
     if not text.strip():
         return False
-    
+
     if len(text.split()) < 2:
         return False
-    
+
     # Define what we consider non-Urdu characters (whitespace is neutral)
     non_urdu_pattern = re.compile(
-        r'[^\s\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF\u0670-\u06D3\u06D5-\u06FF]'
+        r"[^\s\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF\u0670-\u06D3\u06D5-\u06FF]"
     )
-    
+
     # Count all non-Urdu, non-whitespace characters
     non_urdu_chars = len(non_urdu_pattern.findall(text))
     total_chars = len(text.replace(" ", ""))  # Don't count whitespace
-    
+
     if total_chars == 0:
         return False
-    
+
     urdu_ratio = 1 - (non_urdu_chars / total_chars)
     return urdu_ratio >= threshold
+
 
 def get_ner_prompt_messages(text, mode=NERMode.MARSIYA) -> List[Dict[str, str]]:
     if mode == NERMode.GENERAL:
@@ -240,37 +242,46 @@ def get_ner_prompt_messages(text, mode=NERMode.MARSIYA) -> List[Dict[str, str]]:
     else:
         raise ValueError("Invalid NER mode selected.")
     messages = [
-        {'role': 'system', 'content': system_prompt},
-        {'role': 'user', 'content': f"Provide the Named entities from the below Urdu text: \n\n{text}\n\n"}
+        {"role": "system", "content": system_prompt},
+        {
+            "role": "user",
+            "content": f"Provide the Named entities from the below Urdu text: \n\n{text}\n\n",
+        },
     ]
     return messages
 
-def get_ner_prompt_messages_per_chunk(text: str, chunk_size = CHUNK_SIZE, mode=NERMode.MARSIYA) -> List[List[Dict[str, str]]]:
-    lines = [line for line in text.split('\n') if is_mostly_urdu(line)]
+
+def get_ner_prompt_messages_per_chunk(
+    text: str, chunk_size=CHUNK_SIZE, mode=NERMode.MARSIYA
+) -> List[List[Dict[str, str]]]:
+    lines = [line for line in text.split("\n") if is_mostly_urdu(line)]
     chunk_messages = list()
     for i in range(0, len(lines), chunk_size):
-        chunk = "\n".join(lines[i:i + chunk_size])
+        chunk = "\n".join(lines[i : i + chunk_size])
         chunk_messages.append(get_ner_prompt_messages(chunk, mode))
-        
+
     return chunk_messages
 
 
-def extract_named_entites_from_chunks(llm: LLM, chunks: List[List[Dict[str, str]]]) -> List[TaggedElement]:
+def extract_named_entites_from_chunks(
+    llm: LLM, chunks: List[List[Dict[str, str]]]
+) -> List[TaggedElement]:
     """
     Extract named entities from chunks of text using the specified NER mode.
-    
+
     Args:
         chunks (List[List[Dict[str, str]]]): List of chunk messages for NER processing.
-    
+
     Returns:
         List[TaggedElement]: List of extracted named entities, in the same order as the input chunks.
     """
     extracted_results = [None] * len(chunks)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_CONCURRENT_REQUESTS) as executor:
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=MAX_CONCURRENT_REQUESTS
+    ) as executor:
         futures = {
-            executor.submit(llm.call, chunk): idx
-            for idx, chunk in enumerate(chunks)
+            executor.submit(llm.call, chunk): idx for idx, chunk in enumerate(chunks)
         }
 
         for future in tqdm(
@@ -293,20 +304,20 @@ def extract_named_entites_from_chunks(llm: LLM, chunks: List[List[Dict[str, str]
 
 
 def get_ner_tags(
-    text: str, 
+    text: str,
     mode=NERMode.MARSIYA,
     model_id: str = "openai/gpt-4o-mini",
-    chunk_size: int = CHUNK_SIZE
+    chunk_size: int = CHUNK_SIZE,
 ) -> TaggedElements:
     chunked_messages = get_ner_prompt_messages_per_chunk(text, chunk_size, mode)
     print("Using model:", model_id)
     print("Using chunk size:", chunk_size)
     print("Number of chunks:", len(chunked_messages))
-    
-    with open('dataset/test_data.json') as f:
-        return json.load(f)
-    
+
+    # with open('dataset/test_data.json') as f:
+    #     return json.load(f)
+
     llm = LLM(model=model_id, response_format=TaggedElements)
     # responses = [llm.call(cm) for cm in tqdm(chunked_messages, desc="Processing chunks")]
     responses = extract_named_entites_from_chunks(llm, chunked_messages)
-    return sum([json.loads(r)['tagged_elements'] for r in responses], [])
+    return sum([json.loads(r)["tagged_elements"] for r in responses], [])
