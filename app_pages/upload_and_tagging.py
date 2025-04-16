@@ -41,7 +41,8 @@ def add_text_if_not_exists(text):
         with open(f"{UPLOAD_DIR}/{text_hash}.json", "r") as f:
             data = json.load(f)
             st.session_state['data'] = data
-            st.success("Text already exists. You can proceed to tagging.")
+            if 'tagged' in data and data['tagged']:
+                st.success("Tags already exists. You can proceed to tagging.")
 
 
 def set_tagged_result(text, ner_tags):
@@ -62,15 +63,26 @@ def select_ner_config():
         llm_configs = get_llm_configs()
         providers = list(llm_configs.keys())
         selected_provider = st.selectbox("Select LLM Provider", providers)
+        prefix = llm_configs[selected_provider]["prefix"]
         default_model_id = llm_configs[selected_provider]["default"]
         model_ids = llm_configs[selected_provider]["models"]
         model_id_to_name = {m['name']: m['model_id'] for m in model_ids}
         default_model_idx = list(model_id_to_name.values()).index(default_model_id)
         
         selected_model = st.selectbox("Select Model", list(model_id_to_name.keys()), key="model_id", index=default_model_idx)
-        selected_model_id = f"{selected_provider}/{model_id_to_name[selected_model]}"
+        selected_model_id = f"{prefix}/{model_id_to_name[selected_model]}"
         st.session_state['selected_model_id'] = selected_model_id
         st.number_input("Chunk Size (for large texts)", min_value=1, max_value=100, value=40, step=5, key="chunk_size")
+
+
+def initiate_ner_tagging():
+    final_text = st.session_state.get('final_text')
+    if final_text:
+        st.success("Ready to process this text.")
+        add_text_if_not_exists(final_text)
+        start_ner_tagging(final_text)
+    else:
+        st.warning("Please provide some text first.")
 
 
 st.title("📜 LLM-based Marsiya Named Entity Tagging")
@@ -87,11 +99,14 @@ with tab1:
     if uploaded_file:
         text = uploaded_file.read().decode("utf-8")
         st.text_area("Uploaded Content", value=text, height=300)
+        st.session_state['final_text'] = text
         
 with tab2:
     pasted_text = st.text_area("Paste Marsiya Text Below:", height=300)
     if pasted_text:
+        st.session_state['final_text'] = pasted_text
         st.success("Text received.")
+        
 
 with tab3:
     st.markdown("Search from existing marsiyas:")
@@ -110,20 +125,9 @@ with tab3:
         st.info(f"Selected Marsiya: {selected_file} {'(Tagged)' if all_marsiya_files[selected_file]['tagged'] else ''}")
         content = f"{selected_file}\nContent: {all_marsiya_files[selected_file]['content']}"
         st.text_area("Marsiya Content", value=content, height=300)
+        st.session_state['final_text'] = content
 
 
-if st.button("Start LLM Tagging"):
-    final_text = ""
-    if uploaded_file:
-        final_text = text
-    elif pasted_text:
-        final_text = pasted_text
-    elif selected_file:
-        final_text = content
-
-    if final_text:
-        st.success("Ready to process this text.")
-        add_text_if_not_exists(final_text)
-        start_ner_tagging(final_text)
-    else:
-        st.warning("Please provide some text first.")
+st.button("Start LLM Tagging", on_click=initiate_ner_tagging)
+    
+    
