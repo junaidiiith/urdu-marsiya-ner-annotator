@@ -12,7 +12,7 @@ from ner_annotator.utils import calculate_hash
 TAG_COLORS = {
     "PERSON": "#AED6F1",       # Light Blue
     "LOCATION": "#A9DFBF",     # Light Green
-    "DATA": "#FCF3CF",         # Light Yellow
+    "DATE": "#FCF3CF",         # Light Yellow
     "TIME": "#FADBD8",         # Light Pink
     "ORGANIZATION": "#F9E79F", # Light Orange
     "DESGINATION": "#D5DBDB",  # Light Gray
