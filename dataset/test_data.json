@@ -1,0 +1,64 @@
+{
+    "tagged_entities": [
+        {
+            "original": "پنڈلیاں سوجی ہیں اور طوق سے چھلتا ہے گلا",
+            "tagged": "پنڈلیاں سوجی ہیں اور طوق سے چھلتا ہے گلا",
+            "english": "The shins are swollen and the throat is wounded by the collar of chains."
+        },
+        {
+            "original": "سخت اینا میں ہے، فرزند شتہ کرب و بلا",
+            "tagged": "سخت اینا میں ہے، فرزند شتہ <LOCATION>کرب و بلا</LOCATION>",
+            "english": "In severe agony is the son of the one martyred in Karbala."
+        },
+        {
+            "original": "خار تلووں میں میں مقتل سے جو پیدل ہے چلا",
+            "tagged": "خار تلووں میں میں <LOCATION>مقتل</LOCATION> سے جو پیدل ہے چلا",
+            "english": "Thorns pierce his feet as he walks barefoot from the battlefield."
+        },
+        {
+            "original": "دھجیاں پاؤں میں باندھے ہے وہ نازوں کا پلا",
+            "tagged": "دھجیاں پاؤں میں باندھے ہے وہ نازوں کا پلا",
+            "english": "He who was raised with affection now has rags tied to his feet."
+        },
+        {
+            "original": "اس کی مظلومی پہ بیتاب حرم ہوتے ہیں",
+            "tagged": "اس کی مظلومی پہ بیتاب <ORGANIZATION>حرم</ORGANIZATION> ہوتے ہیں",
+            "english": "The women of the holy sanctuary are agitated by his oppression."
+        },
+        {
+            "original": "دیدۂ حلقۂ زنجیر لہو روتے ہیں",
+            "tagged": "دیدۂ حلقۂ زنجیر لہو روتے ہیں",
+            "english": "The eyes within the circle of chains weep blood."
+        },
+        {
+            "original": "پیچھے بیمار کے ہے قافلہ اہل حرم",
+            "tagged": "پیچھے <DESIGNATION>بیمار</DESIGNATION> کے ہے قافلہ <ORGANIZATION>اہل حرم</ORGANIZATION>",
+            "english": "Behind the ailing one follows the caravan of the sacred household."
+        },
+        {
+            "original": "چُپ ہیں تصویر سے گویا کہ کسی میں نہیں دم",
+            "tagged": "چُپ ہیں تصویر سے گویا کہ کسی میں نہیں دم",
+            "english": "They are as silent as paintings, as if no soul remains within them."
+        },
+        {
+            "original": "دختر فاطمہ زہرا کا عجب ہے عالم",
+            "tagged": "<PERSON>دختر فاطمہ زہرا</PERSON> کا عجب ہے عالم",
+            "english": "A strange state has befallen the daughter of Fatima Zahra."
+        },
+        {
+            "original": "تھر تھری جسم میں ہے اُٹھ نہیں سکتے ہیں قدم",
+            "tagged": "تھر تھری جسم میں ہے اُٹھ نہیں سکتے ہیں قدم",
+            "english": "Her body trembles so much that she cannot lift her feet."
+        },
+        {
+            "original": "رو کے فرماتی ہیں کسی گوشے میں جائے زینب",
+            "tagged": "رو کے فرماتی ہیں کسی گوشے میں جائے <PERSON>زینب</PERSON>",
+            "english": "She weeps and says, 'Let Zainab retreat into some corner.'"
+        },
+        {
+            "original": "ہاتھ کھل جائیں تو منھ اپنا چھپائے زینب",
+            "tagged": "ہاتھ کھل جائیں تو منھ اپنا چھپائے <PERSON>زینب</PERSON>",
+            "english": "If her hands were free, Zainab would hide her face."
+        }
+    ]
+}

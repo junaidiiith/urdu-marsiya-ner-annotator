@@ -1,0 +1,38 @@
+{
+    "OpenAI": {
+        "prefix": "openai",
+        "default": "gpt-4o-mini",
+        "models": [
+            {
+                "name": "GPT4o Mini",
+                "model_id": "gpt-4o-mini"
+            },
+            {
+                "name": "GPT4.1 Mini",
+                "model_id": "gpt-4.1-mini"
+            },
+            {
+                "name": "O3 Mini",
+                "model_id": "o3-mini"
+            },
+            {
+                "name": "GPT4o",
+                "model_id": "gpt-4o"
+            }
+        ]
+    },
+    "Claude": {
+        "prefix": "anthropic",
+        "default": "claude-3-5-haiku-20241022",
+        "models": [
+            {
+                "name": "Claude 3.7 Sonnet",
+                "model_id": "claude-3-7-sonnet-20250219"
+            },
+            {
+                "name": "Claude 3.5 Haiku",
+                "model_id": "claude-3-5-haiku-20241022"
+            }
+        ]
+    }
+}

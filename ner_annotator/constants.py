@@ -1,0 +1,6 @@
+URDU_LETTERS_THRESHOLD = 0.7
+CHUNK_SIZE = 40
+MAX_CONCURRENT_REQUESTS = 5
+UPLOAD_DIR = "uploads"
+DATASET_DIR = "dataset/marsiya-all"
+RESULTS_DIR = "results"

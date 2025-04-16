@@ -1,0 +1,1117 @@
+[
+    {
+        "original": "جلد چهارم",
+        "tagged": "جلد چهارم",
+        "english": "Volume four"
+    },
+    {
+        "original": "مرثیۂ میر انیس",
+        "tagged": "مرثیۂ <PERSON>میر انیس</PERSON>",
+        "english": "Elegy of Mir Anis"
+    },
+    {
+        "original": "آفت میں گرفتار ہیں ناموس محمد",
+        "tagged": "آفت میں گرفتار ہیں ناموس <PERSON>محمد</PERSON>",
+        "english": "In calamity is the honor of Muhammad trapped."
+    },
+    {
+        "original": "مجبور ہیں لاچار ہیں ناموس محمد",
+        "tagged": "مجبور ہیں لاچار ہیں ناموس <PERSON>محمد</PERSON>",
+        "english": "They are helpless, the honor of Muhammad is helpless."
+    },
+    {
+        "original": "سرور کے عزادار ہیں ناموس محمد",
+        "tagged": "سرور کے عزادار ہیں ناموس <PERSON>محمد</PERSON>",
+        "english": "They are the mourners of the master, the honor of Muhammad."
+    },
+    {
+        "original": "اور جینے سے بیزار ہیں ناموس محمد",
+        "tagged": "اور جینے سے بیزار ہیں ناموس <PERSON>محمد</PERSON>",
+        "english": "And they are fed up with life, the honor of Muhammad."
+    },
+    {
+        "original": "زنداں کی صعوبت ہے غریب الوطنی ہے",
+        "tagged": "زنداں کی صعوبت ہے غریب الوطنی ہے",
+        "english": "Imprisonment is difficult, it is foreignness."
+    },
+    {
+        "original": "غل ہائے حسینا کا ہے اور سینہ زنی ہے",
+        "tagged": "غل ہائے <PERSON>حسینا</PERSON> کا ہے اور سینہ زنی ہے",
+        "english": "It is the commotion of Husaina and the beating of chests."
+    },
+    {
+        "original": "کھانا ہے نہ پینا ہے، نہ راحت ہے نہ سونا",
+        "tagged": "کھانا ہے نہ پینا ہے، نہ راحت ہے نہ سونا",
+        "english": "There is neither food nor drink, no comfort nor sleep."
+    },
+    {
+        "original": "ہے خاک کا فرش اور نہ تکیہ نہ بچھونا",
+        "tagged": "ہے خاک کا فرش اور نہ تکیہ نہ بچھونا",
+        "english": "The floor is of dust, there is neither pillow nor bedding."
+    },
+    {
+        "original": "یاد آتا ہے جب وارثوں کا جان نہ کھونا",
+        "tagged": "یاد آتا ہے جب وارثوں کا جان نہ کھونا",
+        "english": "It reminds of the heirs, never losing a life."
+    },
+    {
+        "original": "چھٹتا نہیں مظلوموں سے منھ ڈھانپ کے رونا",
+        "tagged": "چھٹتا نہیں مظلوموں سے منھ ڈھانپ کے رونا",
+        "english": "The oppressed do not stop crying with their faces covered."
+    },
+    {
+        "original": "نورانی بدن خاک سے ہیووں کے اَٹے ہیں",
+        "tagged": "نورانی بدن خاک سے ہیووں کے اَٹے ہیں",
+        "english": "The luminous body is covered with dust."
+    },
+    {
+        "original": "عریاں ہیں سر اور سب کے گریبان پھٹے ہیں",
+        "tagged": "عریاں ہیں سر اور سب کے گریبان پھٹے ہیں",
+        "english": "They are bareheaded and everyone's collars are torn."
+    },
+    {
+        "original": "اکبر کی جوانی کا کسی رانڈ کو غم ہے",
+        "tagged": "<PERSON>اکبر</PERSON> کی جوانی کا کسی رانڈ کو غم ہے",
+        "english": "The youth of Akbar grieves some widowed woman."
+    },
+    {
+        "original": "اصغر کے لئے چشم کسی بی بی کی نم ہے",
+        "tagged": "<PERSON>اصغر</PERSON> کے لئے چشم کسی <PERSON>بی بی</PERSON> کی نم ہے",
+        "english": "For Asghar, the eyes of some lady are wet."
+    },
+    {
+        "original": "عباس کی فرقت کا کسی دل پہ الم ہے",
+        "tagged": "<PERSON>عباس</PERSON> کی فرقت کا کسی دل پہ الم ہے",
+        "english": "The separation from Abbas is a sorrow on some heart."
+    },
+    {
+        "original": "دولھا کو کوئی روتی ہے سر زانو پہ خم ہے",
+        "tagged": "دولھا کو کوئی روتی ہے سر زانو پہ خم ہے",
+        "english": "Someone weeps for the groom, bending her head on her knees."
+    },
+    {
+        "original": "کرتی ہے کوئی یاد محمد کے پسر کو",
+        "tagged": "کرتی ہے کوئی یاد <PERSON>محمد</PERSON> کے پسر کو",
+        "english": "Someone remembers the son of Muhammad."
+    },
+    {
+        "original": "دیوار سے رو کر کوئی ٹکراتی ہے سر کو",
+        "tagged": "دیوار سے رو کر کوئی ٹکراتی ہے سر کو",
+        "english": "Weeping, someone keeps hitting her head against the wall."
+    },
+    {
+        "original": "کہتی ہے کوئی لوٹا گیا باغ ہمارا",
+        "tagged": "کہتی ہے کوئی لوٹا گیا باغ ہمارا",
+        "english": "Someone says, 'Our garden has been returned.'"
+    },
+    {
+        "original": "ہے ہے مرے بچے کو ستمگاروں نے مارا",
+        "tagged": "ہے ہے مرے بچے کو ستمگاروں نے مارا",
+        "english": "Oh woe! My child has been killed by the oppressors."
+    },
+    {
+        "original": "مجھ رانڈ کا پیری میں رہا کچھ نہ سہارا",
+        "tagged": "مجھ رانڈ کا پیری میں رہا کچھ نہ سہارا",
+        "english": "In my old age, I have had no support."
+    },
+    {
+        "original": "دنیا سے مرا لال جواں ہو کے سدھارا",
+        "tagged": "دنیا سے مرا لال جواں ہو کے سدھارا",
+        "english": "My son departed this world as a young man."
+    },
+    {
+        "original": "شادی بھی ہوئی تھی نہ مرے لخت جگر کی",
+        "tagged": "شادی بھی ہوئی تھی نہ مرے لخت جگر کی",
+        "english": "There was not even a wedding for my flesh and blood."
+    },
+    {
+        "original": "میں مر نہ گئی ہائے بلا لے کے پسر کی",
+        "tagged": "میں مر نہ گئی ہائے بلا لے کے پسر کی",
+        "english": "I did not die, oh misery over my son."
+    },
+    {
+        "original": "کہتی تھی کوئی حال بہت غیر ہے میرا",
+        "tagged": "کہتی تھی کوئی حال بہت غیر ہے میرا",
+        "english": "Someone used to say, 'My condition is very strange.'"
+    },
+    {
+        "original": "لوگو! کسی گھر میں نہیں دیکھا یہ اندھیرا",
+        "tagged": "لوگو! کسی گھر میں نہیں دیکھا یہ اندھیرا",
+        "english": "People! This darkness has not been seen in any house."
+    },
+    {
+        "original": "کہتی تھی یہ کبرا مجھے زحمت نے ہے گھیرا",
+        "tagged": "کہتی تھی یہ کبرا مجھے زحمت نے ہے گھیرا",
+        "english": "She said, 'This grave has surrounded me with hardship.'"
+    },
+    {
+        "original": "منھ مجھ کو سکینہ نظر آتا نہیں تیرا",
+        "tagged": "منھ مجھ کو <PERSON>سکینہ</PERSON> نظر آتا نہیں تیرا",
+        "english": "I cannot see your face, Sakina."
+    },
+    {
+        "original": "میں کاہے کو واقف تھی اسیری کے محن سے",
+        "tagged": "میں کاہے کو واقف تھی اسیری کے محن سے",
+        "english": "Why was I aware of the hardships of captivity?"
+    },
+    {
+        "original": "گھٹ گھٹ کے بس اب جان نکل جائے گی تن سے",
+        "tagged": "گھٹ گھٹ کے بس اب جان نکل جائے گی تن سے",
+        "english": "Suffering like this, soon my life will leave my body."
+    },
+    {
+        "original": "ہر شام و سحر شور یہ تھا ہائے حُسَیْنَا",
+        "tagged": "ہر شام و سحر شور یہ تھا ہائے <PERSON>حسینا</PERSON>",
+        "english": "Every evening and dawn, the cry was 'Oh Husayna!'"
+    },
+    {
+        "original": "ابتک نہ کفن تم کو ملا ہائے حسینا",
+        "tagged": "ابتک نہ کفن تم کو ملا ہائے <PERSON>حسینا</PERSON>",
+        "english": "Even now, no shroud has been found for you, oh Husayna!"
+    },
+    {
+        "original": "کاٹا ترا ظالم نے گلا ہے حسینا",
+        "tagged": "کاٹا ترا ظالم نے گلا ہے <PERSON>حسینا</PERSON>",
+        "english": "The oppressor has cut your throat, oh Husayna!"
+    },
+    {
+        "original": "کنبه ترا آفت میں پھنسا ہائے حسینا",
+        "tagged": "کنبه ترا آفت میں پھنسا ہائے <PERSON>حسینا</PERSON>",
+        "english": "Your body is trapped in calamity, oh Husayna!"
+    },
+    {
+        "original": "تم چھٹ گئے کٹوا کے گلا رنج و الم سے",
+        "tagged": "تم چھٹ گئے کٹوا کے گلا رنج و الم سے",
+        "english": "You departed, cut off from sorrow and grief."
+    },
+    {
+        "original": "اب کون چھڑائے گا ہمیں قید ستم سے",
+        "tagged": "اب کون چھڑائے گا ہمیں قید ستم سے",
+        "english": "Now who will rescue us from the captivity of oppression?"
+    },
+    {
+        "original": "اس قید میں تھا بالی سکینہ کو نہ آرام",
+        "tagged": "اس قید میں تھا بالی <PERSON>سکینہ</PERSON> کو نہ آرام",
+        "english": "In this prison, Sakina has no rest."
+    },
+    {
+        "original": "سر پیٹتی تھی ہاتھوں سے رو کر سحر و شام",
+        "tagged": "سر پیٹتی تھی ہاتھوں سے رو کر سحر و شام",
+        "english": "She would beat her head with her hands, weeping day and night."
+    },
+    {
+        "original": "سب بھولی تھی بابا ہی کا بس یاد تھا اک نام",
+        "tagged": "سب بھولی تھی بابا ہی کا بس یاد تھا اک نام",
+        "english": "She had forgotten everything; only the name of her father remained."
+    },
+    {
+        "original": "کہتی تھی کہ اماں نہیں جینے کی میں ناکام",
+        "tagged": "کہتی تھی کہ اماں نہیں جینے کی میں ناکام",
+        "english": "She would say, 'Mother, I have failed to live.'"
+    },
+    {
+        "original": "پاؤں گی کہاں فاطمہ زہرا کے پسر کو",
+        "tagged": "پاؤں گی کہاں <PERSON>فاطمہ زہرا</PERSON> کے پسر کو",
+        "english": "Where will I find the son of Fatima Zahra?"
+    },
+    {
+        "original": "ہیں ڈھونڈھتی آنکھیں مری مظلوم پدر کو",
+        "tagged": "ہیں ڈھونڈھتی آنکھیں مری مظلوم پدر کو",
+        "english": "My eyes search for my oppressed father."
+    },
+    {
+        "original": "منھ چوم کے بہلاتی تھی ماں اے مری پیاری",
+        "tagged": "منھ چوم کے بہلاتی تھی ماں اے مری پیاری",
+        "english": "She would kiss my face and soothe me, oh my dear mother."
+    },
+    {
+        "original": "اب آئے گی یاں بی بی کے بابا کی سواری",
+        "tagged": "اب آئے گی یاں <PERSON>بی بی</PERSON> کے <PERSON>بابا</PERSON> کی سواری",
+        "english": "Now the ride of the lady's father will come."
+    },
+    {
+        "original": "آؤ کرو آرام مری گود میں واری",
+        "tagged": "آؤ کرو آرام مری گود میں واری",
+        "english": "Come and rest in my lap."
+    },
+    {
+        "original": "روداد سنی ہے شہِ والا نے تمہاری",
+        "tagged": "روداد سنی ہے <PERSON>شہِ والا</PERSON> نے تمہاری",
+        "english": "The great lord has heard your tale."
+    },
+    {
+        "original": "چھاتی سے حسین آ کے لگاویں گے مری جاں",
+        "tagged": "چھاتی سے <PERSON>حسین</PERSON> آ کے لگاویں گے مری جاں",
+        "english": "Husain will come and embrace me from my chest."
+    },
+    {
+        "original": "عباس علی پانی پلاویں گے مری جاں",
+        "tagged": "<PERSON>عباس</PERSON> <PERSON>علی</PERSON> پانی پلاویں گے مری جاں",
+        "english": "Abbas Ali will give me water, oh my soul."
+    },
+    {
+        "original": "وہ کہتی نہ سوؤں گی اگر نیند بھی آئے",
+        "tagged": "وہ کہتی نہ سوؤں گی اگر نیند بھی آئے",
+        "english": "She says, 'I will not sleep even if sleep comes.'"
+    },
+    {
+        "original": "ہے کون جو چھاتی پہ سکینہ کو سلائے",
+        "tagged": "ہے کون جو چھاتی پہ <PERSON>سکینہ</PERSON> کو سلائے",
+        "english": "Who is there to put Sakina to rest on their lap?"
+    },
+    {
+        "original": "حال اپنا کسے آہ یہ مظلوم سنائے",
+        "tagged": "حال اپنا کسے آہ یہ مظلوم سنائے",
+        "english": "Who can tell the plight of this oppressed one with a sigh?"
+    },
+    {
+        "original": "بابا نہیں زانو پہ مجھے کون بٹھائے",
+        "tagged": "<PERSON>بابا</PERSON> نہیں زانو پہ مجھے کون بٹھائے",
+        "english": "Who will sit me on their lap if Baba is not here?"
+    },
+    {
+        "original": "سینہ مرا اب درد یتیمی سے طپاں ہے",
+        "tagged": "سینہ مرا اب درد یتیمی سے طپاں ہے",
+        "english": "My chest is now ablaze with the pain of orphanhood."
+    },
+    {
+        "original": "بچھڑی ہوں پدر سے مجھے آرام کہاں ہے",
+        "tagged": "بچھڑی ہوں <PERSON>پدر</PERSON> سے مجھے آرام کہاں ہے",
+        "english": "I have been separated from my father; where can I find comfort?"
+    },
+    {
+        "original": "مرثیہ میر انیس",
+        "tagged": "<PERSON>مرثیہ میر انیس</PERSON>",
+        "english": "Elegy of Mir Anees."
+    },
+    {
+        "original": "جلد چهارم",
+        "tagged": "جلد چهارم",
+        "english": "Volume Four."
+    },
+    {
+        "original": "یاد آتا ہے بابا کا وہ چھاتی پر سُلانا",
+        "tagged": "یاد آتا ہے <PERSON>بابا</PERSON> کا وہ چھاتی پر سُلانا",
+        "english": "I remember how Baba used to put me to rest on his chest."
+    },
+    {
+        "original": "وہ پیار کی باتیں وہ مرا ناز اُٹھانا",
+        "tagged": "وہ پیار کی باتیں وہ مرا ناز اُٹھانا",
+        "english": "Those affectionate conversations, that used to lift my spirits."
+    },
+    {
+        "original": "وہ پیٹھ پہ شفقت سے مری ہاتھ پھرانا",
+        "tagged": "وہ پیٹھ پہ شفقت سے مری ہاتھ پھرانا",
+        "english": "That gentle hand stroking my back."
+    },
+    {
+        "original": "اور پیار سے ہر وقت وہ منھ چومتے جانا",
+        "tagged": "اور پیار سے ہر وقت وہ منھ چومتے جانا",
+        "english": "And always kissing my face affectionately."
+    },
+    {
+        "original": "تا حشر بس اب شاد نہ ہوئے گی سکینہ",
+        "tagged": "تا حشر بس اب شاد نہ ہوئے گی <PERSON>سکینہ</PERSON>",
+        "english": "Until the Day of Resurrection, Sakina will not ever be happy again."
+    },
+    {
+        "original": "چین آئے گا جب قبر میں سوئے گی سکینہ",
+        "tagged": "چین آئے گا جب قبر میں سوئے گی <PERSON>سکینہ</PERSON>",
+        "english": "She will find peace when she sleeps in her grave, Sakina."
+    },
+    {
+        "original": "یہ نیل طمانچے کے کسے آہ دکھاؤں",
+        "tagged": "یہ نیل طمانچے کے کسے آہ دکھاؤں",
+        "english": "Who shall I show the throbbing pain of the slaps?"
+    },
+    {
+        "original": "کانوں کے میں دکھ کا کسے احوال سناؤں",
+        "tagged": "کانوں کے میں دکھ کا کسے احوال سناؤں",
+        "english": "Who can I tell about the pain in my ears?"
+    },
+    {
+        "original": "عباس چچا کو بھلا کس طرح سے پاؤں",
+        "tagged": "<PERSON>عباس</PERSON> چچا کو بھلا کس طرح سے پاؤں",
+        "english": "How can I find Uncle Abbas?"
+    },
+    {
+        "original": "اکبر ہیں کہاں جن کو حمایت کو بلاؤں",
+        "tagged": "<PERSON>اکبر</PERSON> ہیں کہاں جن کو حمایت کو بلاؤں",
+        "english": "Where is Akbar, whom I would call for support?"
+    },
+    {
+        "original": "ڈر شمر کا یہ ہے کہ میں چلّا نہیں سکتی",
+        "tagged": "ڈر <PERSON>شمر</PERSON> کا یہ ہے کہ میں چلّا نہیں سکتی",
+        "english": "The fear of Shimmer is that I cannot shout."
+    },
+    {
+        "original": "وہ آ نہیں سکتے ہیں میں واں جا نہیں سکتی",
+        "tagged": "وہ آ نہیں سکتے ہیں میں واں جا نہیں سکتی",
+        "english": "They cannot come, and I cannot go there."
+    },
+    {
+        "original": "ماں نے کہا قرباں ترے اے بیکس و بے پر",
+        "tagged": "<PERSON>ماں</PERSON> نے کہا قرباں ترے اے بیکس و بے پر",
+        "english": "Mother said, 'I would sacrifice myself for you, oh helpless one.'"
+    },
+    {
+        "original": "اب رونے کی طاقت نہیں ہے چپ رہو دم بھر",
+        "tagged": "اب رونے کی طاقت نہیں ہے چپ رہو دم بھر",
+        "english": "Now I do not have the strength to cry; be silent for a moment."
+    },
+    {
+        "original": "سُن لیوے گا رونا ترا گر شمر بد اختر",
+        "tagged": "سُن لیوے گا رونا ترا گر <PERSON>شمر</PERSON> بد اختر",
+        "english": "Your cries will be heard if that wretched Shimmer is present."
+    },
+    {
+        "original": "بیرحم ہے بے دردی سے گھڑکے گا ستمگر",
+        "tagged": "بیرحم ہے بے دردی سے گھڑکے گا ستمگر",
+        "english": "He is merciless and will cruelly oppress."
+    },
+    {
+        "original": "دشمن تری آواز کا وہ دشمن دیں ہے",
+        "tagged": "دشمن تری آواز کا وہ دشمن دیں ہے",
+        "english": "That enemy of your voice is truly an enemy."
+    },
+    {
+        "original": "ہم بیکس و مجبور ہیں کچھ زور نہیں ہے",
+        "tagged": "ہم بیکس و مجبور ہیں کچھ زور نہیں ہے",
+        "english": "We are helpless and cannot exert any force."
+    },
+    {
+        "original": "وہ کہتی تھی سینے میں تڑپتا ہے مرا دل",
+        "tagged": "وہ کہتی تھی سینے میں تڑپتا ہے مرا دل",
+        "english": "She used to say, 'My heart is restless in my chest.'"
+    },
+    {
+        "original": "مر جاؤں تو آسان ہو اماں مری مشکل",
+        "tagged": "مر جاؤں تو آسان ہو <PERSON>اماں</PERSON> میری مشکل",
+        "english": "If I die, my difficulties will be easy for my mother."
+    },
+    {
+        "original": "اس دُکھ کی میں اب ہو نہیں سکتی متحمل",
+        "tagged": "اس دُکھ کی میں اب ہو نہیں سکتی متحمل",
+        "english": "I cannot bear this sorrow any longer."
+    },
+    {
+        "original": "راضی ہوں مجھے تیغ سے کوئی کرے بسمل",
+        "tagged": "راضی ہوں مجھے تیغ سے کوئی کرے بسمل",
+        "english": "I am content if someone slays me with a sword."
+    },
+    {
+        "original": "بابا کی جدائی نے یہ بیتاب کیا ہے",
+        "tagged": "<PERSON>بابا</PERSON> کی جدائی نے یہ بیتاب کیا ہے",
+        "english": "The separation from Baba has made me restless."
+    },
+    {
+        "original": "کانوں کا بھی اب درد مجھے بھول گیا ہے",
+        "tagged": "کانوں کا بھی اب درد مجھے بھول گیا ہے",
+        "english": "I have forgotten the pain in my ears as well."
+    },
+    {
+        "original": "یہ کہہ کے تڑپنے لگی وہ بے کس و دلگیر",
+        "tagged": "یہ کہہ کے تڑپنے لگی وہ بے کس و دلگیر",
+        "english": "Saying this, she started to writhe, helpless and heartbroken."
+    },
+    {
+        "original": "سر پیٹا کئی بار تو حالت ہوئی تغییر",
+        "tagged": "سر پیٹا کئی بار تو حالت ہوئی تغییر",
+        "english": "She struck her head many times, and her state changed."
+    },
+    {
+        "original": "سمجھاتی تھی ہر بار اسے شاہ کی ہمشیر",
+        "tagged": "سمجھاتی تھی ہر بار اسے <PERSON>شاہ</PERSON> کی ہمشیر",
+        "english": "She advised her every time, as she was the sister of the king."
+    },
+    {
+        "original": "پر ایسی وہ مچلی کہ نہ بہلی کسی تدبیر",
+        "tagged": "پر ایسی وہ مچلی کہ نہ بہلی کسی تدبیر",
+        "english": "But she wriggled so much that no plan could help her."
+    },
+    {
+        "original": "یہ رنج و الم تھا دل غمناک کے اوپر",
+        "tagged": "یہ رنج و الم تھا دل غمناک کے اوپر",
+        "english": "This was the sorrow and grief upon a sad heart."
+    },
+    {
+        "original": "بسمل کی طرح لوٹتی تھی خاک کے اوپر",
+        "tagged": "<PERSON>بسمل</PERSON> کی طرح لوٹتی تھی خاک کے اوپر",
+        "english": "She rolled on the ground just like Basmal."
+    },
+    {
+        "original": "سر پیٹ کے ماں کہتی تھی ہے ہے میں کروں کیا",
+        "tagged": "سر پیٹ کے <PERSON>ماں</PERSON> کہتی تھی ہے ہے میں کروں کیا",
+        "english": "Grabbing her head, mother exclaimed, 'What should I do!'"
+    },
+    {
+        "original": "مظلومی پہ اس بچی کے پھٹتا ہے کلیجا",
+        "tagged": "مظلومی پہ اس بچی کے پھٹتا ہے کلیجا",
+        "english": "The tyranny on this child makes my heart burst."
+    },
+    {
+        "original": "اس قید میں گذرا ہے ابھی فاقہ پہ فاقا",
+        "tagged": "اس قید میں گذرا ہے ابھی فاقہ پہ فاقا",
+        "english": "In this imprisonment, I have passed time with hunger upon hunger."
+    },
+    {
+        "original": "اے لوگو! سکینہ کا مری دم ہے نکلتا",
+        "tagged": "اے لوگو! <PERSON>سکینہ</PERSON> کا مری دم ہے نکلتا",
+        "english": "Oh people! Sakina's breath is leaving me."
+    },
+    {
+        "original": "بند آنکھیں ہیں منھ کھولو مری ماہ جبیں ہے",
+        "tagged": "بند آنکھیں ہیں منھ کھولو میری <PERSON>ماہ جبیں</PERSON> ہے",
+        "english": "My eyes are closed; open my face, oh my beautiful one."
+    },
+    {
+        "original": "کیا منھ میں چواؤں کہیں پانی بھی نہیں ہے",
+        "tagged": "کیا منھ میں چواؤں کہیں پانی بھی نہیں ہے",
+        "english": "Is there no water in my mouth to drink?"
+    },
+    {
+        "original": "غش ہو گئی بس اتنے میں وہ بے کس و پر غم",
+        "tagged": "غش ہو گئی بس اتنے میں وہ بے کس و پر غم",
+        "english": "She fainted at that moment, helpless and full of grief."
+    },
+    {
+        "original": "ہر بی بی کو بس ہو گیا اک سکتے کا عالم",
+        "tagged": "ہر بی بی کو بس ہو گیا اک سکتے کا عالم",
+        "english": "Every woman fell into a state of utter shock."
+    },
+    {
+        "original": "بانو نے کہا ہائے میں اب کیا کروں اس دم",
+        "tagged": "<PERSON>بانو</PERSON> نے کہا ہائے میں اب کیا کروں اس دم",
+        "english": "Bano said, 'Oh, what shall I do in this moment?'"
+    },
+    {
+        "original": "ہاتھوں سے چلی شیفتهٔ سید اکرم",
+        "tagged": "ہاتھوں سے چلی <PERSON>شیفتهٔ سید اکرم</PERSON>",
+        "english": "With her hands, she went to the beloved of Sayyid Akram."
+    },
+    {
+        "original": "جان و جگر شاہ مدینہ کو غش آیا",
+        "tagged": "جان و جگر <PERSON>شاہ مدینہ</PERSON> کو غش آیا",
+        "english": "The King of Medina fainted, soul and liver."
+    },
+    {
+        "original": "فریاد ہے فریاد سکینہ کو غش آیا",
+        "tagged": "فریاد ہے فریاد <PERSON>سکینہ</PERSON> کو غش آیا",
+        "english": "There is a cry, Sakina has fainted."
+    },
+    {
+        "original": "یاں ہائے سکینہ کا ہوا شور جو اک بار",
+        "tagged": "یاں ہائے <PERSON>سکینہ</PERSON> کا ہوا شور جو اک بار",
+        "english": "Oh, the cry of Sakina arose once."
+    },
+    {
+        "original": "تب خواب سے حاکم بھی محل میں ہوا بیدار",
+        "tagged": "تب خواب سے <PERSON>حاکم</PERSON> بھی محل میں ہوا بیدار",
+        "english": "Then the ruler also awakened in the palace from the dream."
+    },
+    {
+        "original": "منگوائی خبر جب تو کسی نے کیا اظہار",
+        "tagged": "منگوائی خبر جب تو کسی نے کیا اظہار",
+        "english": "When news was brought, someone expressed it."
+    },
+    {
+        "original": "اک چار برس کی جو ہے شبیر کی دلدار",
+        "tagged": "اک چار برس کی جو ہے <PERSON>شبیر</PERSON> کی دلدار",
+        "english": "A beloved of Shabir who is just four years old."
+    },
+    {
+        "original": "یاد اُس کو نہیں شہ کی فراموش ہوئی ہے",
+        "tagged": "یاد اُس کو نہیں <DESIGNATION>شہ</DESIGNATION> کی فراموش ہوئی ہے",
+        "english": "He does not remember, he has forgotten the martyr."
+    },
+    {
+        "original": "بابا کو یه روئی ہے کہ بیہوش ہوئی ہے",
+        "tagged": "<PERSON>بابا</PERSON> کو یه روئی ہے کہ بیہوش ہوئی ہے",
+        "english": "Father has heard that she has fainted."
+    },
+    {
+        "original": "حلقہ کیے گرد اُس کے حرم روتے ہیں باہم",
+        "tagged": "حلقہ کیے گرد اُس کے <ORGANIZATION>حرم</ORGANIZATION> روتے ہیں باہم",
+        "english": "Those around her sacred household weep together."
+    },
+    {
+        "original": "کہرام ہے زنداں میں قیامت کا ہے عالم",
+        "tagged": "کہرام ہے <LOCATION>زنداں</LOCATION> میں قیامت کا ہے عالم",
+        "english": "There is chaos in the prison; it is a day of resurrection."
+    },
+    {
+        "original": "بولا یہ خبرداروں سے اس وقت یہ اظلم",
+        "tagged": "بولا یہ خبرداروں سے اس وقت یہ اظلم",
+        "english": "He spoke to the warning ones at that moment, 'This is injustice.'"
+    },
+    {
+        "original": "پہونچاؤ خرابے میں سر سید اکرم",
+        "tagged": "پہونچاؤ خرابے میں <PERSON>سر سید اکرم</PERSON>",
+        "english": "Bring the head of Syed Akram to the ruins."
+    },
+    {
+        "original": "بے تاب ہے مل لے شہ مظلوم کے سر سے",
+        "tagged": "بے تاب ہے مل لے <DESIGNATION>شہ مظلوم</DESIGNATION> کے سر سے",
+        "english": "He is restless to meet the head of the martyred one."
+    },
+    {
+        "original": "محروم نہ رہ جائے وہ دیدار پسر سے",
+        "tagged": "محروم نہ رہ جائے وہ دیدار <PERSON>پسر</PERSON> سے",
+        "english": "Let her not be deprived of the sight of her son."
+    },
+    {
+        "original": "جلد چہارم",
+        "tagged": "جلد چہارم",
+        "english": "Volume Four."
+    },
+    {
+        "original": "مرثیہ میر انیس",
+        "tagged": "<PERSON>مرثیہ میر انیس</PERSON>",
+        "english": "Elegy of Mir Anees."
+    },
+    {
+        "original": "جس طشت طلائی میں رکھا تھا سر سرور",
+        "tagged": "جس <LOCATION>طشت</LOCATION> طلائی میں رکھا تھا سر <PERSON>سرور</PERSON>",
+        "english": "In the golden basin where the head of the beloved was placed."
+    },
+    {
+        "original": "خدام روانہ ہوے جلدی اُسے لے کر",
+        "tagged": "خدام روانہ ہوے جلدی اُسے لے کر",
+        "english": "The attendants hastily set off to take him."
+    },
+    {
+        "original": "جا کر درِ زنداں پہ پکارے وہ بد اختر",
+        "tagged": "جا کر <LOCATION>درِ زنداں</LOCATION> پہ پکارے وہ بد اختر",
+        "english": "Going to the prison door, he called the unfortunate one."
+    },
+    {
+        "original": "لے جائے کوئی آ کے سر سید بے سر",
+        "tagged": "لے جائے کوئی آ کے سر <PERSON>سید</PERSON> بے سر",
+        "english": "May someone come and take the head of the headless Syed."
+    },
+    {
+        "original": "خوشبو اسے شبیر کی زلفوں کی سنگھا دو",
+        "tagged": "خوشبو اسے <PERSON>شبیر</PERSON> کی زلفوں کی سنگھا دو",
+        "english": "Let the fragrance of Shabir's hair be inhaled by her."
+    },
+    {
+        "original": "سر باپ کا مظلوم سکینہ کو دکھا دو",
+        "tagged": "سر باپ کا مظلوم <PERSON>سکینہ</PERSON> کو دکھا دو",
+        "english": "Show the head of the father to the oppressed Sakina."
+    },
+    {
+        "original": "روتے در زنداں پہ گئے سید سجاد",
+        "tagged": "روتے <LOCATION>در زنداں</LOCATION> پہ گئے <PERSON>سید سجاد</PERSON>",
+        "english": "Crying, Syed Sajjad went to the prison door."
+    },
+    {
+        "original": "سر باپ کا ہاتھوں پہ لیا بادل ناشاد",
+        "tagged": "سر باپ کا ہاتھوں پہ لیا بادل ناشاد",
+        "english": "He took the head of his father in his hands, surrounded by gloom."
+    },
+    {
+        "original": "زنداں میں چلے کرتے ہوے نالہ و فریاد",
+        "tagged": "<LOCATION>زنداں</LOCATION> میں چلے کرتے ہوے نالہ و فریاد",
+        "english": "Crying and lamenting, they peacefully walked in the prison."
+    },
+    {
+        "original": "جا پہونچے تو رانڈوں سے کیا جا کے یہ ارشاد",
+        "tagged": "جا پہونچے تو <ORGANIZATION>رانڈوں</ORGANIZATION> سے کیا جا کے یہ ارشاد",
+        "english": "When they reached, they announced this from among the women."
+    },
+    {
+        "original": "شبیر کا سر آیا ہے تعظیم کو اُٹھو",
+        "tagged": "<PERSON>شبیر</PERSON> کا سر آیا ہے تعظیم کو اُٹھو",
+        "english": "The head of Shabir has arrived; rise in honor."
+    },
+    {
+        "original": "زہرا کے جگر بند کی تسلیم کو اٹھو",
+        "tagged": "<PERSON>زہرا</PERSON> کے جگر بند کی تسلیم کو اٹھو",
+        "english": "Honor the recognition of the daughter of Zahra."
+    },
+    {
+        "original": "سر پیٹیں یہ سنتے ہی سبھی بی بیاں باہم",
+        "tagged": "سر پیٹیں یہ سنتے ہی سبھی بی بیاں باہم",
+        "english": "Upon hearing this, all the women beat their heads together."
+    },
+    {
+        "original": "زینب نے کہا کرتی ہے تسلیم یہ پر غم",
+        "tagged": "<PERSON>زینب</PERSON> نے کہا کرتی ہے تسلیم یہ پر غم",
+        "english": "Zainab said, 'This acknowledgment is grief.'"
+    },
+    {
+        "original": "ہاتھوں پہ لیا پھیر سر سردار دو عالم",
+        "tagged": "ہاتھوں پہ لیا پھیر سر <DESIGNATION>سردار دو عالم</DESIGNATION>",
+        "english": "He took the head of the master of both worlds in his hands."
+    },
+    {
+        "original": "سر پیٹ کے سب بیبیاں کرنے لگیں ماتم",
+        "tagged": "سر پیٹ کے سب بیبیاں کرنے لگیں ماتم",
+        "english": "All the women began to mourn, beating their heads."
+    },
+    {
+        "original": "سر ہاتھوں پہ بھائی کا بہن کے جو دھرا تھا",
+        "tagged": "سر ہاتھوں پہ بھائی کا بہن کے جو دھرا تھا",
+        "english": "The head that was held in the sister's hands of the brother."
+    },
+    {
+        "original": "اک نور خدا چار طرف جلوہ نما تھا",
+        "tagged": "اک نور خدا چار طرف جلوہ نما تھا",
+        "english": "A divine light was visible from all sides."
+    },
+    {
+        "original": "بالیں پہ سکینہ کے سر شاہ جو لائی",
+        "tagged": "بالیں پہ <PERSON>سکینہ</PERSON> کے سر <PERSON>شاہ</PERSON> جو لائی",
+        "english": "The king brought it to Sakina's hair."
+    },
+    {
+        "original": "جو گیسوئے سرور کی سکینہ کو سنگھائی",
+        "tagged": "جو گیسوئے <PERSON>سرور</PERSON> کی <PERSON>سکینہ</PERSON> کو سنگھائی",
+        "english": "She inhaled the scent of the beloved's hair."
+    },
+    {
+        "original": "بابا کی جو بو دختر مظلوم نے پائی",
+        "tagged": "<PERSON>بابا</PERSON> کی جو بو <PERSON>دختر مظلوم</PERSON> نے پائی",
+        "english": "The daughter of the oppressed received the scent of her father."
+    },
+    {
+        "original": "کچھ غش میں افاقہ ہوا اور ہوش میں آئی",
+        "tagged": "کچھ غش میں افاقہ ہوا اور ہوش میں آئی",
+        "english": "She regained consciousness after a brief faint."
+    },
+    {
+        "original": "آہستہ کھا روح مزا پاتی ہے لوگو",
+        "tagged": "آہستہ کھا روح مزا پاتی ہے لوگو",
+        "english": "Slowly, the soul enjoys the fragrance, O people."
+    },
+    {
+        "original": "بو بابا کی زلفوں کی چلی آتی ہے لوگو",
+        "tagged": "بو <PERSON>بابا</PERSON> کی زلفوں کی چلی آتی ہے لوگو",
+        "english": "The fragrance of Baba's tresses comes to me, O people."
+    },
+    {
+        "original": "پھر تھام کے شانے اُسے بانو نے اُٹھایا",
+        "tagged": "پھر تھام کے شانے اُسے <PERSON>بانو</PERSON> نے اُٹھایا",
+        "english": "Then, holding her shoulders, Bano lifted her."
+    },
+    {
+        "original": "زینب نے کہا لے ترا بے کس پدر آیا",
+        "tagged": "<PERSON>زینب</PERSON> نے کہا لے ترا بے کس <PERSON>پدر</PERSON> آیا",
+        "english": "Zainab said, 'Take her, your helpless father has come.'"
+    },
+    {
+        "original": "سر خاک پہ سجدے کو سکینہ نے جھکایا",
+        "tagged": "سر خاک پہ سجدے کو <PERSON>سکینہ</PERSON> نے جھکایا",
+        "english": "Sakina bowed her head to prostrate upon the dust."
+    },
+    {
+        "original": "دیکھا جو سوئے طشت تو یہ شور مچایا",
+        "tagged": "دیکھا جو سوئے <LOCATION>طشت</LOCATION> تو یہ شور مچایا",
+        "english": "When she saw the basin, she cried out."
+    },
+    {
+        "original": "بابا کا میرے سر ہے یہ پہچان گئی میں",
+        "tagged": "<PERSON>بابا</PERSON> کا میرے سر ہے یہ پہچان گئی میں",
+        "english": "This is my father's head; I recognized it."
+    },
+    {
+        "original": "ان خون بھری زلفوں کے قربان گئی میں",
+        "tagged": "ان خون بھری زلفوں کے قربان گئی میں",
+        "english": "I have sacrificed myself for those blood-filled tresses."
+    },
+    {
+        "original": "چھوٹے سے جو ہاتھوں سے اُٹھایا سر سرور",
+        "tagged": "چھوٹے سے جو ہاتھوں سے اُٹھایا سر <PERSON>سرور</PERSON>",
+        "english": "The head of the beloved was lifted by her small hands."
+    },
+    {
+        "original": "آنکھیں ملیں رخساروں سے منھ رکھ دیا منھ پر",
+        "tagged": "آنسو ملیں رخساروں سے منھ رکھ دیا منھ پر",
+        "english": "The eyes met the cheeks, as she covered her face."
+    },
+    {
+        "original": "لکھا ہے کہ جنبش میں تب آئے لب اطہر",
+        "tagged": "لکھا ہے کہ جنبش میں تب آئے لب <PERSON>اطہر</PERSON>",
+        "english": "It is written that the lips of the pure one moved."
+    },
+    {
+        "original": "حضرت نے بھی اعجاز سے چومے لب دختر",
+        "tagged": "<PERSON>حضرت</PERSON> نے بھی اعجاز سے چومے لب <PERSON>دختر</PERSON>",
+        "english": "The revered one also miraculously kissed the lips of the daughter."
+    },
+    {
+        "original": "وا ہو گئیں آنکھیں شہ مظلوم کے سر کی",
+        "tagged": "وا ہو گئیں آنکھیں <DESIGNATION>شہ مظلوم</DESIGNATION> کے سر کی",
+        "english": "The eyes of the martyred one opened wide upon the head."
+    },
+    {
+        "original": "بیٹی پہ عجب یاس سے حضرت نے نظر کی",
+        "tagged": "بیٹی پہ عجب یاس سے <PERSON>حضرت</PERSON> نے نظر کی",
+        "english": "With a strange despair, the revered one looked at the daughter."
+    },
+    {
+        "original": "بیٹی نے کہا صدقے میں اس پیار کے بابا",
+        "tagged": "بیٹی نے کہا صدقے میں اس پیار کے بابا",
+        "english": "The daughter said, 'I sacrifice myself for this dear Father.'"
+    },
+    {
+        "original": "یہ کس نے گلا آپ کا تلوار سے کاٹا",
+        "tagged": "یہ کس نے گلا آپ کا تلوار سے کاٹا",
+        "english": "Who has cut your throat with a sword?"
+    },
+    {
+        "original": "سر تو ہے یہاں اور تن پر نور ہے کس جا",
+        "tagged": "سر تو ہے یہاں اور تن پر نور ہے کس جا",
+        "english": "Your head is here, but where is the body filled with light?"
+    },
+    {
+        "original": "وہ بازو کہاں ہیں جو مرے ہوتے تھے تکیا",
+        "tagged": "وہ بازو کہاں ہیں جو مرے ہوتے تھے تکیا",
+        "english": "Where are the arms that used to be my pillow?"
+    },
+    {
+        "original": "اب منھ سے نکلتا ہے کلیجہ مرا پھٹ کر",
+        "tagged": "اب منھ سے نکلتا ہے کلیجہ مرا پھٹ کر",
+        "english": "Now my heart bursts out from my mouth."
+    },
+    {
+        "original": "وہ چھاتی کہاں جس سے میں سوتی تھی لپٹ کر",
+        "tagged": "وہ چھاتی کہاں جس سے میں سوتی تھی لپٹ کر",
+        "english": "Where is that chest to which I used to cling while sleeping?"
+    },
+    {
+        "original": "اس سن میں کہوں کیا جو ستم میں نے اٹھائے",
+        "tagged": "اس سن میں کہوں کیا جو ستم میں نے اٹھائے",
+        "english": "What shall I say in this age about the atrocities I have endured?"
+    },
+    {
+        "original": "یا شاہ طمانچے مجھے ظالم نے لگائے",
+        "tagged": "یا <PERSON>شاہ</PERSON> طمانچے مجھے ظالم نے لگائے",
+        "english": "O King, the oppressor has struck me with slaps."
+    },
+    {
+        "original": "بُندے مرے چھینے مجھے نیزے بھی دکھائے",
+        "tagged": "بُندے مرے چھینے مجھے نیزے بھی دکھائے",
+        "english": "They snatched my belongings and showed me spears."
+    },
+    {
+        "original": "باندھے ہوئے گردن میں رسن کھینچتے لائے",
+        "tagged": "باندھے ہوئے گردن میں رسن کھینچتے لائے",
+        "english": "They brought me with a rope tied around my neck."
+    },
+    {
+        "original": "نے پاس ہیں آپ اور نہ چچا جان ہمارے",
+        "tagged": "نے پاس ہیں آپ اور نہ <PERSON>چچا جان</PERSON> ہمارے",
+        "english": "You are not here, nor is my uncle."
+    },
+    {
+        "original": "فریاد کہ مجروح ہوئے کان ہمارے",
+        "tagged": "فریاد کہ مجروح ہوئے کان ہمارے",
+        "english": "A cry that our ears have been wounded."
+    },
+    {
+        "original": "اتنے میں کہا شمر ستم گر نے یہ آ کر",
+        "tagged": "اتنے میں کہا <PERSON>شمر</PERSON> ستم گر نے یہ آ کر",
+        "english": "Just then, the tyrant Shimmer came and said this."
+    },
+    {
+        "original": "دے جاؤ بس اب جلد سر سبط پیمبر",
+        "tagged": "دے جاؤ بس اب جلد سر <PERSON>سبط پیمبر</PERSON>",
+        "english": "Hand over the head of the grandson of the Prophet quickly."
+    },
+    {
+        "original": "حاکم کا مجھے حکم یہ پہونچا ہے مکرر",
+        "tagged": "<PERSON>حاکم</PERSON> کا مجھے حکم یہ پہونچا ہے مکرر",
+        "english": "This order has come to me again from the governor."
+    },
+    {
+        "original": "دم بھر سے زیادہ نہ رہے یاں سر سرور",
+        "tagged": "دم بھر سے زیادہ نہ رہے یاں سر <PERSON>سرور</PERSON>",
+        "english": "Do not let the head of the lord remain here for more than a breath."
+    },
+    {
+        "original": "رونی ہے تو دکھلا دو ذرا شکل بدر کو",
+        "tagged": "رونی ہے تو دکھلا دو ذرا شکل <PERSON>بدر</PERSON> کو",
+        "english": "If you weep, then show me the face of Badr."
+    },
+    {
+        "original": "پہلی ہو سکینہ تو حوالے کرو سر کو",
+        "tagged": "پہلی ہو <PERSON>سکینہ</PERSON> تو حوالے کرو سر کو",
+        "english": "If it is Sakina, then hand over the head."
+    },
+    {
+        "original": "مرثیہ میر انیس",
+        "tagged": "<PERSON>مرثیہ میر انیس</PERSON>",
+        "english": "Elegy of Mir Anees."
+    },
+    {
+        "original": "جلد چهارم",
+        "tagged": "جلد چهارم",
+        "english": "Volume fourth."
+    },
+    {
+        "original": "ناداں نے سنی شمر کی آواز جو اک بار",
+        "tagged": "ناداں نے سنی <PERSON>شمر</PERSON> کی آواز جو اک بار",
+        "english": "The foolish one heard Shimmer's voice just once."
+    },
+    {
+        "original": "تن کانپ گیا سہم گئی وہ جگر افگار",
+        "tagged": "تن کانپ گیا سہم گئی وہ جگر افگار",
+        "english": "Her body trembled, terrified and pained."
+    },
+    {
+        "original": "بانو سے لپٹ کے کہا اے مادر غم خوار",
+        "tagged": "بانو سے لپٹ کے کہا اے <PERSON>مادر</PERSON> غم خوار",
+        "english": "Clinging to the lady, she said, 'O Mother of compassion!'"
+    },
+    {
+        "original": "جاں اپنی میں دوں گی پہ یہ سر دوں گی نہ زنہار",
+        "tagged": "جاں اپنی میں دوں گی پہ یہ سر دوں گی نہ زنہار",
+        "english": "I will give my life, but I will not give up this head."
+    },
+    {
+        "original": "کرتے میں چھپا لیتی ہوں اس خوں بھرے سر کو",
+        "tagged": "کرتے میں چھپا لیتی ہوں اس خوں بھرے سر کو",
+        "english": "I hide this blood-stained head."
+    },
+    {
+        "original": "دیکھا نہیں جی بھر کے ابھی اپنے پدر کو",
+        "tagged": "دیکھا نہیں جی بھر کے ابھی اپنے <PERSON>پدر</PERSON> کو",
+        "english": "I have not yet seen my father to my heart's content."
+    },
+    {
+        "original": "سن لو یہ وصیت مری تم سب کے میں قرباں",
+        "tagged": "سن لو یہ وصیت مری تم سب کے میں قرباں",
+        "english": "Listen to this will, I am sacrificed for you all."
+    },
+    {
+        "original": "تم بھی نہ اسے دیجو سر سرورِ ذی شاں",
+        "tagged": "تم بھی نہ اسے دیجو سر <PERSON>سرورِ ذی شاں</PERSON>",
+        "english": "Do not give them the head of my lord."
+    },
+    {
+        "original": "جھنجھلا ke مجھے قتل کرے گر یہ بد ایماں",
+        "tagged": "جھنجھلا کے مجھے قتل کرے گر یہ بد ایماں",
+        "english": "If they harm me, may they be cursed."
+    },
+    {
+        "original": "سر باپ کا رکھ دیجیو مری قبر میں امّاں",
+        "tagged": "سر باپ کا رکھ دیجیو مری قبر میں <PERSON>امّاں</PERSON>",
+        "english": "Place my father's head in my grave, O Mother."
+    },
+    {
+        "original": "ہوگا نہ قلق روح مری شاد رہے گی",
+        "tagged": "ہوگا نہ قلق روح مری شاد رہے گی",
+        "english": "My soul will not be troubled; it will remain happy."
+    },
+    {
+        "original": "واللہ مری گور بھی آباد رہے گی",
+        "tagged": "واللہ مری گور بھی آباد رہے گی",
+        "english": "By God, my grave will also remain prosperous."
+    },
+    {
+        "original": "ڈیوڑھی سے سکینہ کی سنی شمر نے تقریر",
+        "tagged": "ڈیوڑھی سے <PERSON>سکینہ</PERSON> کی سنی <PERSON>شمر</PERSON> نے تقریر",
+        "english": "From the courtyard, Shimmer heard Sakina's speech."
+    },
+    {
+        "original": "زنداں میں گیا چیں بہ جبیں دست به شمشیر",
+        "tagged": "زنداں میں گیا چیں بہ جبیں دست بہ شمشیر",
+        "english": "He entered the prison, hands on the sword."
+    },
+    {
+        "original": "تھرّائے حرم سہم گئی دختر شبیر",
+        "tagged": "تھرّائے حرم سہم گئی <PERSON>دختر شبیر</PERSON>",
+        "english": "The sacred place trembled, and the daughter of Shabir was terrified."
+    },
+    {
+        "original": "فرمانے لگے اُس سے یہ تب عابد دل گیر",
+        "tagged": "فرمانے لگے اُس سے یہ تب <PERSON>عابد</PERSON> دل گیر",
+        "english": "He then said to her, the heartbroken worshipper."
+    },
+    {
+        "original": "اس ظلم رسیدہ کو نہ آزار دے بس کر",
+        "tagged": "اس ظلم رسیدہ کو نہ آزار دے بس کر",
+        "english": "Stop torturing this one who has been afflicted by such cruelty."
+    },
+    {
+        "original": "معصوم سکینہ کی یتیمی پہ ترس کر",
+        "tagged": "معصوم <PERSON>سکینہ</PERSON> کی یتیمی پہ ترس کر",
+        "english": "Have mercy on the orphaned innocent Sakina."
+    },
+    {
+        "original": "ظالم نے بہ زور اس سے سر شاہ کو چھینا",
+        "tagged": "ظالم نے بہ زور اس سے سر <PERSON>شاہ</PERSON> کو چھینا",
+        "english": "The oppressor forcefully snatched the head of the king from her."
+    },
+    {
+        "original": "اور لے گیا زنداں سے سر شاہ مدینا",
+        "tagged": "اور لے گیا زنداں سے سر <PERSON>شاہ مدینا</PERSON>",
+        "english": "And he took the head of the king of Medina from the prison."
+    },
+    {
+        "original": "رانڈیں تو لگی پیٹنے رو کر سر و سینا",
+        "tagged": "رانڈیں تو لگی پیٹنے رو کر سر و سینا",
+        "english": "They began to wail and beat their heads and chests."
+    },
+    {
+        "original": "اور مر گئی پس ہائے پدر کہہ کے سکینا",
+        "tagged": "اور مر گئی پس ہائے <PERSON>پدر</PERSON> کہہ کے <PERSON>سکینہ</PERSON>",
+        "english": "And she died, lamenting 'O Father,' Sakina said."
+    },
+    {
+        "original": "اک دھوم ہوئی خانہ زنداں میں بکا کی",
+        "tagged": "اک دھوم ہوئی خانہ زنداں میں بکا کی",
+        "english": "There was a commotion in the prison of weeping."
+    },
+    {
+        "original": "تھا شور کہ شبیر کی عاشق نے قضا کی",
+        "tagged": "تھا شور کہ <PERSON>شبیر</PERSON> کی عاشق نے قضا کی",
+        "english": "There was an uproar that the lover of Shabir had met her fate."
+    },
+    {
+        "original": "ماں بولی کہ بچی تری صورت کے میں صدقے",
+        "tagged": "ماں بولی کہ بچی تری صورت کے میں صدقے",
+        "english": "The mother said, 'I sacrifice myself for your beautiful face.'"
+    },
+    {
+        "original": "ہے ہے مری پیاری تو جدا ہو گئی مجھ سے",
+        "tagged": "ہے ہے مری پیاری تو جدا ہو گئی مجھ سے",
+        "english": "Alas, my beloved has been separated from me."
+    },
+    {
+        "original": "ماں چھوٹی سی میت تری کن آنکھوں سے دیکھے",
+        "tagged": "ماں چھوٹی سی میت تری کن آنکھوں سے دیکھے",
+        "english": "O Mother, see your small corpse with these eyes."
+    },
+    {
+        "original": "آخر ہوئیں بی بی نہ اُٹھاے گئے صدمے",
+        "tagged": "آخر ہوئیں بی بی نہ اُٹھاے گئے صدمے",
+        "english": "Finally, the lady could not bear the sorrows."
+    },
+    {
+        "original": "مادر تری مظلومی کے قربان سکینہ",
+        "tagged": "مادر تری مظلومی کے قربان <PERSON>سکینہ</PERSON>",
+        "english": "O Mother, I sacrifice myself for your oppression, Sakina."
+    },
+    {
+        "original": "معصوم سکینہ مری نادان سکینہ",
+        "tagged": "معصوم <PERSON>سکینہ</PERSON> مری نادان <PERSON>سکینہ</PERSON>",
+        "english": "Innocent Sakina, my foolish Sakina."
+    },
+    {
+        "original": "صدقے گئی اب روتی نہیں شمر کے ڈر سے",
+        "tagged": "صدقے گئی اب روتی نہیں <PERSON>شمر</PERSON> کے ڈر سے",
+        "english": "Gone is my sincerity, now I do not weep for the fear of Shimmer."
+    },
+    {
+        "original": "کہتی نہیں اماں ہمیں ملوا دو پدر سے",
+        "tagged": "کہتی نہیں <PERSON>اماں</PERSON> ہمیں ملوا دو <PERSON>پدر</PERSON> سے",
+        "english": "She does not say, 'Mother, let us meet our father.'"
+    },
+    {
+        "original": "گھر دادی کے تم آج چلی ہو مرے گھر سے",
+        "tagged": "گھر <PERSON>دادی</PERSON> کے تم آج چلی ہو مرے گھر سے",
+        "english": "Today you have left my house for grandmother's house."
+    },
+    {
+        "original": "منھ موڑ گئیں مادر تفیتدہ جگر سے",
+        "tagged": "منھ موڑ گئیں <PERSON>مادر</PERSON> تفیتدہ جگر سے",
+        "english": "The mother has turned away from the wounded heart."
+    },
+    {
+        "original": "میں روتی ہوں بیدار نہیں ہوتی ہو بی بی",
+        "tagged": "میں روتی ہوں بیدار نہیں ہوتی ہو <PERSON>بی بی</PERSON>",
+        "english": "I cry, but you do not wake, O lady."
+    },
+    {
+        "original": "پھر رکھ کے منھ اس بچی کے منھ پر یہ پکاری",
+        "tagged": "پھر رکھ کے منھ اس بچی کے منھ پر یہ پکاری",
+        "english": "Then placing this on the mouth of the child, she cried out."
+    },
+    {
+        "original": "اصغر کی طرح چھوڑ گئیں تم ہمیں واری",
+        "tagged": "اصغر کی طرح چھوڑ گئیں تم ہمیں واری",
+        "english": "You left us like Asghar."
+    },
+    {
+        "original": "بی بی میں نہیں جینے کی فرقت میں تمھاری",
+        "tagged": "<PERSON>بی بی</PERSON> میں نہیں جینے کی فرقت میں تمھاری",
+        "english": "O lady, I cannot live in separation from you."
+    },
+    {
+        "original": "ہے ہے مری عاشق مری بیکس مری پیاری",
+        "tagged": "ہے ہے مری عاشق مری بیکس مری پیاری",
+        "english": "Oh, my beloved, my helpless, my dear."
+    },
+    {
+        "original": "مادر سے بڑے وقت میں منھ موڑ گئیں تم",
+        "tagged": "<PERSON>مادر</PERSON> سے بڑے وقت میں منھ موڑ گئیں تم",
+        "english": "You turned away from the mother after a long time."
+    },
+    {
+        "original": "اس قید میں رونے کے لیے چھوڑ گئیں تم",
+        "tagged": "اس قید میں رونے کے لیے چھوڑ گئیں تم",
+        "english": "You left me to weep in this imprisonment."
+    },
+    {
+        "original": "ننھی سی کہاں قبر بناؤں میں تمھاری",
+        "tagged": "ننھی سی کہاں قبر بناؤں میں تمھاری",
+        "english": "Where can I make a grave for you, my little one?"
+    },
+    {
+        "original": "چادر بھی نہیں جس کا کفن دوں تمھیں واری",
+        "tagged": "چادر بھی نہیں جس کا کفن دوں تمھیں واری",
+        "english": "There is not even a shroud to give you, my dear."
+    },
+    {
+        "original": "پردیس میں کی تو نے قضا اے مری پیاری",
+        "tagged": "پردیس میں کی تو نے قضا اے مری پیاری",
+        "english": "In the foreign land, you met your fate, O my beloved."
+    },
+    {
+        "original": "کیا آخری خدمت کرے ماں درد کی ماری",
+        "tagged": "کیا آخری خدمت کرے <PERSON>ماں</PERSON> درد کی ماری",
+        "english": "What last service can a mother, afflicted with pain, perform?"
+    },
+    {
+        "original": "پوشیدہ تہِ خاک جو تن ہوگا تمھارا",
+        "tagged": "پوشیدہ تہِ خاک جو تن ہوگا تمھارا",
+        "english": "What remains of you will be hidden beneath the soil."
+    },
+    {
+        "original": "یہ خوں بھرا کرتا ہی کفن ہوگا تمھارا",
+        "tagged": "یہ خوں بھرا کرتا ہی کفن ہوگا تمھارا",
+        "english": "This blood-stained cloth will be your shroud."
+    },
+    {
+        "original": "اس بین سے بانو کے ہوا شور قیامت",
+        "tagged": "اس بین سے <PERSON>بانو</PERSON> کے ہوا شور قیامت",
+        "english": "The cry of the lady caused a commotion of the Day of Judgment."
+    },
+    {
+        "original": "اور زینب و کلثوم بھی روتی تھیں بہ شدت",
+        "tagged": "اور <PERSON>زینب</PERSON> و <PERSON>کلثوم</PERSON> بھی روتی تھیں بہ شدت",
+        "english": "And Zainab and Kulthum were also crying intensely."
+    },
+    {
+        "original": "عابد کو بھی تھی چھوٹی بہن کی بڑی اُلفت",
+        "tagged": "عابد کو بھی تھی چھوٹی بہن کی بڑی اُلفت",
+        "english": "Abid also had great affection for his little sister."
+    },
+    {
+        "original": "خاموش انیسؔ آگے نہیں لکھنے کی طاقت",
+        "tagged": "<PERSON>انیسؔ</PERSON> خاموش آگے نہیں لکھنے کی طاقت",
+        "english": "Anis remains silent, unable to write further."
+    },
+    {
+        "original": "درگاہِ الہی میں یہ اس وقت دعا کر",
+        "tagged": "درگاہِ الہی میں یہ اس وقت دعا کر",
+        "english": "Pray at the divine court at this time."
+    },
+    {
+        "original": "زائر ہمیں شبیر کا اے بارِ خدا کر",
+        "tagged": "زائر ہمیں <PERSON>شبیر</PERSON> کا اے بارِ خدا کر",
+        "english": "O God, let the visitor remember Shabeer."
+    }
+]
