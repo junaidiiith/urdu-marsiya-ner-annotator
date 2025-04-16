@@ -176,3 +176,6 @@ cython_debug/
 
 .python-version
 testing.ipynb
+
+.streamlit
+
