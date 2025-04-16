@@ -196,7 +196,6 @@ def show_file_statistics():
 def main():
     
     add_entity_status()
-    st.set_page_config(page_title="Marsiya NER Reviewing", layout="centered")
     st.title("📜 LLM-based NER Manual Review")
 
     # Display Legend

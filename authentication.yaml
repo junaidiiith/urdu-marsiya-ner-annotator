@@ -9,7 +9,7 @@ credentials:
       name: Saniya Irfan
       password: '$2b$12$D8NYk2N/UfLehb4PWUqPhenXq53G8.8UiDpmMBV4ALz19w3wsDa5q'
       roles: 
-        - viewer
+        - admin
 
     junaid:
       email: syed.juned.ali@tuwien.ac.at

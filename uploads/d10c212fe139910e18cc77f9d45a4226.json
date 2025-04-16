@@ -5,1117 +5,2112 @@
         {
             "original": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
             "tagged": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
-            "english": "Volume four"
+            "english": "Volume four",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0631\u062b\u06cc\u06c1\u0654 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
             "tagged": "\u0645\u0631\u062b\u06cc\u06c1\u0654 <PERSON>\u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633</PERSON>",
-            "english": "Elegy of Mir Anis"
+            "english": "Elegy of Mir Anis",
+            "entity_status": {
+                "\u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633": {
+                    "entity": "\u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0622\u0641\u062a \u0645\u06cc\u06ba \u06af\u0631\u0641\u062a\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 \u0645\u062d\u0645\u062f",
             "tagged": "\u0622\u0641\u062a \u0645\u06cc\u06ba \u06af\u0631\u0641\u062a\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 <PERSON>\u0645\u062d\u0645\u062f</PERSON>",
-            "english": "In calamity is the honor of Muhammad trapped."
+            "english": "In calamity is the honor of Muhammad trapped.",
+            "entity_status": {
+                "\u0645\u062d\u0645\u062f": {
+                    "entity": "\u0645\u062d\u0645\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u062c\u0628\u0648\u0631 \u06c1\u06cc\u06ba \u0644\u0627\u0686\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 \u0645\u062d\u0645\u062f",
             "tagged": "\u0645\u062c\u0628\u0648\u0631 \u06c1\u06cc\u06ba \u0644\u0627\u0686\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 <PERSON>\u0645\u062d\u0645\u062f</PERSON>",
-            "english": "They are helpless, the honor of Muhammad is helpless."
+            "english": "They are helpless, the honor of Muhammad is helpless.",
+            "entity_status": {
+                "\u0645\u062d\u0645\u062f": {
+                    "entity": "\u0645\u062d\u0645\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631\u0648\u0631 \u06a9\u06d2 \u0639\u0632\u0627\u062f\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 \u0645\u062d\u0645\u062f",
             "tagged": "\u0633\u0631\u0648\u0631 \u06a9\u06d2 \u0639\u0632\u0627\u062f\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 <PERSON>\u0645\u062d\u0645\u062f</PERSON>",
-            "english": "They are the mourners of the master, the honor of Muhammad."
+            "english": "They are the mourners of the master, the honor of Muhammad.",
+            "entity_status": {
+                "\u0645\u062d\u0645\u062f": {
+                    "entity": "\u0645\u062d\u0645\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0648\u0631 \u062c\u06cc\u0646\u06d2 \u0633\u06d2 \u0628\u06cc\u0632\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 \u0645\u062d\u0645\u062f",
             "tagged": "\u0627\u0648\u0631 \u062c\u06cc\u0646\u06d2 \u0633\u06d2 \u0628\u06cc\u0632\u0627\u0631 \u06c1\u06cc\u06ba \u0646\u0627\u0645\u0648\u0633 <PERSON>\u0645\u062d\u0645\u062f</PERSON>",
-            "english": "And they are fed up with life, the honor of Muhammad."
+            "english": "And they are fed up with life, the honor of Muhammad.",
+            "entity_status": {
+                "\u0645\u062d\u0645\u062f": {
+                    "entity": "\u0645\u062d\u0645\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0632\u0646\u062f\u0627\u06ba \u06a9\u06cc \u0635\u0639\u0648\u0628\u062a \u06c1\u06d2 \u063a\u0631\u06cc\u0628 \u0627\u0644\u0648\u0637\u0646\u06cc \u06c1\u06d2",
             "tagged": "\u0632\u0646\u062f\u0627\u06ba \u06a9\u06cc \u0635\u0639\u0648\u0628\u062a \u06c1\u06d2 \u063a\u0631\u06cc\u0628 \u0627\u0644\u0648\u0637\u0646\u06cc \u06c1\u06d2",
-            "english": "Imprisonment is difficult, it is foreignness."
+            "english": "Imprisonment is difficult, it is foreignness.",
+            "entity_status": {}
         },
         {
             "original": "\u063a\u0644 \u06c1\u0627\u0626\u06d2 \u062d\u0633\u06cc\u0646\u0627 \u06a9\u0627 \u06c1\u06d2 \u0627\u0648\u0631 \u0633\u06cc\u0646\u06c1 \u0632\u0646\u06cc \u06c1\u06d2",
             "tagged": "\u063a\u0644 \u06c1\u0627\u0626\u06d2 <PERSON>\u062d\u0633\u06cc\u0646\u0627</PERSON> \u06a9\u0627 \u06c1\u06d2 \u0627\u0648\u0631 \u0633\u06cc\u0646\u06c1 \u0632\u0646\u06cc \u06c1\u06d2",
-            "english": "It is the commotion of Husaina and the beating of chests."
+            "english": "It is the commotion of Husaina and the beating of chests.",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646\u0627": {
+                    "entity": "\u062d\u0633\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u06be\u0627\u0646\u0627 \u06c1\u06d2 \u0646\u06c1 \u067e\u06cc\u0646\u0627 \u06c1\u06d2\u060c \u0646\u06c1 \u0631\u0627\u062d\u062a \u06c1\u06d2 \u0646\u06c1 \u0633\u0648\u0646\u0627",
             "tagged": "\u06a9\u06be\u0627\u0646\u0627 \u06c1\u06d2 \u0646\u06c1 \u067e\u06cc\u0646\u0627 \u06c1\u06d2\u060c \u0646\u06c1 \u0631\u0627\u062d\u062a \u06c1\u06d2 \u0646\u06c1 \u0633\u0648\u0646\u0627",
-            "english": "There is neither food nor drink, no comfort nor sleep."
+            "english": "There is neither food nor drink, no comfort nor sleep.",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u06d2 \u062e\u0627\u06a9 \u06a9\u0627 \u0641\u0631\u0634 \u0627\u0648\u0631 \u0646\u06c1 \u062a\u06a9\u06cc\u06c1 \u0646\u06c1 \u0628\u0686\u06be\u0648\u0646\u0627",
             "tagged": "\u06c1\u06d2 \u062e\u0627\u06a9 \u06a9\u0627 \u0641\u0631\u0634 \u0627\u0648\u0631 \u0646\u06c1 \u062a\u06a9\u06cc\u06c1 \u0646\u06c1 \u0628\u0686\u06be\u0648\u0646\u0627",
-            "english": "The floor is of dust, there is neither pillow nor bedding."
+            "english": "The floor is of dust, there is neither pillow nor bedding.",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u0627\u062f \u0622\u062a\u0627 \u06c1\u06d2 \u062c\u0628 \u0648\u0627\u0631\u062b\u0648\u06ba \u06a9\u0627 \u062c\u0627\u0646 \u0646\u06c1 \u06a9\u06be\u0648\u0646\u0627",
             "tagged": "\u06cc\u0627\u062f \u0622\u062a\u0627 \u06c1\u06d2 \u062c\u0628 \u0648\u0627\u0631\u062b\u0648\u06ba \u06a9\u0627 \u062c\u0627\u0646 \u0646\u06c1 \u06a9\u06be\u0648\u0646\u0627",
-            "english": "It reminds of the heirs, never losing a life."
+            "english": "It reminds of the heirs, never losing a life.",
+            "entity_status": {}
         },
         {
             "original": "\u0686\u06be\u0679\u062a\u0627 \u0646\u06c1\u06cc\u06ba \u0645\u0638\u0644\u0648\u0645\u0648\u06ba \u0633\u06d2 \u0645\u0646\u06be \u0688\u06be\u0627\u0646\u067e \u06a9\u06d2 \u0631\u0648\u0646\u0627",
             "tagged": "\u0686\u06be\u0679\u062a\u0627 \u0646\u06c1\u06cc\u06ba \u0645\u0638\u0644\u0648\u0645\u0648\u06ba \u0633\u06d2 \u0645\u0646\u06be \u0688\u06be\u0627\u0646\u067e \u06a9\u06d2 \u0631\u0648\u0646\u0627",
-            "english": "The oppressed do not stop crying with their faces covered."
+            "english": "The oppressed do not stop crying with their faces covered.",
+            "entity_status": {}
         },
         {
             "original": "\u0646\u0648\u0631\u0627\u0646\u06cc \u0628\u062f\u0646 \u062e\u0627\u06a9 \u0633\u06d2 \u06c1\u06cc\u0648\u0648\u06ba \u06a9\u06d2 \u0627\u064e\u0679\u06d2 \u06c1\u06cc\u06ba",
             "tagged": "\u0646\u0648\u0631\u0627\u0646\u06cc \u0628\u062f\u0646 \u062e\u0627\u06a9 \u0633\u06d2 \u06c1\u06cc\u0648\u0648\u06ba \u06a9\u06d2 \u0627\u064e\u0679\u06d2 \u06c1\u06cc\u06ba",
-            "english": "The luminous body is covered with dust."
+            "english": "The luminous body is covered with dust.",
+            "entity_status": {}
         },
         {
             "original": "\u0639\u0631\u06cc\u0627\u06ba \u06c1\u06cc\u06ba \u0633\u0631 \u0627\u0648\u0631 \u0633\u0628 \u06a9\u06d2 \u06af\u0631\u06cc\u0628\u0627\u0646 \u067e\u06be\u0679\u06d2 \u06c1\u06cc\u06ba",
             "tagged": "\u0639\u0631\u06cc\u0627\u06ba \u06c1\u06cc\u06ba \u0633\u0631 \u0627\u0648\u0631 \u0633\u0628 \u06a9\u06d2 \u06af\u0631\u06cc\u0628\u0627\u0646 \u067e\u06be\u0679\u06d2 \u06c1\u06cc\u06ba",
-            "english": "They are bareheaded and everyone's collars are torn."
+            "english": "They are bareheaded and everyone's collars are torn.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u06a9\u0628\u0631 \u06a9\u06cc \u062c\u0648\u0627\u0646\u06cc \u06a9\u0627 \u06a9\u0633\u06cc \u0631\u0627\u0646\u0688 \u06a9\u0648 \u063a\u0645 \u06c1\u06d2",
             "tagged": "<PERSON>\u0627\u06a9\u0628\u0631</PERSON> \u06a9\u06cc \u062c\u0648\u0627\u0646\u06cc \u06a9\u0627 \u06a9\u0633\u06cc \u0631\u0627\u0646\u0688 \u06a9\u0648 \u063a\u0645 \u06c1\u06d2",
-            "english": "The youth of Akbar grieves some widowed woman."
+            "english": "The youth of Akbar grieves some widowed woman.",
+            "entity_status": {
+                "\u0627\u06a9\u0628\u0631": {
+                    "entity": "\u0627\u06a9\u0628\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0635\u063a\u0631 \u06a9\u06d2 \u0644\u0626\u06d2 \u0686\u0634\u0645 \u06a9\u0633\u06cc \u0628\u06cc \u0628\u06cc \u06a9\u06cc \u0646\u0645 \u06c1\u06d2",
             "tagged": "<PERSON>\u0627\u0635\u063a\u0631</PERSON> \u06a9\u06d2 \u0644\u0626\u06d2 \u0686\u0634\u0645 \u06a9\u0633\u06cc <PERSON>\u0628\u06cc \u0628\u06cc</PERSON> \u06a9\u06cc \u0646\u0645 \u06c1\u06d2",
-            "english": "For Asghar, the eyes of some lady are wet."
+            "english": "For Asghar, the eyes of some lady are wet.",
+            "entity_status": {
+                "\u0627\u0635\u063a\u0631": {
+                    "entity": "\u0627\u0635\u063a\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0628\u06cc \u0628\u06cc": {
+                    "entity": "\u0628\u06cc \u0628\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0639\u0628\u0627\u0633 \u06a9\u06cc \u0641\u0631\u0642\u062a \u06a9\u0627 \u06a9\u0633\u06cc \u062f\u0644 \u067e\u06c1 \u0627\u0644\u0645 \u06c1\u06d2",
             "tagged": "<PERSON>\u0639\u0628\u0627\u0633</PERSON> \u06a9\u06cc \u0641\u0631\u0642\u062a \u06a9\u0627 \u06a9\u0633\u06cc \u062f\u0644 \u067e\u06c1 \u0627\u0644\u0645 \u06c1\u06d2",
-            "english": "The separation from Abbas is a sorrow on some heart."
+            "english": "The separation from Abbas is a sorrow on some heart.",
+            "entity_status": {
+                "\u0639\u0628\u0627\u0633": {
+                    "entity": "\u0639\u0628\u0627\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u0648\u0644\u06be\u0627 \u06a9\u0648 \u06a9\u0648\u0626\u06cc \u0631\u0648\u062a\u06cc \u06c1\u06d2 \u0633\u0631 \u0632\u0627\u0646\u0648 \u067e\u06c1 \u062e\u0645 \u06c1\u06d2",
             "tagged": "\u062f\u0648\u0644\u06be\u0627 \u06a9\u0648 \u06a9\u0648\u0626\u06cc \u0631\u0648\u062a\u06cc \u06c1\u06d2 \u0633\u0631 \u0632\u0627\u0646\u0648 \u067e\u06c1 \u062e\u0645 \u06c1\u06d2",
-            "english": "Someone weeps for the groom, bending her head on her knees."
+            "english": "Someone weeps for the groom, bending her head on her knees.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u0631\u062a\u06cc \u06c1\u06d2 \u06a9\u0648\u0626\u06cc \u06cc\u0627\u062f \u0645\u062d\u0645\u062f \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u0648",
             "tagged": "\u06a9\u0631\u062a\u06cc \u06c1\u06d2 \u06a9\u0648\u0626\u06cc \u06cc\u0627\u062f <PERSON>\u0645\u062d\u0645\u062f</PERSON> \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u0648",
-            "english": "Someone remembers the son of Muhammad."
+            "english": "Someone remembers the son of Muhammad.",
+            "entity_status": {
+                "\u0645\u062d\u0645\u062f": {
+                    "entity": "\u0645\u062d\u0645\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u06cc\u0648\u0627\u0631 \u0633\u06d2 \u0631\u0648 \u06a9\u0631 \u06a9\u0648\u0626\u06cc \u0679\u06a9\u0631\u0627\u062a\u06cc \u06c1\u06d2 \u0633\u0631 \u06a9\u0648",
             "tagged": "\u062f\u06cc\u0648\u0627\u0631 \u0633\u06d2 \u0631\u0648 \u06a9\u0631 \u06a9\u0648\u0626\u06cc \u0679\u06a9\u0631\u0627\u062a\u06cc \u06c1\u06d2 \u0633\u0631 \u06a9\u0648",
-            "english": "Weeping, someone keeps hitting her head against the wall."
+            "english": "Weeping, someone keeps hitting her head against the wall.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u06c1\u062a\u06cc \u06c1\u06d2 \u06a9\u0648\u0626\u06cc \u0644\u0648\u0679\u0627 \u06af\u06cc\u0627 \u0628\u0627\u063a \u06c1\u0645\u0627\u0631\u0627",
             "tagged": "\u06a9\u06c1\u062a\u06cc \u06c1\u06d2 \u06a9\u0648\u0626\u06cc \u0644\u0648\u0679\u0627 \u06af\u06cc\u0627 \u0628\u0627\u063a \u06c1\u0645\u0627\u0631\u0627",
-            "english": "Someone says, 'Our garden has been returned.'"
+            "english": "Someone says, 'Our garden has been returned.'",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06d2 \u0628\u0686\u06d2 \u06a9\u0648 \u0633\u062a\u0645\u06af\u0627\u0631\u0648\u06ba \u0646\u06d2 \u0645\u0627\u0631\u0627",
             "tagged": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06d2 \u0628\u0686\u06d2 \u06a9\u0648 \u0633\u062a\u0645\u06af\u0627\u0631\u0648\u06ba \u0646\u06d2 \u0645\u0627\u0631\u0627",
-            "english": "Oh woe! My child has been killed by the oppressors."
+            "english": "Oh woe! My child has been killed by the oppressors.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u062c\u06be \u0631\u0627\u0646\u0688 \u06a9\u0627 \u067e\u06cc\u0631\u06cc \u0645\u06cc\u06ba \u0631\u06c1\u0627 \u06a9\u0686\u06be \u0646\u06c1 \u0633\u06c1\u0627\u0631\u0627",
             "tagged": "\u0645\u062c\u06be \u0631\u0627\u0646\u0688 \u06a9\u0627 \u067e\u06cc\u0631\u06cc \u0645\u06cc\u06ba \u0631\u06c1\u0627 \u06a9\u0686\u06be \u0646\u06c1 \u0633\u06c1\u0627\u0631\u0627",
-            "english": "In my old age, I have had no support."
+            "english": "In my old age, I have had no support.",
+            "entity_status": {}
         },
         {
             "original": "\u062f\u0646\u06cc\u0627 \u0633\u06d2 \u0645\u0631\u0627 \u0644\u0627\u0644 \u062c\u0648\u0627\u06ba \u06c1\u0648 \u06a9\u06d2 \u0633\u062f\u06be\u0627\u0631\u0627",
             "tagged": "\u062f\u0646\u06cc\u0627 \u0633\u06d2 \u0645\u0631\u0627 \u0644\u0627\u0644 \u062c\u0648\u0627\u06ba \u06c1\u0648 \u06a9\u06d2 \u0633\u062f\u06be\u0627\u0631\u0627",
-            "english": "My son departed this world as a young man."
+            "english": "My son departed this world as a young man.",
+            "entity_status": {}
         },
         {
             "original": "\u0634\u0627\u062f\u06cc \u0628\u06be\u06cc \u06c1\u0648\u0626\u06cc \u062a\u06be\u06cc \u0646\u06c1 \u0645\u0631\u06d2 \u0644\u062e\u062a \u062c\u06af\u0631 \u06a9\u06cc",
             "tagged": "\u0634\u0627\u062f\u06cc \u0628\u06be\u06cc \u06c1\u0648\u0626\u06cc \u062a\u06be\u06cc \u0646\u06c1 \u0645\u0631\u06d2 \u0644\u062e\u062a \u062c\u06af\u0631 \u06a9\u06cc",
-            "english": "There was not even a wedding for my flesh and blood."
+            "english": "There was not even a wedding for my flesh and blood.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u06cc\u06ba \u0645\u0631 \u0646\u06c1 \u06af\u0626\u06cc \u06c1\u0627\u0626\u06d2 \u0628\u0644\u0627 \u0644\u06d2 \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u06cc",
             "tagged": "\u0645\u06cc\u06ba \u0645\u0631 \u0646\u06c1 \u06af\u0626\u06cc \u06c1\u0627\u0626\u06d2 \u0628\u0644\u0627 \u0644\u06d2 \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u06cc",
-            "english": "I did not die, oh misery over my son."
+            "english": "I did not die, oh misery over my son.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06a9\u0648\u0626\u06cc \u062d\u0627\u0644 \u0628\u06c1\u062a \u063a\u06cc\u0631 \u06c1\u06d2 \u0645\u06cc\u0631\u0627",
             "tagged": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06a9\u0648\u0626\u06cc \u062d\u0627\u0644 \u0628\u06c1\u062a \u063a\u06cc\u0631 \u06c1\u06d2 \u0645\u06cc\u0631\u0627",
-            "english": "Someone used to say, 'My condition is very strange.'"
+            "english": "Someone used to say, 'My condition is very strange.'",
+            "entity_status": {}
         },
         {
             "original": "\u0644\u0648\u06af\u0648! \u06a9\u0633\u06cc \u06af\u06be\u0631 \u0645\u06cc\u06ba \u0646\u06c1\u06cc\u06ba \u062f\u06cc\u06a9\u06be\u0627 \u06cc\u06c1 \u0627\u0646\u062f\u06be\u06cc\u0631\u0627",
             "tagged": "\u0644\u0648\u06af\u0648! \u06a9\u0633\u06cc \u06af\u06be\u0631 \u0645\u06cc\u06ba \u0646\u06c1\u06cc\u06ba \u062f\u06cc\u06a9\u06be\u0627 \u06cc\u06c1 \u0627\u0646\u062f\u06be\u06cc\u0631\u0627",
-            "english": "People! This darkness has not been seen in any house."
+            "english": "People! This darkness has not been seen in any house.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06cc\u06c1 \u06a9\u0628\u0631\u0627 \u0645\u062c\u06be\u06d2 \u0632\u062d\u0645\u062a \u0646\u06d2 \u06c1\u06d2 \u06af\u06be\u06cc\u0631\u0627",
             "tagged": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06cc\u06c1 \u06a9\u0628\u0631\u0627 \u0645\u062c\u06be\u06d2 \u0632\u062d\u0645\u062a \u0646\u06d2 \u06c1\u06d2 \u06af\u06be\u06cc\u0631\u0627",
-            "english": "She said, 'This grave has surrounded me with hardship.'"
+            "english": "She said, 'This grave has surrounded me with hardship.'",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0646\u06be \u0645\u062c\u06be \u06a9\u0648 \u0633\u06a9\u06cc\u0646\u06c1 \u0646\u0638\u0631 \u0622\u062a\u0627 \u0646\u06c1\u06cc\u06ba \u062a\u06cc\u0631\u0627",
             "tagged": "\u0645\u0646\u06be \u0645\u062c\u06be \u06a9\u0648 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u0646\u0638\u0631 \u0622\u062a\u0627 \u0646\u06c1\u06cc\u06ba \u062a\u06cc\u0631\u0627",
-            "english": "I cannot see your face, Sakina."
+            "english": "I cannot see your face, Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u06cc\u06ba \u06a9\u0627\u06c1\u06d2 \u06a9\u0648 \u0648\u0627\u0642\u0641 \u062a\u06be\u06cc \u0627\u0633\u06cc\u0631\u06cc \u06a9\u06d2 \u0645\u062d\u0646 \u0633\u06d2",
             "tagged": "\u0645\u06cc\u06ba \u06a9\u0627\u06c1\u06d2 \u06a9\u0648 \u0648\u0627\u0642\u0641 \u062a\u06be\u06cc \u0627\u0633\u06cc\u0631\u06cc \u06a9\u06d2 \u0645\u062d\u0646 \u0633\u06d2",
-            "english": "Why was I aware of the hardships of captivity?"
+            "english": "Why was I aware of the hardships of captivity?",
+            "entity_status": {}
         },
         {
             "original": "\u06af\u06be\u0679 \u06af\u06be\u0679 \u06a9\u06d2 \u0628\u0633 \u0627\u0628 \u062c\u0627\u0646 \u0646\u06a9\u0644 \u062c\u0627\u0626\u06d2 \u06af\u06cc \u062a\u0646 \u0633\u06d2",
             "tagged": "\u06af\u06be\u0679 \u06af\u06be\u0679 \u06a9\u06d2 \u0628\u0633 \u0627\u0628 \u062c\u0627\u0646 \u0646\u06a9\u0644 \u062c\u0627\u0626\u06d2 \u06af\u06cc \u062a\u0646 \u0633\u06d2",
-            "english": "Suffering like this, soon my life will leave my body."
+            "english": "Suffering like this, soon my life will leave my body.",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u0631 \u0634\u0627\u0645 \u0648 \u0633\u062d\u0631 \u0634\u0648\u0631 \u06cc\u06c1 \u062a\u06be\u0627 \u06c1\u0627\u0626\u06d2 \u062d\u064f\u0633\u064e\u06cc\u0652\u0646\u064e\u0627",
             "tagged": "\u06c1\u0631 \u0634\u0627\u0645 \u0648 \u0633\u062d\u0631 \u0634\u0648\u0631 \u06cc\u06c1 \u062a\u06be\u0627 \u06c1\u0627\u0626\u06d2 <PERSON>\u062d\u0633\u06cc\u0646\u0627</PERSON>",
-            "english": "Every evening and dawn, the cry was 'Oh Husayna!'"
+            "english": "Every evening and dawn, the cry was 'Oh Husayna!'",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646\u0627": {
+                    "entity": "\u062d\u0633\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0628\u062a\u06a9 \u0646\u06c1 \u06a9\u0641\u0646 \u062a\u0645 \u06a9\u0648 \u0645\u0644\u0627 \u06c1\u0627\u0626\u06d2 \u062d\u0633\u06cc\u0646\u0627",
             "tagged": "\u0627\u0628\u062a\u06a9 \u0646\u06c1 \u06a9\u0641\u0646 \u062a\u0645 \u06a9\u0648 \u0645\u0644\u0627 \u06c1\u0627\u0626\u06d2 <PERSON>\u062d\u0633\u06cc\u0646\u0627</PERSON>",
-            "english": "Even now, no shroud has been found for you, oh Husayna!"
+            "english": "Even now, no shroud has been found for you, oh Husayna!",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646\u0627": {
+                    "entity": "\u062d\u0633\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u0627\u0679\u0627 \u062a\u0631\u0627 \u0638\u0627\u0644\u0645 \u0646\u06d2 \u06af\u0644\u0627 \u06c1\u06d2 \u062d\u0633\u06cc\u0646\u0627",
             "tagged": "\u06a9\u0627\u0679\u0627 \u062a\u0631\u0627 \u0638\u0627\u0644\u0645 \u0646\u06d2 \u06af\u0644\u0627 \u06c1\u06d2 <PERSON>\u062d\u0633\u06cc\u0646\u0627</PERSON>",
-            "english": "The oppressor has cut your throat, oh Husayna!"
+            "english": "The oppressor has cut your throat, oh Husayna!",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646\u0627": {
+                    "entity": "\u062d\u0633\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u0646\u0628\u0647 \u062a\u0631\u0627 \u0622\u0641\u062a \u0645\u06cc\u06ba \u067e\u06be\u0646\u0633\u0627 \u06c1\u0627\u0626\u06d2 \u062d\u0633\u06cc\u0646\u0627",
             "tagged": "\u06a9\u0646\u0628\u0647 \u062a\u0631\u0627 \u0622\u0641\u062a \u0645\u06cc\u06ba \u067e\u06be\u0646\u0633\u0627 \u06c1\u0627\u0626\u06d2 <PERSON>\u062d\u0633\u06cc\u0646\u0627</PERSON>",
-            "english": "Your body is trapped in calamity, oh Husayna!"
+            "english": "Your body is trapped in calamity, oh Husayna!",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646\u0627": {
+                    "entity": "\u062d\u0633\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062a\u0645 \u0686\u06be\u0679 \u06af\u0626\u06d2 \u06a9\u0679\u0648\u0627 \u06a9\u06d2 \u06af\u0644\u0627 \u0631\u0646\u062c \u0648 \u0627\u0644\u0645 \u0633\u06d2",
             "tagged": "\u062a\u0645 \u0686\u06be\u0679 \u06af\u0626\u06d2 \u06a9\u0679\u0648\u0627 \u06a9\u06d2 \u06af\u0644\u0627 \u0631\u0646\u062c \u0648 \u0627\u0644\u0645 \u0633\u06d2",
-            "english": "You departed, cut off from sorrow and grief."
+            "english": "You departed, cut off from sorrow and grief.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0628 \u06a9\u0648\u0646 \u0686\u06be\u0691\u0627\u0626\u06d2 \u06af\u0627 \u06c1\u0645\u06cc\u06ba \u0642\u06cc\u062f \u0633\u062a\u0645 \u0633\u06d2",
             "tagged": "\u0627\u0628 \u06a9\u0648\u0646 \u0686\u06be\u0691\u0627\u0626\u06d2 \u06af\u0627 \u06c1\u0645\u06cc\u06ba \u0642\u06cc\u062f \u0633\u062a\u0645 \u0633\u06d2",
-            "english": "Now who will rescue us from the captivity of oppression?"
+            "english": "Now who will rescue us from the captivity of oppression?",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u062a\u06be\u0627 \u0628\u0627\u0644\u06cc \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0648 \u0646\u06c1 \u0622\u0631\u0627\u0645",
             "tagged": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u062a\u06be\u0627 \u0628\u0627\u0644\u06cc <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u0646\u06c1 \u0622\u0631\u0627\u0645",
-            "english": "In this prison, Sakina has no rest."
+            "english": "In this prison, Sakina has no rest.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u067e\u06cc\u0679\u062a\u06cc \u062a\u06be\u06cc \u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0631\u0648 \u06a9\u0631 \u0633\u062d\u0631 \u0648 \u0634\u0627\u0645",
             "tagged": "\u0633\u0631 \u067e\u06cc\u0679\u062a\u06cc \u062a\u06be\u06cc \u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0631\u0648 \u06a9\u0631 \u0633\u062d\u0631 \u0648 \u0634\u0627\u0645",
-            "english": "She would beat her head with her hands, weeping day and night."
+            "english": "She would beat her head with her hands, weeping day and night.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0628 \u0628\u06be\u0648\u0644\u06cc \u062a\u06be\u06cc \u0628\u0627\u0628\u0627 \u06c1\u06cc \u06a9\u0627 \u0628\u0633 \u06cc\u0627\u062f \u062a\u06be\u0627 \u0627\u06a9 \u0646\u0627\u0645",
             "tagged": "\u0633\u0628 \u0628\u06be\u0648\u0644\u06cc \u062a\u06be\u06cc \u0628\u0627\u0628\u0627 \u06c1\u06cc \u06a9\u0627 \u0628\u0633 \u06cc\u0627\u062f \u062a\u06be\u0627 \u0627\u06a9 \u0646\u0627\u0645",
-            "english": "She had forgotten everything; only the name of her father remained."
+            "english": "She had forgotten everything; only the name of her father remained.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06a9\u06c1 \u0627\u0645\u0627\u06ba \u0646\u06c1\u06cc\u06ba \u062c\u06cc\u0646\u06d2 \u06a9\u06cc \u0645\u06cc\u06ba \u0646\u0627\u06a9\u0627\u0645",
             "tagged": "\u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06a9\u06c1 \u0627\u0645\u0627\u06ba \u0646\u06c1\u06cc\u06ba \u062c\u06cc\u0646\u06d2 \u06a9\u06cc \u0645\u06cc\u06ba \u0646\u0627\u06a9\u0627\u0645",
-            "english": "She would say, 'Mother, I have failed to live.'"
+            "english": "She would say, 'Mother, I have failed to live.'",
+            "entity_status": {}
         },
         {
             "original": "\u067e\u0627\u0624\u06ba \u06af\u06cc \u06a9\u06c1\u0627\u06ba \u0641\u0627\u0637\u0645\u06c1 \u0632\u06c1\u0631\u0627 \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u0648",
             "tagged": "\u067e\u0627\u0624\u06ba \u06af\u06cc \u06a9\u06c1\u0627\u06ba <PERSON>\u0641\u0627\u0637\u0645\u06c1 \u0632\u06c1\u0631\u0627</PERSON> \u06a9\u06d2 \u067e\u0633\u0631 \u06a9\u0648",
-            "english": "Where will I find the son of Fatima Zahra?"
+            "english": "Where will I find the son of Fatima Zahra?",
+            "entity_status": {
+                "\u0641\u0627\u0637\u0645\u06c1 \u0632\u06c1\u0631\u0627": {
+                    "entity": "\u0641\u0627\u0637\u0645\u06c1 \u0632\u06c1\u0631\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06c1\u06cc\u06ba \u0688\u06be\u0648\u0646\u0688\u06be\u062a\u06cc \u0622\u0646\u06a9\u06be\u06cc\u06ba \u0645\u0631\u06cc \u0645\u0638\u0644\u0648\u0645 \u067e\u062f\u0631 \u06a9\u0648",
             "tagged": "\u06c1\u06cc\u06ba \u0688\u06be\u0648\u0646\u0688\u06be\u062a\u06cc \u0622\u0646\u06a9\u06be\u06cc\u06ba \u0645\u0631\u06cc \u0645\u0638\u0644\u0648\u0645 \u067e\u062f\u0631 \u06a9\u0648",
-            "english": "My eyes search for my oppressed father."
+            "english": "My eyes search for my oppressed father.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0646\u06be \u0686\u0648\u0645 \u06a9\u06d2 \u0628\u06c1\u0644\u0627\u062a\u06cc \u062a\u06be\u06cc \u0645\u0627\u06ba \u0627\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
             "tagged": "\u0645\u0646\u06be \u0686\u0648\u0645 \u06a9\u06d2 \u0628\u06c1\u0644\u0627\u062a\u06cc \u062a\u06be\u06cc \u0645\u0627\u06ba \u0627\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
-            "english": "She would kiss my face and soothe me, oh my dear mother."
+            "english": "She would kiss my face and soothe me, oh my dear mother.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0628 \u0622\u0626\u06d2 \u06af\u06cc \u06cc\u0627\u06ba \u0628\u06cc \u0628\u06cc \u06a9\u06d2 \u0628\u0627\u0628\u0627 \u06a9\u06cc \u0633\u0648\u0627\u0631\u06cc",
             "tagged": "\u0627\u0628 \u0622\u0626\u06d2 \u06af\u06cc \u06cc\u0627\u06ba <PERSON>\u0628\u06cc \u0628\u06cc</PERSON> \u06a9\u06d2 <PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u06cc \u0633\u0648\u0627\u0631\u06cc",
-            "english": "Now the ride of the lady's father will come."
+            "english": "Now the ride of the lady's father will come.",
+            "entity_status": {
+                "\u0628\u06cc \u0628\u06cc": {
+                    "entity": "\u0628\u06cc \u0628\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0653\u0624 \u06a9\u0631\u0648 \u0622\u0631\u0627\u0645 \u0645\u0631\u06cc \u06af\u0648\u062f \u0645\u06cc\u06ba \u0648\u0627\u0631\u06cc",
             "tagged": "\u0627\u0653\u0624 \u06a9\u0631\u0648 \u0622\u0631\u0627\u0645 \u0645\u0631\u06cc \u06af\u0648\u062f \u0645\u06cc\u06ba \u0648\u0627\u0631\u06cc",
-            "english": "Come and rest in my lap."
+            "english": "Come and rest in my lap.",
+            "entity_status": {}
         },
         {
             "original": "\u0631\u0648\u062f\u0627\u062f \u0633\u0646\u06cc \u06c1\u06d2 \u0634\u06c1\u0650 \u0648\u0627\u0644\u0627 \u0646\u06d2 \u062a\u0645\u06c1\u0627\u0631\u06cc",
             "tagged": "\u0631\u0648\u062f\u0627\u062f \u0633\u0646\u06cc \u06c1\u06d2 <PERSON>\u0634\u06c1\u0650 \u0648\u0627\u0644\u0627</PERSON> \u0646\u06d2 \u062a\u0645\u06c1\u0627\u0631\u06cc",
-            "english": "The great lord has heard your tale."
+            "english": "The great lord has heard your tale.",
+            "entity_status": {
+                "\u0634\u06c1\u0650 \u0648\u0627\u0644\u0627": {
+                    "entity": "\u0634\u06c1\u0650 \u0648\u0627\u0644\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0686\u06be\u0627\u062a\u06cc \u0633\u06d2 \u062d\u0633\u06cc\u0646 \u0622 \u06a9\u06d2 \u0644\u06af\u0627\u0648\u06cc\u06ba \u06af\u06d2 \u0645\u0631\u06cc \u062c\u0627\u06ba",
             "tagged": "\u0686\u06be\u0627\u062a\u06cc \u0633\u06d2 <PERSON>\u062d\u0633\u06cc\u0646</PERSON> \u0622 \u06a9\u06d2 \u0644\u06af\u0627\u0648\u06cc\u06ba \u06af\u06d2 \u0645\u0631\u06cc \u062c\u0627\u06ba",
-            "english": "Husain will come and embrace me from my chest."
+            "english": "Husain will come and embrace me from my chest.",
+            "entity_status": {
+                "\u062d\u0633\u06cc\u0646": {
+                    "entity": "\u062d\u0633\u06cc\u0646",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0639\u0628\u0627\u0633 \u0639\u0644\u06cc \u067e\u0627\u0646\u06cc \u067e\u0644\u0627\u0648\u06cc\u06ba \u06af\u06d2 \u0645\u0631\u06cc \u062c\u0627\u06ba",
             "tagged": "<PERSON>\u0639\u0628\u0627\u0633</PERSON> <PERSON>\u0639\u0644\u06cc</PERSON> \u067e\u0627\u0646\u06cc \u067e\u0644\u0627\u0648\u06cc\u06ba \u06af\u06d2 \u0645\u0631\u06cc \u062c\u0627\u06ba",
-            "english": "Abbas Ali will give me water, oh my soul."
+            "english": "Abbas Ali will give me water, oh my soul.",
+            "entity_status": {
+                "\u0639\u0628\u0627\u0633": {
+                    "entity": "\u0639\u0628\u0627\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0639\u0644\u06cc": {
+                    "entity": "\u0639\u0644\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0648\u06c1 \u06a9\u06c1\u062a\u06cc \u0646\u06c1 \u0633\u0648\u0624\u06ba \u06af\u06cc \u0627\u06af\u0631 \u0646\u06cc\u0646\u062f \u0628\u06be\u06cc \u0622\u0626\u06d2",
             "tagged": "\u0648\u06c1 \u06a9\u06c1\u062a\u06cc \u0646\u06c1 \u0633\u0648\u0624\u06ba \u06af\u06cc \u0627\u06af\u0631 \u0646\u06cc\u0646\u062f \u0628\u06be\u06cc \u0622\u0626\u06d2",
-            "english": "She says, 'I will not sleep even if sleep comes.'"
+            "english": "She says, 'I will not sleep even if sleep comes.'",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u06d2 \u06a9\u0648\u0646 \u062c\u0648 \u0686\u06be\u0627\u062a\u06cc \u067e\u06c1 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0648 \u0633\u0644\u0627\u0626\u06d2",
             "tagged": "\u06c1\u06d2 \u06a9\u0648\u0646 \u062c\u0648 \u0686\u06be\u0627\u062a\u06cc \u067e\u06c1 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u0633\u0644\u0627\u0626\u06d2",
-            "english": "Who is there to put Sakina to rest on their lap?"
+            "english": "Who is there to put Sakina to rest on their lap?",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062d\u0627\u0644 \u0627\u067e\u0646\u0627 \u06a9\u0633\u06d2 \u0622\u06c1 \u06cc\u06c1 \u0645\u0638\u0644\u0648\u0645 \u0633\u0646\u0627\u0626\u06d2",
             "tagged": "\u062d\u0627\u0644 \u0627\u067e\u0646\u0627 \u06a9\u0633\u06d2 \u0622\u06c1 \u06cc\u06c1 \u0645\u0638\u0644\u0648\u0645 \u0633\u0646\u0627\u0626\u06d2",
-            "english": "Who can tell the plight of this oppressed one with a sigh?"
+            "english": "Who can tell the plight of this oppressed one with a sigh?",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0628\u0627 \u0646\u06c1\u06cc\u06ba \u0632\u0627\u0646\u0648 \u067e\u06c1 \u0645\u062c\u06be\u06d2 \u06a9\u0648\u0646 \u0628\u0679\u06be\u0627\u0626\u06d2",
             "tagged": "<PERSON>\u0628\u0627\u0628\u0627</PERSON> \u0646\u06c1\u06cc\u06ba \u0632\u0627\u0646\u0648 \u067e\u06c1 \u0645\u062c\u06be\u06d2 \u06a9\u0648\u0646 \u0628\u0679\u06be\u0627\u0626\u06d2",
-            "english": "Who will sit me on their lap if Baba is not here?"
+            "english": "Who will sit me on their lap if Baba is not here?",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u06cc\u0646\u06c1 \u0645\u0631\u0627 \u0627\u0628 \u062f\u0631\u062f \u06cc\u062a\u06cc\u0645\u06cc \u0633\u06d2 \u0637\u067e\u0627\u06ba \u06c1\u06d2",
             "tagged": "\u0633\u06cc\u0646\u06c1 \u0645\u0631\u0627 \u0627\u0628 \u062f\u0631\u062f \u06cc\u062a\u06cc\u0645\u06cc \u0633\u06d2 \u0637\u067e\u0627\u06ba \u06c1\u06d2",
-            "english": "My chest is now ablaze with the pain of orphanhood."
+            "english": "My chest is now ablaze with the pain of orphanhood.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0686\u06be\u0691\u06cc \u06c1\u0648\u06ba \u067e\u062f\u0631 \u0633\u06d2 \u0645\u062c\u06be\u06d2 \u0622\u0631\u0627\u0645 \u06a9\u06c1\u0627\u06ba \u06c1\u06d2",
             "tagged": "\u0628\u0686\u06be\u0691\u06cc \u06c1\u0648\u06ba <PERSON>\u067e\u062f\u0631</PERSON> \u0633\u06d2 \u0645\u062c\u06be\u06d2 \u0622\u0631\u0627\u0645 \u06a9\u06c1\u0627\u06ba \u06c1\u06d2",
-            "english": "I have been separated from my father; where can I find comfort?"
+            "english": "I have been separated from my father; where can I find comfort?",
+            "entity_status": {
+                "\u067e\u062f\u0631": {
+                    "entity": "\u067e\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
             "tagged": "<PERSON>\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633</PERSON>",
-            "english": "Elegy of Mir Anees."
+            "english": "Elegy of Mir Anees.",
+            "entity_status": {
+                "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633": {
+                    "entity": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
             "tagged": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
-            "english": "Volume Four."
+            "english": "Volume Four.",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u0627\u062f \u0622\u062a\u0627 \u06c1\u06d2 \u0628\u0627\u0628\u0627 \u06a9\u0627 \u0648\u06c1 \u0686\u06be\u0627\u062a\u06cc \u067e\u0631 \u0633\u064f\u0644\u0627\u0646\u0627",
             "tagged": "\u06cc\u0627\u062f \u0622\u062a\u0627 \u06c1\u06d2 <PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u0627 \u0648\u06c1 \u0686\u06be\u0627\u062a\u06cc \u067e\u0631 \u0633\u064f\u0644\u0627\u0646\u0627",
-            "english": "I remember how Baba used to put me to rest on his chest."
+            "english": "I remember how Baba used to put me to rest on his chest.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0648\u06c1 \u067e\u06cc\u0627\u0631 \u06a9\u06cc \u0628\u0627\u062a\u06cc\u06ba \u0648\u06c1 \u0645\u0631\u0627 \u0646\u0627\u0632 \u0627\u064f\u0679\u06be\u0627\u0646\u0627",
             "tagged": "\u0648\u06c1 \u067e\u06cc\u0627\u0631 \u06a9\u06cc \u0628\u0627\u062a\u06cc\u06ba \u0648\u06c1 \u0645\u0631\u0627 \u0646\u0627\u0632 \u0627\u064f\u0679\u06be\u0627\u0646\u0627",
-            "english": "Those affectionate conversations, that used to lift my spirits."
+            "english": "Those affectionate conversations, that used to lift my spirits.",
+            "entity_status": {}
         },
         {
             "original": "\u0648\u06c1 \u067e\u06cc\u0679\u06be \u067e\u06c1 \u0634\u0641\u0642\u062a \u0633\u06d2 \u0645\u0631\u06cc \u06c1\u0627\u062a\u06be \u067e\u06be\u0631\u0627\u0646\u0627",
             "tagged": "\u0648\u06c1 \u067e\u06cc\u0679\u06be \u067e\u06c1 \u0634\u0641\u0642\u062a \u0633\u06d2 \u0645\u0631\u06cc \u06c1\u0627\u062a\u06be \u067e\u06be\u0631\u0627\u0646\u0627",
-            "english": "That gentle hand stroking my back."
+            "english": "That gentle hand stroking my back.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0648\u0631 \u067e\u06cc\u0627\u0631 \u0633\u06d2 \u06c1\u0631 \u0648\u0642\u062a \u0648\u06c1 \u0645\u0646\u06be \u0686\u0648\u0645\u062a\u06d2 \u062c\u0627\u0646\u0627",
             "tagged": "\u0627\u0648\u0631 \u067e\u06cc\u0627\u0631 \u0633\u06d2 \u06c1\u0631 \u0648\u0642\u062a \u0648\u06c1 \u0645\u0646\u06be \u0686\u0648\u0645\u062a\u06d2 \u062c\u0627\u0646\u0627",
-            "english": "And always kissing my face affectionately."
+            "english": "And always kissing my face affectionately.",
+            "entity_status": {}
         },
         {
             "original": "\u062a\u0627 \u062d\u0634\u0631 \u0628\u0633 \u0627\u0628 \u0634\u0627\u062f \u0646\u06c1 \u06c1\u0648\u0626\u06d2 \u06af\u06cc \u0633\u06a9\u06cc\u0646\u06c1",
             "tagged": "\u062a\u0627 \u062d\u0634\u0631 \u0628\u0633 \u0627\u0628 \u0634\u0627\u062f \u0646\u06c1 \u06c1\u0648\u0626\u06d2 \u06af\u06cc <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON>",
-            "english": "Until the Day of Resurrection, Sakina will not ever be happy again."
+            "english": "Until the Day of Resurrection, Sakina will not ever be happy again.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0686\u06cc\u0646 \u0622\u0626\u06d2 \u06af\u0627 \u062c\u0628 \u0642\u0628\u0631 \u0645\u06cc\u06ba \u0633\u0648\u0626\u06d2 \u06af\u06cc \u0633\u06a9\u06cc\u0646\u06c1",
             "tagged": "\u0686\u06cc\u0646 \u0622\u0626\u06d2 \u06af\u0627 \u062c\u0628 \u0642\u0628\u0631 \u0645\u06cc\u06ba \u0633\u0648\u0626\u06d2 \u06af\u06cc <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON>",
-            "english": "She will find peace when she sleeps in her grave, Sakina."
+            "english": "She will find peace when she sleeps in her grave, Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06cc\u06c1 \u0646\u06cc\u0644 \u0637\u0645\u0627\u0646\u0686\u06d2 \u06a9\u06d2 \u06a9\u0633\u06d2 \u0622\u06c1 \u062f\u06a9\u06be\u0627\u0624\u06ba",
             "tagged": "\u06cc\u06c1 \u0646\u06cc\u0644 \u0637\u0645\u0627\u0646\u0686\u06d2 \u06a9\u06d2 \u06a9\u0633\u06d2 \u0622\u06c1 \u062f\u06a9\u06be\u0627\u0624\u06ba",
-            "english": "Who shall I show the throbbing pain of the slaps?"
+            "english": "Who shall I show the throbbing pain of the slaps?",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u0627\u0646\u0648\u06ba \u06a9\u06d2 \u0645\u06cc\u06ba \u062f\u06a9\u06be \u06a9\u0627 \u06a9\u0633\u06d2 \u0627\u062d\u0648\u0627\u0644 \u0633\u0646\u0627\u0624\u06ba",
             "tagged": "\u06a9\u0627\u0646\u0648\u06ba \u06a9\u06d2 \u0645\u06cc\u06ba \u062f\u06a9\u06be \u06a9\u0627 \u06a9\u0633\u06d2 \u0627\u062d\u0648\u0627\u0644 \u0633\u0646\u0627\u0624\u06ba",
-            "english": "Who can I tell about the pain in my ears?"
+            "english": "Who can I tell about the pain in my ears?",
+            "entity_status": {}
         },
         {
             "original": "\u0639\u0628\u0627\u0633 \u0686\u0686\u0627 \u06a9\u0648 \u0628\u06be\u0644\u0627 \u06a9\u0633 \u0637\u0631\u062d \u0633\u06d2 \u067e\u0627\u0624\u06ba",
             "tagged": "<PERSON>\u0639\u0628\u0627\u0633</PERSON> \u0686\u0686\u0627 \u06a9\u0648 \u0628\u06be\u0644\u0627 \u06a9\u0633 \u0637\u0631\u062d \u0633\u06d2 \u067e\u0627\u0624\u06ba",
-            "english": "How can I find Uncle Abbas?"
+            "english": "How can I find Uncle Abbas?",
+            "entity_status": {
+                "\u0639\u0628\u0627\u0633": {
+                    "entity": "\u0639\u0628\u0627\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u06a9\u0628\u0631 \u06c1\u06cc\u06ba \u06a9\u06c1\u0627\u06ba \u062c\u0646 \u06a9\u0648 \u062d\u0645\u0627\u06cc\u062a \u06a9\u0648 \u0628\u0644\u0627\u0624\u06ba",
             "tagged": "<PERSON>\u0627\u06a9\u0628\u0631</PERSON> \u06c1\u06cc\u06ba \u06a9\u06c1\u0627\u06ba \u062c\u0646 \u06a9\u0648 \u062d\u0645\u0627\u06cc\u062a \u06a9\u0648 \u0628\u0644\u0627\u0624\u06ba",
-            "english": "Where is Akbar, whom I would call for support?"
+            "english": "Where is Akbar, whom I would call for support?",
+            "entity_status": {
+                "\u0627\u06a9\u0628\u0631": {
+                    "entity": "\u0627\u06a9\u0628\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0688\u0631 \u0634\u0645\u0631 \u06a9\u0627 \u06cc\u06c1 \u06c1\u06d2 \u06a9\u06c1 \u0645\u06cc\u06ba \u0686\u0644\u0651\u0627 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc",
             "tagged": "\u0688\u0631 <PERSON>\u0634\u0645\u0631</PERSON> \u06a9\u0627 \u06cc\u06c1 \u06c1\u06d2 \u06a9\u06c1 \u0645\u06cc\u06ba \u0686\u0644\u0651\u0627 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc",
-            "english": "The fear of Shimmer is that I cannot shout."
+            "english": "The fear of Shimmer is that I cannot shout.",
+            "entity_status": {
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0648\u06c1 \u0627\u0653 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba \u0645\u06cc\u06ba \u0648\u0627\u06ba \u062c\u0627 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc",
             "tagged": "\u0648\u06c1 \u0627\u0653 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba \u0645\u06cc\u06ba \u0648\u0627\u06ba \u062c\u0627 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc",
-            "english": "They cannot come, and I cannot go there."
+            "english": "They cannot come, and I cannot go there.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0627\u06ba \u0646\u06d2 \u06a9\u06c1\u0627 \u0642\u0631\u0628\u0627\u06ba \u062a\u0631\u06d2 \u0627\u06d2 \u0628\u06cc\u06a9\u0633 \u0648 \u0628\u06d2 \u067e\u0631",
             "tagged": "<PERSON>\u0645\u0627\u06ba</PERSON> \u0646\u06d2 \u06a9\u06c1\u0627 \u0642\u0631\u0628\u0627\u06ba \u062a\u0631\u06d2 \u0627\u06d2 \u0628\u06cc\u06a9\u0633 \u0648 \u0628\u06d2 \u067e\u0631",
-            "english": "Mother said, 'I would sacrifice myself for you, oh helpless one.'"
+            "english": "Mother said, 'I would sacrifice myself for you, oh helpless one.'",
+            "entity_status": {
+                "\u0645\u0627\u06ba": {
+                    "entity": "\u0645\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0628 \u0631\u0648\u0646\u06d2 \u06a9\u06cc \u0637\u0627\u0642\u062a \u0646\u06c1\u06cc\u06ba \u06c1\u06d2 \u0686\u067e \u0631\u06c1\u0648 \u062f\u0645 \u0628\u06be\u0631",
             "tagged": "\u0627\u0628 \u0631\u0648\u0646\u06d2 \u06a9\u06cc \u0637\u0627\u0642\u062a \u0646\u06c1\u06cc\u06ba \u06c1\u06d2 \u0686\u067e \u0631\u06c1\u0648 \u062f\u0645 \u0628\u06be\u0631",
-            "english": "Now I do not have the strength to cry; be silent for a moment."
+            "english": "Now I do not have the strength to cry; be silent for a moment.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u064f\u0646 \u0644\u06cc\u0648\u06d2 \u06af\u0627 \u0631\u0648\u0646\u0627 \u062a\u0631\u0627 \u06af\u0631 \u0634\u0645\u0631 \u0628\u062f \u0627\u062e\u062a\u0631",
             "tagged": "\u0633\u064f\u0646 \u0644\u06cc\u0648\u06d2 \u06af\u0627 \u0631\u0648\u0646\u0627 \u062a\u0631\u0627 \u06af\u0631 <PERSON>\u0634\u0645\u0631</PERSON> \u0628\u062f \u0627\u062e\u062a\u0631",
-            "english": "Your cries will be heard if that wretched Shimmer is present."
+            "english": "Your cries will be heard if that wretched Shimmer is present.",
+            "entity_status": {
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u06cc\u0631\u062d\u0645 \u06c1\u06d2 \u0628\u06d2 \u062f\u0631\u062f\u06cc \u0633\u06d2 \u06af\u06be\u0691\u06a9\u06d2 \u06af\u0627 \u0633\u062a\u0645\u06af\u0631",
             "tagged": "\u0628\u06cc\u0631\u062d\u0645 \u06c1\u06d2 \u0628\u06d2 \u062f\u0631\u062f\u06cc \u0633\u06d2 \u06af\u06be\u0691\u06a9\u06d2 \u06af\u0627 \u0633\u062a\u0645\u06af\u0631",
-            "english": "He is merciless and will cruelly oppress."
+            "english": "He is merciless and will cruelly oppress.",
+            "entity_status": {}
         },
         {
             "original": "\u062f\u0634\u0645\u0646 \u062a\u0631\u06cc \u0622\u0648\u0627\u0632 \u06a9\u0627 \u0648\u06c1 \u062f\u0634\u0645\u0646 \u062f\u06cc\u06ba \u06c1\u06d2",
             "tagged": "\u062f\u0634\u0645\u0646 \u062a\u0631\u06cc \u0622\u0648\u0627\u0632 \u06a9\u0627 \u0648\u06c1 \u062f\u0634\u0645\u0646 \u062f\u06cc\u06ba \u06c1\u06d2",
-            "english": "That enemy of your voice is truly an enemy."
+            "english": "That enemy of your voice is truly an enemy.",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u0645 \u0628\u06cc\u06a9\u0633 \u0648 \u0645\u062c\u0628\u0648\u0631 \u06c1\u06cc\u06ba \u06a9\u0686\u06be \u0632\u0648\u0631 \u0646\u06c1\u06cc\u06ba \u06c1\u06d2",
             "tagged": "\u06c1\u0645 \u0628\u06cc\u06a9\u0633 \u0648 \u0645\u062c\u0628\u0648\u0631 \u06c1\u06cc\u06ba \u06a9\u0686\u06be \u0632\u0648\u0631 \u0646\u06c1\u06cc\u06ba \u06c1\u06d2",
-            "english": "We are helpless and cannot exert any force."
+            "english": "We are helpless and cannot exert any force.",
+            "entity_status": {}
         },
         {
             "original": "\u0648\u06c1 \u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u0633\u06cc\u0646\u06d2 \u0645\u06cc\u06ba \u062a\u0691\u067e\u062a\u0627 \u06c1\u06d2 \u0645\u0631\u0627 \u062f\u0644",
             "tagged": "\u0648\u06c1 \u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u0633\u06cc\u0646\u06d2 \u0645\u06cc\u06ba \u062a\u0691\u067e\u062a\u0627 \u06c1\u06d2 \u0645\u0631\u0627 \u062f\u0644",
-            "english": "She used to say, 'My heart is restless in my chest.'"
+            "english": "She used to say, 'My heart is restless in my chest.'",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0631 \u062c\u0627\u0624\u06ba \u062a\u0648 \u0622\u0633\u0627\u0646 \u06c1\u0648 \u0627\u0645\u0627\u06ba \u0645\u0631\u06cc \u0645\u0634\u06a9\u0644",
             "tagged": "\u0645\u0631 \u062c\u0627\u0624\u06ba \u062a\u0648 \u0622\u0633\u0627\u0646 \u06c1\u0648 <PERSON>\u0627\u0645\u0627\u06ba</PERSON> \u0645\u06cc\u0631\u06cc \u0645\u0634\u06a9\u0644",
-            "english": "If I die, my difficulties will be easy for my mother."
+            "english": "If I die, my difficulties will be easy for my mother.",
+            "entity_status": {
+                "\u0627\u0645\u0627\u06ba": {
+                    "entity": "\u0627\u0645\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0633 \u062f\u064f\u06a9\u06be \u06a9\u06cc \u0645\u06cc\u06ba \u0627\u0628 \u06c1\u0648 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc \u0645\u062a\u062d\u0645\u0644",
             "tagged": "\u0627\u0633 \u062f\u064f\u06a9\u06be \u06a9\u06cc \u0645\u06cc\u06ba \u0627\u0628 \u06c1\u0648 \u0646\u06c1\u06cc\u06ba \u0633\u06a9\u062a\u06cc \u0645\u062a\u062d\u0645\u0644",
-            "english": "I cannot bear this sorrow any longer."
+            "english": "I cannot bear this sorrow any longer.",
+            "entity_status": {}
         },
         {
             "original": "\u0631\u0627\u0636\u06cc \u06c1\u0648\u06ba \u0645\u062c\u06be\u06d2 \u062a\u06cc\u063a \u0633\u06d2 \u06a9\u0648\u0626\u06cc \u06a9\u0631\u06d2 \u0628\u0633\u0645\u0644",
             "tagged": "\u0631\u0627\u0636\u06cc \u06c1\u0648\u06ba \u0645\u062c\u06be\u06d2 \u062a\u06cc\u063a \u0633\u06d2 \u06a9\u0648\u0626\u06cc \u06a9\u0631\u06d2 \u0628\u0633\u0645\u0644",
-            "english": "I am content if someone slays me with a sword."
+            "english": "I am content if someone slays me with a sword.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0628\u0627 \u06a9\u06cc \u062c\u062f\u0627\u0626\u06cc \u0646\u06d2 \u06cc\u06c1 \u0628\u06cc\u062a\u0627\u0628 \u06a9\u06cc\u0627 \u06c1\u06d2",
             "tagged": "<PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u06cc \u062c\u062f\u0627\u0626\u06cc \u0646\u06d2 \u06cc\u06c1 \u0628\u06cc\u062a\u0627\u0628 \u06a9\u06cc\u0627 \u06c1\u06d2",
-            "english": "The separation from Baba has made me restless."
+            "english": "The separation from Baba has made me restless.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u0627\u0646\u0648\u06ba \u06a9\u0627 \u0628\u06be\u06cc \u0627\u0628 \u062f\u0631\u062f \u0645\u062c\u06be\u06d2 \u0628\u06be\u0648\u0644 \u06af\u06cc\u0627 \u06c1\u06d2",
             "tagged": "\u06a9\u0627\u0646\u0648\u06ba \u06a9\u0627 \u0628\u06be\u06cc \u0627\u0628 \u062f\u0631\u062f \u0645\u062c\u06be\u06d2 \u0628\u06be\u0648\u0644 \u06af\u06cc\u0627 \u06c1\u06d2",
-            "english": "I have forgotten the pain in my ears as well."
+            "english": "I have forgotten the pain in my ears as well.",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u06c1 \u06a9\u06c1\u06c1 \u06a9\u06d2 \u062a\u0691\u067e\u0646\u06d2 \u0644\u06af\u06cc \u0648\u06c1 \u0628\u06d2 \u06a9\u0633 \u0648 \u062f\u0644\u06af\u06cc\u0631",
             "tagged": "\u06cc\u06c1 \u06a9\u06c1\u06c1 \u06a9\u06d2 \u062a\u0691\u067e\u0646\u06d2 \u0644\u06af\u06cc \u0648\u06c1 \u0628\u06d2 \u06a9\u0633 \u0648 \u062f\u0644\u06af\u06cc\u0631",
-            "english": "Saying this, she started to writhe, helpless and heartbroken."
+            "english": "Saying this, she started to writhe, helpless and heartbroken.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0631 \u067e\u06cc\u0679\u0627 \u06a9\u0626\u06cc \u0628\u0627\u0631 \u062a\u0648 \u062d\u0627\u0644\u062a \u06c1\u0648\u0626\u06cc \u062a\u063a\u06cc\u06cc\u0631",
             "tagged": "\u0633\u0631 \u067e\u06cc\u0679\u0627 \u06a9\u0626\u06cc \u0628\u0627\u0631 \u062a\u0648 \u062d\u0627\u0644\u062a \u06c1\u0648\u0626\u06cc \u062a\u063a\u06cc\u06cc\u0631",
-            "english": "She struck her head many times, and her state changed."
+            "english": "She struck her head many times, and her state changed.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0645\u062c\u06be\u0627\u062a\u06cc \u062a\u06be\u06cc \u06c1\u0631 \u0628\u0627\u0631 \u0627\u0633\u06d2 \u0634\u0627\u06c1 \u06a9\u06cc \u06c1\u0645\u0634\u06cc\u0631",
             "tagged": "\u0633\u0645\u062c\u06be\u0627\u062a\u06cc \u062a\u06be\u06cc \u06c1\u0631 \u0628\u0627\u0631 \u0627\u0633\u06d2 <PERSON>\u0634\u0627\u06c1</PERSON> \u06a9\u06cc \u06c1\u0645\u0634\u06cc\u0631",
-            "english": "She advised her every time, as she was the sister of the king."
+            "english": "She advised her every time, as she was the sister of the king.",
+            "entity_status": {
+                "\u0634\u0627\u06c1": {
+                    "entity": "\u0634\u0627\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u067e\u0631 \u0627\u06cc\u0633\u06cc \u0648\u06c1 \u0645\u0686\u0644\u06cc \u06a9\u06c1 \u0646\u06c1 \u0628\u06c1\u0644\u06cc \u06a9\u0633\u06cc \u062a\u062f\u0628\u06cc\u0631",
             "tagged": "\u067e\u0631 \u0627\u06cc\u0633\u06cc \u0648\u06c1 \u0645\u0686\u0644\u06cc \u06a9\u06c1 \u0646\u06c1 \u0628\u06c1\u0644\u06cc \u06a9\u0633\u06cc \u062a\u062f\u0628\u06cc\u0631",
-            "english": "But she wriggled so much that no plan could help her."
+            "english": "But she wriggled so much that no plan could help her.",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u06c1 \u0631\u0646\u062c \u0648 \u0627\u0644\u0645 \u062a\u06be\u0627 \u062f\u0644 \u063a\u0645\u0646\u0627\u06a9 \u06a9\u06d2 \u0627\u0648\u067e\u0631",
             "tagged": "\u06cc\u06c1 \u0631\u0646\u062c \u0648 \u0627\u0644\u0645 \u062a\u06be\u0627 \u062f\u0644 \u063a\u0645\u0646\u0627\u06a9 \u06a9\u06d2 \u0627\u0648\u067e\u0631",
-            "english": "This was the sorrow and grief upon a sad heart."
+            "english": "This was the sorrow and grief upon a sad heart.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0633\u0645\u0644 \u06a9\u06cc \u0637\u0631\u062d \u0644\u0648\u0679\u062a\u06cc \u062a\u06be\u06cc \u062e\u0627\u06a9 \u06a9\u06d2 \u0627\u0648\u067e\u0631",
             "tagged": "<PERSON>\u0628\u0633\u0645\u0644</PERSON> \u06a9\u06cc \u0637\u0631\u062d \u0644\u0648\u0679\u062a\u06cc \u062a\u06be\u06cc \u062e\u0627\u06a9 \u06a9\u06d2 \u0627\u0648\u067e\u0631",
-            "english": "She rolled on the ground just like Basmal."
+            "english": "She rolled on the ground just like Basmal.",
+            "entity_status": {
+                "\u0628\u0633\u0645\u0644": {
+                    "entity": "\u0628\u0633\u0645\u0644",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u067e\u06cc\u0679 \u06a9\u06d2 \u0645\u0627\u06ba \u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06c1\u06d2 \u06c1\u06d2 \u0645\u06cc\u06ba \u06a9\u0631\u0648\u06ba \u06a9\u06cc\u0627",
             "tagged": "\u0633\u0631 \u067e\u06cc\u0679 \u06a9\u06d2 <PERSON>\u0645\u0627\u06ba</PERSON> \u06a9\u06c1\u062a\u06cc \u062a\u06be\u06cc \u06c1\u06d2 \u06c1\u06d2 \u0645\u06cc\u06ba \u06a9\u0631\u0648\u06ba \u06a9\u06cc\u0627",
-            "english": "Grabbing her head, mother exclaimed, 'What should I do!'"
+            "english": "Grabbing her head, mother exclaimed, 'What should I do!'",
+            "entity_status": {
+                "\u0645\u0627\u06ba": {
+                    "entity": "\u0645\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0638\u0644\u0648\u0645\u06cc \u067e\u06c1 \u0627\u0633 \u0628\u0686\u06cc \u06a9\u06d2 \u067e\u06be\u0679\u062a\u0627 \u06c1\u06d2 \u06a9\u0644\u06cc\u062c\u0627",
             "tagged": "\u0645\u0638\u0644\u0648\u0645\u06cc \u067e\u06c1 \u0627\u0633 \u0628\u0686\u06cc \u06a9\u06d2 \u067e\u06be\u0679\u062a\u0627 \u06c1\u06d2 \u06a9\u0644\u06cc\u062c\u0627",
-            "english": "The tyranny on this child makes my heart burst."
+            "english": "The tyranny on this child makes my heart burst.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u06af\u0630\u0631\u0627 \u06c1\u06d2 \u0627\u0628\u06be\u06cc \u0641\u0627\u0642\u06c1 \u067e\u06c1 \u0641\u0627\u0642\u0627",
             "tagged": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u06af\u0630\u0631\u0627 \u06c1\u06d2 \u0627\u0628\u06be\u06cc \u0641\u0627\u0642\u06c1 \u067e\u06c1 \u0641\u0627\u0642\u0627",
-            "english": "In this imprisonment, I have passed time with hunger upon hunger."
+            "english": "In this imprisonment, I have passed time with hunger upon hunger.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u06d2 \u0644\u0648\u06af\u0648! \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0627 \u0645\u0631\u06cc \u062f\u0645 \u06c1\u06d2 \u0646\u06a9\u0644\u062a\u0627",
             "tagged": "\u0627\u06d2 \u0644\u0648\u06af\u0648! <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0627 \u0645\u0631\u06cc \u062f\u0645 \u06c1\u06d2 \u0646\u06a9\u0644\u062a\u0627",
-            "english": "Oh people! Sakina's breath is leaving me."
+            "english": "Oh people! Sakina's breath is leaving me.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u0646\u062f \u0622\u0646\u06a9\u06be\u06cc\u06ba \u06c1\u06cc\u06ba \u0645\u0646\u06be \u06a9\u06be\u0648\u0644\u0648 \u0645\u0631\u06cc \u0645\u0627\u06c1 \u062c\u0628\u06cc\u06ba \u06c1\u06d2",
             "tagged": "\u0628\u0646\u062f \u0622\u0646\u06a9\u06be\u06cc\u06ba \u06c1\u06cc\u06ba \u0645\u0646\u06be \u06a9\u06be\u0648\u0644\u0648 \u0645\u06cc\u0631\u06cc <PERSON>\u0645\u0627\u06c1 \u062c\u0628\u06cc\u06ba</PERSON> \u06c1\u06d2",
-            "english": "My eyes are closed; open my face, oh my beautiful one."
+            "english": "My eyes are closed; open my face, oh my beautiful one.",
+            "entity_status": {
+                "\u0645\u0627\u06c1 \u062c\u0628\u06cc\u06ba": {
+                    "entity": "\u0645\u0627\u06c1 \u062c\u0628\u06cc\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u06cc\u0627 \u0645\u0646\u06be \u0645\u06cc\u06ba \u0686\u0648\u0627\u0624\u06ba \u06a9\u06c1\u06cc\u06ba \u067e\u0627\u0646\u06cc \u0628\u06be\u06cc \u0646\u06c1\u06cc\u06ba \u06c1\u06d2",
             "tagged": "\u06a9\u06cc\u0627 \u0645\u0646\u06be \u0645\u06cc\u06ba \u0686\u0648\u0627\u0624\u06ba \u06a9\u06c1\u06cc\u06ba \u067e\u0627\u0646\u06cc \u0628\u06be\u06cc \u0646\u06c1\u06cc\u06ba \u06c1\u06d2",
-            "english": "Is there no water in my mouth to drink?"
+            "english": "Is there no water in my mouth to drink?",
+            "entity_status": {}
         },
         {
             "original": "\u063a\u0634 \u06c1\u0648 \u06af\u0626\u06cc \u0628\u0633 \u0627\u062a\u0646\u06d2 \u0645\u06cc\u06ba \u0648\u06c1 \u0628\u06d2 \u06a9\u0633 \u0648 \u067e\u0631 \u063a\u0645",
             "tagged": "\u063a\u0634 \u06c1\u0648 \u06af\u0626\u06cc \u0628\u0633 \u0627\u062a\u0646\u06d2 \u0645\u06cc\u06ba \u0648\u06c1 \u0628\u06d2 \u06a9\u0633 \u0648 \u067e\u0631 \u063a\u0645",
-            "english": "She fainted at that moment, helpless and full of grief."
+            "english": "She fainted at that moment, helpless and full of grief.",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u0631 \u0628\u06cc \u0628\u06cc \u06a9\u0648 \u0628\u0633 \u06c1\u0648 \u06af\u06cc\u0627 \u0627\u06a9 \u0633\u06a9\u062a\u06d2 \u06a9\u0627 \u0639\u0627\u0644\u0645",
             "tagged": "\u06c1\u0631 \u0628\u06cc \u0628\u06cc \u06a9\u0648 \u0628\u0633 \u06c1\u0648 \u06af\u06cc\u0627 \u0627\u06a9 \u0633\u06a9\u062a\u06d2 \u06a9\u0627 \u0639\u0627\u0644\u0645",
-            "english": "Every woman fell into a state of utter shock."
+            "english": "Every woman fell into a state of utter shock.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0646\u0648 \u0646\u06d2 \u06a9\u06c1\u0627 \u06c1\u0627\u0626\u06d2 \u0645\u06cc\u06ba \u0627\u0628 \u06a9\u06cc\u0627 \u06a9\u0631\u0648\u06ba \u0627\u0633 \u062f\u0645",
             "tagged": "<PERSON>\u0628\u0627\u0646\u0648</PERSON> \u0646\u06d2 \u06a9\u06c1\u0627 \u06c1\u0627\u0626\u06d2 \u0645\u06cc\u06ba \u0627\u0628 \u06a9\u06cc\u0627 \u06a9\u0631\u0648\u06ba \u0627\u0633 \u062f\u0645",
-            "english": "Bano said, 'Oh, what shall I do in this moment?'"
+            "english": "Bano said, 'Oh, what shall I do in this moment?'",
+            "entity_status": {
+                "\u0628\u0627\u0646\u0648": {
+                    "entity": "\u0628\u0627\u0646\u0648",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0686\u0644\u06cc \u0634\u06cc\u0641\u062a\u0647\u0654 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645",
             "tagged": "\u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0686\u0644\u06cc <PERSON>\u0634\u06cc\u0641\u062a\u0647\u0654 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645</PERSON>",
-            "english": "With her hands, she went to the beloved of Sayyid Akram."
+            "english": "With her hands, she went to the beloved of Sayyid Akram.",
+            "entity_status": {
+                "\u0634\u06cc\u0641\u062a\u0647\u0654 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645": {
+                    "entity": "\u0634\u06cc\u0641\u062a\u0647\u0654 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0627\u0646 \u0648 \u062c\u06af\u0631 \u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u06c1 \u06a9\u0648 \u063a\u0634 \u0622\u06cc\u0627",
             "tagged": "\u062c\u0627\u0646 \u0648 \u062c\u06af\u0631 <PERSON>\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u063a\u0634 \u0622\u06cc\u0627",
-            "english": "The King of Medina fainted, soul and liver."
+            "english": "The King of Medina fainted, soul and liver.",
+            "entity_status": {
+                "\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u06c1": {
+                    "entity": "\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0641\u0631\u06cc\u0627\u062f \u06c1\u06d2 \u0641\u0631\u06cc\u0627\u062f \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0648 \u063a\u0634 \u0622\u06cc\u0627",
             "tagged": "\u0641\u0631\u06cc\u0627\u062f \u06c1\u06d2 \u0641\u0631\u06cc\u0627\u062f <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u063a\u0634 \u0622\u06cc\u0627",
-            "english": "There is a cry, Sakina has fainted."
+            "english": "There is a cry, Sakina has fainted.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06cc\u0627\u06ba \u06c1\u0627\u0626\u06d2 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0627 \u06c1\u0648\u0627 \u0634\u0648\u0631 \u062c\u0648 \u0627\u06a9 \u0628\u0627\u0631",
             "tagged": "\u06cc\u0627\u06ba \u06c1\u0627\u0626\u06d2 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0627 \u06c1\u0648\u0627 \u0634\u0648\u0631 \u062c\u0648 \u0627\u06a9 \u0628\u0627\u0631",
-            "english": "Oh, the cry of Sakina arose once."
+            "english": "Oh, the cry of Sakina arose once.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062a\u0628 \u062e\u0648\u0627\u0628 \u0633\u06d2 \u062d\u0627\u06a9\u0645 \u0628\u06be\u06cc \u0645\u062d\u0644 \u0645\u06cc\u06ba \u06c1\u0648\u0627 \u0628\u06cc\u062f\u0627\u0631",
             "tagged": "\u062a\u0628 \u062e\u0648\u0627\u0628 \u0633\u06d2 <PERSON>\u062d\u0627\u06a9\u0645</PERSON> \u0628\u06be\u06cc \u0645\u062d\u0644 \u0645\u06cc\u06ba \u06c1\u0648\u0627 \u0628\u06cc\u062f\u0627\u0631",
-            "english": "Then the ruler also awakened in the palace from the dream."
+            "english": "Then the ruler also awakened in the palace from the dream.",
+            "entity_status": {
+                "\u062d\u0627\u06a9\u0645": {
+                    "entity": "\u062d\u0627\u06a9\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0646\u06af\u0648\u0627\u0626\u06cc \u062e\u0628\u0631 \u062c\u0628 \u062a\u0648 \u06a9\u0633\u06cc \u0646\u06d2 \u06a9\u06cc\u0627 \u0627\u0638\u06c1\u0627\u0631",
             "tagged": "\u0645\u0646\u06af\u0648\u0627\u0626\u06cc \u062e\u0628\u0631 \u062c\u0628 \u062a\u0648 \u06a9\u0633\u06cc \u0646\u06d2 \u06a9\u06cc\u0627 \u0627\u0638\u06c1\u0627\u0631",
-            "english": "When news was brought, someone expressed it."
+            "english": "When news was brought, someone expressed it.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u06a9 \u0686\u0627\u0631 \u0628\u0631\u0633 \u06a9\u06cc \u062c\u0648 \u06c1\u06d2 \u0634\u0628\u06cc\u0631 \u06a9\u06cc \u062f\u0644\u062f\u0627\u0631",
             "tagged": "\u0627\u06a9 \u0686\u0627\u0631 \u0628\u0631\u0633 \u06a9\u06cc \u062c\u0648 \u06c1\u06d2 <PERSON>\u0634\u0628\u06cc\u0631</PERSON> \u06a9\u06cc \u062f\u0644\u062f\u0627\u0631",
-            "english": "A beloved of Shabir who is just four years old."
+            "english": "A beloved of Shabir who is just four years old.",
+            "entity_status": {
+                "\u0634\u0628\u06cc\u0631": {
+                    "entity": "\u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06cc\u0627\u062f \u0627\u064f\u0633 \u06a9\u0648 \u0646\u06c1\u06cc\u06ba \u0634\u06c1 \u06a9\u06cc \u0641\u0631\u0627\u0645\u0648\u0634 \u06c1\u0648\u0626\u06cc \u06c1\u06d2",
             "tagged": "\u06cc\u0627\u062f \u0627\u064f\u0633 \u06a9\u0648 \u0646\u06c1\u06cc\u06ba <DESIGNATION>\u0634\u06c1</DESIGNATION> \u06a9\u06cc \u0641\u0631\u0627\u0645\u0648\u0634 \u06c1\u0648\u0626\u06cc \u06c1\u06d2",
-            "english": "He does not remember, he has forgotten the martyr."
+            "english": "He does not remember, he has forgotten the martyr.",
+            "entity_status": {
+                "\u0634\u06c1": {
+                    "entity": "\u0634\u06c1",
+                    "tag": "DESIGNATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u0627\u0628\u0627 \u06a9\u0648 \u06cc\u0647 \u0631\u0648\u0626\u06cc \u06c1\u06d2 \u06a9\u06c1 \u0628\u06cc\u06c1\u0648\u0634 \u06c1\u0648\u0626\u06cc \u06c1\u06d2",
             "tagged": "<PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u0648 \u06cc\u0647 \u0631\u0648\u0626\u06cc \u06c1\u06d2 \u06a9\u06c1 \u0628\u06cc\u06c1\u0648\u0634 \u06c1\u0648\u0626\u06cc \u06c1\u06d2",
-            "english": "Father has heard that she has fainted."
+            "english": "Father has heard that she has fainted.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062d\u0644\u0642\u06c1 \u06a9\u06cc\u06d2 \u06af\u0631\u062f \u0627\u064f\u0633 \u06a9\u06d2 \u062d\u0631\u0645 \u0631\u0648\u062a\u06d2 \u06c1\u06cc\u06ba \u0628\u0627\u06c1\u0645",
             "tagged": "\u062d\u0644\u0642\u06c1 \u06a9\u06cc\u06d2 \u06af\u0631\u062f \u0627\u064f\u0633 \u06a9\u06d2 <ORGANIZATION>\u062d\u0631\u0645</ORGANIZATION> \u0631\u0648\u062a\u06d2 \u06c1\u06cc\u06ba \u0628\u0627\u06c1\u0645",
-            "english": "Those around her sacred household weep together."
+            "english": "Those around her sacred household weep together.",
+            "entity_status": {
+                "\u062d\u0631\u0645": {
+                    "entity": "\u062d\u0631\u0645",
+                    "tag": "ORGANIZATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u06c1\u0631\u0627\u0645 \u06c1\u06d2 \u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u0642\u06cc\u0627\u0645\u062a \u06a9\u0627 \u06c1\u06d2 \u0639\u0627\u0644\u0645",
             "tagged": "\u06a9\u06c1\u0631\u0627\u0645 \u06c1\u06d2 <LOCATION>\u0632\u0646\u062f\u0627\u06ba</LOCATION> \u0645\u06cc\u06ba \u0642\u06cc\u0627\u0645\u062a \u06a9\u0627 \u06c1\u06d2 \u0639\u0627\u0644\u0645",
-            "english": "There is chaos in the prison; it is a day of resurrection."
+            "english": "There is chaos in the prison; it is a day of resurrection.",
+            "entity_status": {
+                "\u0632\u0646\u062f\u0627\u06ba": {
+                    "entity": "\u0632\u0646\u062f\u0627\u06ba",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u0648\u0644\u0627 \u06cc\u06c1 \u062e\u0628\u0631\u062f\u0627\u0631\u0648\u06ba \u0633\u06d2 \u0627\u0633 \u0648\u0642\u062a \u06cc\u06c1 \u0627\u0638\u0644\u0645",
             "tagged": "\u0628\u0648\u0644\u0627 \u06cc\u06c1 \u062e\u0628\u0631\u062f\u0627\u0631\u0648\u06ba \u0633\u06d2 \u0627\u0633 \u0648\u0642\u062a \u06cc\u06c1 \u0627\u0638\u0644\u0645",
-            "english": "He spoke to the warning ones at that moment, 'This is injustice.'"
+            "english": "He spoke to the warning ones at that moment, 'This is injustice.'",
+            "entity_status": {}
         },
         {
             "original": "\u067e\u06c1\u0648\u0646\u0686\u0627\u0624 \u062e\u0631\u0627\u0628\u06d2 \u0645\u06cc\u06ba \u0633\u0631 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645",
             "tagged": "\u067e\u06c1\u0648\u0646\u0686\u0627\u0624 \u062e\u0631\u0627\u0628\u06d2 \u0645\u06cc\u06ba <PERSON>\u0633\u0631 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645</PERSON>",
-            "english": "Bring the head of Syed Akram to the ruins."
+            "english": "Bring the head of Syed Akram to the ruins.",
+            "entity_status": {
+                "\u0633\u0631 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645": {
+                    "entity": "\u0633\u0631 \u0633\u06cc\u062f \u0627\u06a9\u0631\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u06d2 \u062a\u0627\u0628 \u06c1\u06d2 \u0645\u0644 \u0644\u06d2 \u0634\u06c1 \u0645\u0638\u0644\u0648\u0645 \u06a9\u06d2 \u0633\u0631 \u0633\u06d2",
             "tagged": "\u0628\u06d2 \u062a\u0627\u0628 \u06c1\u06d2 \u0645\u0644 \u0644\u06d2 <DESIGNATION>\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645</DESIGNATION> \u06a9\u06d2 \u0633\u0631 \u0633\u06d2",
-            "english": "He is restless to meet the head of the martyred one."
+            "english": "He is restless to meet the head of the martyred one.",
+            "entity_status": {
+                "\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645": {
+                    "entity": "\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645",
+                    "tag": "DESIGNATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u062d\u0631\u0648\u0645 \u0646\u06c1 \u0631\u06c1 \u062c\u0627\u0626\u06d2 \u0648\u06c1 \u062f\u06cc\u062f\u0627\u0631 \u067e\u0633\u0631 \u0633\u06d2",
             "tagged": "\u0645\u062d\u0631\u0648\u0645 \u0646\u06c1 \u0631\u06c1 \u062c\u0627\u0626\u06d2 \u0648\u06c1 \u062f\u06cc\u062f\u0627\u0631 <PERSON>\u067e\u0633\u0631</PERSON> \u0633\u06d2",
-            "english": "Let her not be deprived of the sight of her son."
+            "english": "Let her not be deprived of the sight of her son.",
+            "entity_status": {
+                "\u067e\u0633\u0631": {
+                    "entity": "\u067e\u0633\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0644\u062f \u0686\u06c1\u0627\u0631\u0645",
             "tagged": "\u062c\u0644\u062f \u0686\u06c1\u0627\u0631\u0645",
-            "english": "Volume Four."
+            "english": "Volume Four.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
             "tagged": "<PERSON>\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633</PERSON>",
-            "english": "Elegy of Mir Anees."
+            "english": "Elegy of Mir Anees.",
+            "entity_status": {
+                "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633": {
+                    "entity": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0633 \u0637\u0634\u062a \u0637\u0644\u0627\u0626\u06cc \u0645\u06cc\u06ba \u0631\u06a9\u06be\u0627 \u062a\u06be\u0627 \u0633\u0631 \u0633\u0631\u0648\u0631",
             "tagged": "\u062c\u0633 <LOCATION>\u0637\u0634\u062a</LOCATION> \u0637\u0644\u0627\u0626\u06cc \u0645\u06cc\u06ba \u0631\u06a9\u06be\u0627 \u062a\u06be\u0627 \u0633\u0631 <PERSON>\u0633\u0631\u0648\u0631</PERSON>",
-            "english": "In the golden basin where the head of the beloved was placed."
+            "english": "In the golden basin where the head of the beloved was placed.",
+            "entity_status": {
+                "\u0637\u0634\u062a": {
+                    "entity": "\u0637\u0634\u062a",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                },
+                "\u0633\u0631\u0648\u0631": {
+                    "entity": "\u0633\u0631\u0648\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062e\u062f\u0627\u0645 \u0631\u0648\u0627\u0646\u06c1 \u06c1\u0648\u06d2 \u062c\u0644\u062f\u06cc \u0627\u064f\u0633\u06d2 \u0644\u06d2 \u06a9\u0631",
             "tagged": "\u062e\u062f\u0627\u0645 \u0631\u0648\u0627\u0646\u06c1 \u06c1\u0648\u06d2 \u062c\u0644\u062f\u06cc \u0627\u064f\u0633\u06d2 \u0644\u06d2 \u06a9\u0631",
-            "english": "The attendants hastily set off to take him."
+            "english": "The attendants hastily set off to take him.",
+            "entity_status": {}
         },
         {
             "original": "\u062c\u0627 \u06a9\u0631 \u062f\u0631\u0650 \u0632\u0646\u062f\u0627\u06ba \u067e\u06c1 \u067e\u06a9\u0627\u0631\u06d2 \u0648\u06c1 \u0628\u062f \u0627\u062e\u062a\u0631",
             "tagged": "\u062c\u0627 \u06a9\u0631 <LOCATION>\u062f\u0631\u0650 \u0632\u0646\u062f\u0627\u06ba</LOCATION> \u067e\u06c1 \u067e\u06a9\u0627\u0631\u06d2 \u0648\u06c1 \u0628\u062f \u0627\u062e\u062a\u0631",
-            "english": "Going to the prison door, he called the unfortunate one."
+            "english": "Going to the prison door, he called the unfortunate one.",
+            "entity_status": {
+                "\u062f\u0631\u0650 \u0632\u0646\u062f\u0627\u06ba": {
+                    "entity": "\u062f\u0631\u0650 \u0632\u0646\u062f\u0627\u06ba",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0644\u06d2 \u062c\u0627\u0626\u06d2 \u06a9\u0648\u0626\u06cc \u0622 \u06a9\u06d2 \u0633\u0631 \u0633\u06cc\u062f \u0628\u06d2 \u0633\u0631",
             "tagged": "\u0644\u06d2 \u062c\u0627\u0626\u06d2 \u06a9\u0648\u0626\u06cc \u0622 \u06a9\u06d2 \u0633\u0631 <PERSON>\u0633\u06cc\u062f</PERSON> \u0628\u06d2 \u0633\u0631",
-            "english": "May someone come and take the head of the headless Syed."
+            "english": "May someone come and take the head of the headless Syed.",
+            "entity_status": {
+                "\u0633\u06cc\u062f": {
+                    "entity": "\u0633\u06cc\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062e\u0648\u0634\u0628\u0648 \u0627\u0633\u06d2 \u0634\u0628\u06cc\u0631 \u06a9\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06cc \u0633\u0646\u06af\u06be\u0627 \u062f\u0648",
             "tagged": "\u062e\u0648\u0634\u0628\u0648 \u0627\u0633\u06d2 <PERSON>\u0634\u0628\u06cc\u0631</PERSON> \u06a9\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06cc \u0633\u0646\u06af\u06be\u0627 \u062f\u0648",
-            "english": "Let the fragrance of Shabir's hair be inhaled by her."
+            "english": "Let the fragrance of Shabir's hair be inhaled by her.",
+            "entity_status": {
+                "\u0634\u0628\u06cc\u0631": {
+                    "entity": "\u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u0645\u0638\u0644\u0648\u0645 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0648 \u062f\u06a9\u06be\u0627 \u062f\u0648",
             "tagged": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u0645\u0638\u0644\u0648\u0645 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u062f\u06a9\u06be\u0627 \u062f\u0648",
-            "english": "Show the head of the father to the oppressed Sakina."
+            "english": "Show the head of the father to the oppressed Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0631\u0648\u062a\u06d2 \u062f\u0631 \u0632\u0646\u062f\u0627\u06ba \u067e\u06c1 \u06af\u0626\u06d2 \u0633\u06cc\u062f \u0633\u062c\u0627\u062f",
             "tagged": "\u0631\u0648\u062a\u06d2 <LOCATION>\u062f\u0631 \u0632\u0646\u062f\u0627\u06ba</LOCATION> \u067e\u06c1 \u06af\u0626\u06d2 <PERSON>\u0633\u06cc\u062f \u0633\u062c\u0627\u062f</PERSON>",
-            "english": "Crying, Syed Sajjad went to the prison door."
+            "english": "Crying, Syed Sajjad went to the prison door.",
+            "entity_status": {
+                "\u062f\u0631 \u0632\u0646\u062f\u0627\u06ba": {
+                    "entity": "\u062f\u0631 \u0632\u0646\u062f\u0627\u06ba",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                },
+                "\u0633\u06cc\u062f \u0633\u062c\u0627\u062f": {
+                    "entity": "\u0633\u06cc\u062f \u0633\u062c\u0627\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0644\u06cc\u0627 \u0628\u0627\u062f\u0644 \u0646\u0627\u0634\u0627\u062f",
             "tagged": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0644\u06cc\u0627 \u0628\u0627\u062f\u0644 \u0646\u0627\u0634\u0627\u062f",
-            "english": "He took the head of his father in his hands, surrounded by gloom."
+            "english": "He took the head of his father in his hands, surrounded by gloom.",
+            "entity_status": {}
         },
         {
             "original": "\u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u0686\u0644\u06d2 \u06a9\u0631\u062a\u06d2 \u06c1\u0648\u06d2 \u0646\u0627\u0644\u06c1 \u0648 \u0641\u0631\u06cc\u0627\u062f",
             "tagged": "<LOCATION>\u0632\u0646\u062f\u0627\u06ba</LOCATION> \u0645\u06cc\u06ba \u0686\u0644\u06d2 \u06a9\u0631\u062a\u06d2 \u06c1\u0648\u06d2 \u0646\u0627\u0644\u06c1 \u0648 \u0641\u0631\u06cc\u0627\u062f",
-            "english": "Crying and lamenting, they peacefully walked in the prison."
+            "english": "Crying and lamenting, they peacefully walked in the prison.",
+            "entity_status": {
+                "\u0632\u0646\u062f\u0627\u06ba": {
+                    "entity": "\u0632\u0646\u062f\u0627\u06ba",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0627 \u067e\u06c1\u0648\u0646\u0686\u06d2 \u062a\u0648 \u0631\u0627\u0646\u0688\u0648\u06ba \u0633\u06d2 \u06a9\u06cc\u0627 \u062c\u0627 \u06a9\u06d2 \u06cc\u06c1 \u0627\u0631\u0634\u0627\u062f",
             "tagged": "\u062c\u0627 \u067e\u06c1\u0648\u0646\u0686\u06d2 \u062a\u0648 <ORGANIZATION>\u0631\u0627\u0646\u0688\u0648\u06ba</ORGANIZATION> \u0633\u06d2 \u06a9\u06cc\u0627 \u062c\u0627 \u06a9\u06d2 \u06cc\u06c1 \u0627\u0631\u0634\u0627\u062f",
-            "english": "When they reached, they announced this from among the women."
+            "english": "When they reached, they announced this from among the women.",
+            "entity_status": {
+                "\u0631\u0627\u0646\u0688\u0648\u06ba": {
+                    "entity": "\u0631\u0627\u0646\u0688\u0648\u06ba",
+                    "tag": "ORGANIZATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0634\u0628\u06cc\u0631 \u06a9\u0627 \u0633\u0631 \u0622\u06cc\u0627 \u06c1\u06d2 \u062a\u0639\u0638\u06cc\u0645 \u06a9\u0648 \u0627\u064f\u0679\u06be\u0648",
             "tagged": "<PERSON>\u0634\u0628\u06cc\u0631</PERSON> \u06a9\u0627 \u0633\u0631 \u0622\u06cc\u0627 \u06c1\u06d2 \u062a\u0639\u0638\u06cc\u0645 \u06a9\u0648 \u0627\u064f\u0679\u06be\u0648",
-            "english": "The head of Shabir has arrived; rise in honor."
+            "english": "The head of Shabir has arrived; rise in honor.",
+            "entity_status": {
+                "\u0634\u0628\u06cc\u0631": {
+                    "entity": "\u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0632\u06c1\u0631\u0627 \u06a9\u06d2 \u062c\u06af\u0631 \u0628\u0646\u062f \u06a9\u06cc \u062a\u0633\u0644\u06cc\u0645 \u06a9\u0648 \u0627\u0679\u06be\u0648",
             "tagged": "<PERSON>\u0632\u06c1\u0631\u0627</PERSON> \u06a9\u06d2 \u062c\u06af\u0631 \u0628\u0646\u062f \u06a9\u06cc \u062a\u0633\u0644\u06cc\u0645 \u06a9\u0648 \u0627\u0679\u06be\u0648",
-            "english": "Honor the recognition of the daughter of Zahra."
+            "english": "Honor the recognition of the daughter of Zahra.",
+            "entity_status": {
+                "\u0632\u06c1\u0631\u0627": {
+                    "entity": "\u0632\u06c1\u0631\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u067e\u06cc\u0679\u06cc\u06ba \u06cc\u06c1 \u0633\u0646\u062a\u06d2 \u06c1\u06cc \u0633\u0628\u06be\u06cc \u0628\u06cc \u0628\u06cc\u0627\u06ba \u0628\u0627\u06c1\u0645",
             "tagged": "\u0633\u0631 \u067e\u06cc\u0679\u06cc\u06ba \u06cc\u06c1 \u0633\u0646\u062a\u06d2 \u06c1\u06cc \u0633\u0628\u06be\u06cc \u0628\u06cc \u0628\u06cc\u0627\u06ba \u0628\u0627\u06c1\u0645",
-            "english": "Upon hearing this, all the women beat their heads together."
+            "english": "Upon hearing this, all the women beat their heads together.",
+            "entity_status": {}
         },
         {
             "original": "\u0632\u06cc\u0646\u0628 \u0646\u06d2 \u06a9\u06c1\u0627 \u06a9\u0631\u062a\u06cc \u06c1\u06d2 \u062a\u0633\u0644\u06cc\u0645 \u06cc\u06c1 \u067e\u0631 \u063a\u0645",
             "tagged": "<PERSON>\u0632\u06cc\u0646\u0628</PERSON> \u0646\u06d2 \u06a9\u06c1\u0627 \u06a9\u0631\u062a\u06cc \u06c1\u06d2 \u062a\u0633\u0644\u06cc\u0645 \u06cc\u06c1 \u067e\u0631 \u063a\u0645",
-            "english": "Zainab said, 'This acknowledgment is grief.'"
+            "english": "Zainab said, 'This acknowledgment is grief.'",
+            "entity_status": {
+                "\u0632\u06cc\u0646\u0628": {
+                    "entity": "\u0632\u06cc\u0646\u0628",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0644\u06cc\u0627 \u067e\u06be\u06cc\u0631 \u0633\u0631 \u0633\u0631\u062f\u0627\u0631 \u062f\u0648 \u0639\u0627\u0644\u0645",
             "tagged": "\u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0644\u06cc\u0627 \u067e\u06be\u06cc\u0631 \u0633\u0631 <DESIGNATION>\u0633\u0631\u062f\u0627\u0631 \u062f\u0648 \u0639\u0627\u0644\u0645</DESIGNATION>",
-            "english": "He took the head of the master of both worlds in his hands."
+            "english": "He took the head of the master of both worlds in his hands.",
+            "entity_status": {
+                "\u0633\u0631\u062f\u0627\u0631 \u062f\u0648 \u0639\u0627\u0644\u0645": {
+                    "entity": "\u0633\u0631\u062f\u0627\u0631 \u062f\u0648 \u0639\u0627\u0644\u0645",
+                    "tag": "DESIGNATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u067e\u06cc\u0679 \u06a9\u06d2 \u0633\u0628 \u0628\u06cc\u0628\u06cc\u0627\u06ba \u06a9\u0631\u0646\u06d2 \u0644\u06af\u06cc\u06ba \u0645\u0627\u062a\u0645",
             "tagged": "\u0633\u0631 \u067e\u06cc\u0679 \u06a9\u06d2 \u0633\u0628 \u0628\u06cc\u0628\u06cc\u0627\u06ba \u06a9\u0631\u0646\u06d2 \u0644\u06af\u06cc\u06ba \u0645\u0627\u062a\u0645",
-            "english": "All the women began to mourn, beating their heads."
+            "english": "All the women began to mourn, beating their heads.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0631 \u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0628\u06be\u0627\u0626\u06cc \u06a9\u0627 \u0628\u06c1\u0646 \u06a9\u06d2 \u062c\u0648 \u062f\u06be\u0631\u0627 \u062a\u06be\u0627",
             "tagged": "\u0633\u0631 \u06c1\u0627\u062a\u06be\u0648\u06ba \u067e\u06c1 \u0628\u06be\u0627\u0626\u06cc \u06a9\u0627 \u0628\u06c1\u0646 \u06a9\u06d2 \u062c\u0648 \u062f\u06be\u0631\u0627 \u062a\u06be\u0627",
-            "english": "The head that was held in the sister's hands of the brother."
+            "english": "The head that was held in the sister's hands of the brother.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u06a9 \u0646\u0648\u0631 \u062e\u062f\u0627 \u0686\u0627\u0631 \u0637\u0631\u0641 \u062c\u0644\u0648\u06c1 \u0646\u0645\u0627 \u062a\u06be\u0627",
             "tagged": "\u0627\u06a9 \u0646\u0648\u0631 \u062e\u062f\u0627 \u0686\u0627\u0631 \u0637\u0631\u0641 \u062c\u0644\u0648\u06c1 \u0646\u0645\u0627 \u062a\u06be\u0627",
-            "english": "A divine light was visible from all sides."
+            "english": "A divine light was visible from all sides.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0644\u06cc\u06ba \u067e\u06c1 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u06d2 \u0633\u0631 \u0634\u0627\u06c1 \u062c\u0648 \u0644\u0627\u0626\u06cc",
             "tagged": "\u0628\u0627\u0644\u06cc\u06ba \u067e\u06c1 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u06d2 \u0633\u0631 <PERSON>\u0634\u0627\u06c1</PERSON> \u062c\u0648 \u0644\u0627\u0626\u06cc",
-            "english": "The king brought it to Sakina's hair."
+            "english": "The king brought it to Sakina's hair.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0634\u0627\u06c1": {
+                    "entity": "\u0634\u0627\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0648 \u06af\u06cc\u0633\u0648\u0626\u06d2 \u0633\u0631\u0648\u0631 \u06a9\u06cc \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u0648 \u0633\u0646\u06af\u06be\u0627\u0626\u06cc",
             "tagged": "\u062c\u0648 \u06af\u06cc\u0633\u0648\u0626\u06d2 <PERSON>\u0633\u0631\u0648\u0631</PERSON> \u06a9\u06cc <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u0648 \u0633\u0646\u06af\u06be\u0627\u0626\u06cc",
-            "english": "She inhaled the scent of the beloved's hair."
+            "english": "She inhaled the scent of the beloved's hair.",
+            "entity_status": {
+                "\u0633\u0631\u0648\u0631": {
+                    "entity": "\u0633\u0631\u0648\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u0627\u0628\u0627 \u06a9\u06cc \u062c\u0648 \u0628\u0648 \u062f\u062e\u062a\u0631 \u0645\u0638\u0644\u0648\u0645 \u0646\u06d2 \u067e\u0627\u0626\u06cc",
             "tagged": "<PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u06cc \u062c\u0648 \u0628\u0648 <PERSON>\u062f\u062e\u062a\u0631 \u0645\u0638\u0644\u0648\u0645</PERSON> \u0646\u06d2 \u067e\u0627\u0626\u06cc",
-            "english": "The daughter of the oppressed received the scent of her father."
+            "english": "The daughter of the oppressed received the scent of her father.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u062f\u062e\u062a\u0631 \u0645\u0638\u0644\u0648\u0645": {
+                    "entity": "\u062f\u062e\u062a\u0631 \u0645\u0638\u0644\u0648\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u0686\u06be \u063a\u0634 \u0645\u06cc\u06ba \u0627\u0641\u0627\u0642\u06c1 \u06c1\u0648\u0627 \u0627\u0648\u0631 \u06c1\u0648\u0634 \u0645\u06cc\u06ba \u0622\u0626\u06cc",
             "tagged": "\u06a9\u0686\u06be \u063a\u0634 \u0645\u06cc\u06ba \u0627\u0641\u0627\u0642\u06c1 \u06c1\u0648\u0627 \u0627\u0648\u0631 \u06c1\u0648\u0634 \u0645\u06cc\u06ba \u0622\u0626\u06cc",
-            "english": "She regained consciousness after a brief faint."
+            "english": "She regained consciousness after a brief faint.",
+            "entity_status": {}
         },
         {
             "original": "\u0622\u06c1\u0633\u062a\u06c1 \u06a9\u06be\u0627 \u0631\u0648\u062d \u0645\u0632\u0627 \u067e\u0627\u062a\u06cc \u06c1\u06d2 \u0644\u0648\u06af\u0648",
             "tagged": "\u0622\u06c1\u0633\u062a\u06c1 \u06a9\u06be\u0627 \u0631\u0648\u062d \u0645\u0632\u0627 \u067e\u0627\u062a\u06cc \u06c1\u06d2 \u0644\u0648\u06af\u0648",
-            "english": "Slowly, the soul enjoys the fragrance, O people."
+            "english": "Slowly, the soul enjoys the fragrance, O people.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0648 \u0628\u0627\u0628\u0627 \u06a9\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06cc \u0686\u0644\u06cc \u0622\u062a\u06cc \u06c1\u06d2 \u0644\u0648\u06af\u0648",
             "tagged": "\u0628\u0648 <PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06cc \u0686\u0644\u06cc \u0622\u062a\u06cc \u06c1\u06d2 \u0644\u0648\u06af\u0648",
-            "english": "The fragrance of Baba's tresses comes to me, O people."
+            "english": "The fragrance of Baba's tresses comes to me, O people.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u067e\u06be\u0631 \u062a\u06be\u0627\u0645 \u06a9\u06d2 \u0634\u0627\u0646\u06d2 \u0627\u064f\u0633\u06d2 \u0628\u0627\u0646\u0648 \u0646\u06d2 \u0627\u064f\u0679\u06be\u0627\u06cc\u0627",
             "tagged": "\u067e\u06be\u0631 \u062a\u06be\u0627\u0645 \u06a9\u06d2 \u0634\u0627\u0646\u06d2 \u0627\u064f\u0633\u06d2 <PERSON>\u0628\u0627\u0646\u0648</PERSON> \u0646\u06d2 \u0627\u064f\u0679\u06be\u0627\u06cc\u0627",
-            "english": "Then, holding her shoulders, Bano lifted her."
+            "english": "Then, holding her shoulders, Bano lifted her.",
+            "entity_status": {
+                "\u0628\u0627\u0646\u0648": {
+                    "entity": "\u0628\u0627\u0646\u0648",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0632\u06cc\u0646\u0628 \u0646\u06d2 \u06a9\u06c1\u0627 \u0644\u06d2 \u062a\u0631\u0627 \u0628\u06d2 \u06a9\u0633 \u067e\u062f\u0631 \u0622\u06cc\u0627",
             "tagged": "<PERSON>\u0632\u06cc\u0646\u0628</PERSON> \u0646\u06d2 \u06a9\u06c1\u0627 \u0644\u06d2 \u062a\u0631\u0627 \u0628\u06d2 \u06a9\u0633 <PERSON>\u067e\u062f\u0631</PERSON> \u0622\u06cc\u0627",
-            "english": "Zainab said, 'Take her, your helpless father has come.'"
+            "english": "Zainab said, 'Take her, your helpless father has come.'",
+            "entity_status": {
+                "\u0632\u06cc\u0646\u0628": {
+                    "entity": "\u0632\u06cc\u0646\u0628",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u067e\u062f\u0631": {
+                    "entity": "\u067e\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0631 \u062e\u0627\u06a9 \u067e\u06c1 \u0633\u062c\u062f\u06d2 \u06a9\u0648 \u0633\u06a9\u06cc\u0646\u06c1 \u0646\u06d2 \u062c\u06be\u06a9\u0627\u06cc\u0627",
             "tagged": "\u0633\u0631 \u062e\u0627\u06a9 \u067e\u06c1 \u0633\u062c\u062f\u06d2 \u06a9\u0648 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u0646\u06d2 \u062c\u06be\u06a9\u0627\u06cc\u0627",
-            "english": "Sakina bowed her head to prostrate upon the dust."
+            "english": "Sakina bowed her head to prostrate upon the dust.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u06cc\u06a9\u06be\u0627 \u062c\u0648 \u0633\u0648\u0626\u06d2 \u0637\u0634\u062a \u062a\u0648 \u06cc\u06c1 \u0634\u0648\u0631 \u0645\u0686\u0627\u06cc\u0627",
             "tagged": "\u062f\u06cc\u06a9\u06be\u0627 \u062c\u0648 \u0633\u0648\u0626\u06d2 <LOCATION>\u0637\u0634\u062a</LOCATION> \u062a\u0648 \u06cc\u06c1 \u0634\u0648\u0631 \u0645\u0686\u0627\u06cc\u0627",
-            "english": "When she saw the basin, she cried out."
+            "english": "When she saw the basin, she cried out.",
+            "entity_status": {
+                "\u0637\u0634\u062a": {
+                    "entity": "\u0637\u0634\u062a",
+                    "tag": "LOCATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u0627\u0628\u0627 \u06a9\u0627 \u0645\u06cc\u0631\u06d2 \u0633\u0631 \u06c1\u06d2 \u06cc\u06c1 \u067e\u06c1\u0686\u0627\u0646 \u06af\u0626\u06cc \u0645\u06cc\u06ba",
             "tagged": "<PERSON>\u0628\u0627\u0628\u0627</PERSON> \u06a9\u0627 \u0645\u06cc\u0631\u06d2 \u0633\u0631 \u06c1\u06d2 \u06cc\u06c1 \u067e\u06c1\u0686\u0627\u0646 \u06af\u0626\u06cc \u0645\u06cc\u06ba",
-            "english": "This is my father's head; I recognized it."
+            "english": "This is my father's head; I recognized it.",
+            "entity_status": {
+                "\u0628\u0627\u0628\u0627": {
+                    "entity": "\u0628\u0627\u0628\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0646 \u062e\u0648\u0646 \u0628\u06be\u0631\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06d2 \u0642\u0631\u0628\u0627\u0646 \u06af\u0626\u06cc \u0645\u06cc\u06ba",
             "tagged": "\u0627\u0646 \u062e\u0648\u0646 \u0628\u06be\u0631\u06cc \u0632\u0644\u0641\u0648\u06ba \u06a9\u06d2 \u0642\u0631\u0628\u0627\u0646 \u06af\u0626\u06cc \u0645\u06cc\u06ba",
-            "english": "I have sacrificed myself for those blood-filled tresses."
+            "english": "I have sacrificed myself for those blood-filled tresses.",
+            "entity_status": {}
         },
         {
             "original": "\u0686\u06be\u0648\u0679\u06d2 \u0633\u06d2 \u062c\u0648 \u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0627\u064f\u0679\u06be\u0627\u06cc\u0627 \u0633\u0631 \u0633\u0631\u0648\u0631",
             "tagged": "\u0686\u06be\u0648\u0679\u06d2 \u0633\u06d2 \u062c\u0648 \u06c1\u0627\u062a\u06be\u0648\u06ba \u0633\u06d2 \u0627\u064f\u0679\u06be\u0627\u06cc\u0627 \u0633\u0631 <PERSON>\u0633\u0631\u0648\u0631</PERSON>",
-            "english": "The head of the beloved was lifted by her small hands."
+            "english": "The head of the beloved was lifted by her small hands.",
+            "entity_status": {
+                "\u0633\u0631\u0648\u0631": {
+                    "entity": "\u0633\u0631\u0648\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0653\u0646\u06a9\u06be\u06cc\u06ba \u0645\u0644\u06cc\u06ba \u0631\u062e\u0633\u0627\u0631\u0648\u06ba \u0633\u06d2 \u0645\u0646\u06be \u0631\u06a9\u06be \u062f\u06cc\u0627 \u0645\u0646\u06be \u067e\u0631",
             "tagged": "\u0622\u0646\u0633\u0648 \u0645\u0644\u06cc\u06ba \u0631\u062e\u0633\u0627\u0631\u0648\u06ba \u0633\u06d2 \u0645\u0646\u06be \u0631\u06a9\u06be \u062f\u06cc\u0627 \u0645\u0646\u06be \u067e\u0631",
-            "english": "The eyes met the cheeks, as she covered her face."
+            "english": "The eyes met the cheeks, as she covered her face.",
+            "entity_status": {}
         },
         {
             "original": "\u0644\u06a9\u06be\u0627 \u06c1\u06d2 \u06a9\u06c1 \u062c\u0646\u0628\u0634 \u0645\u06cc\u06ba \u062a\u0628 \u0622\u0626\u06d2 \u0644\u0628 \u0627\u0637\u06c1\u0631",
             "tagged": "\u0644\u06a9\u06be\u0627 \u06c1\u06d2 \u06a9\u06c1 \u062c\u0646\u0628\u0634 \u0645\u06cc\u06ba \u062a\u0628 \u0622\u0626\u06d2 \u0644\u0628 <PERSON>\u0627\u0637\u06c1\u0631</PERSON>",
-            "english": "It is written that the lips of the pure one moved."
+            "english": "It is written that the lips of the pure one moved.",
+            "entity_status": {
+                "\u0627\u0637\u06c1\u0631": {
+                    "entity": "\u0627\u0637\u06c1\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062d\u0636\u0631\u062a \u0646\u06d2 \u0628\u06be\u06cc \u0627\u0639\u062c\u0627\u0632 \u0633\u06d2 \u0686\u0648\u0645\u06d2 \u0644\u0628 \u062f\u062e\u062a\u0631",
             "tagged": "<PERSON>\u062d\u0636\u0631\u062a</PERSON> \u0646\u06d2 \u0628\u06be\u06cc \u0627\u0639\u062c\u0627\u0632 \u0633\u06d2 \u0686\u0648\u0645\u06d2 \u0644\u0628 <PERSON>\u062f\u062e\u062a\u0631</PERSON>",
-            "english": "The revered one also miraculously kissed the lips of the daughter."
+            "english": "The revered one also miraculously kissed the lips of the daughter.",
+            "entity_status": {
+                "\u062d\u0636\u0631\u062a": {
+                    "entity": "\u062d\u0636\u0631\u062a",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u062f\u062e\u062a\u0631": {
+                    "entity": "\u062f\u062e\u062a\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0648\u0627 \u06c1\u0648 \u06af\u0626\u06cc\u06ba \u0622\u0646\u06a9\u06be\u06cc\u06ba \u0634\u06c1 \u0645\u0638\u0644\u0648\u0645 \u06a9\u06d2 \u0633\u0631 \u06a9\u06cc",
             "tagged": "\u0648\u0627 \u06c1\u0648 \u06af\u0626\u06cc\u06ba \u0622\u0646\u06a9\u06be\u06cc\u06ba <DESIGNATION>\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645</DESIGNATION> \u06a9\u06d2 \u0633\u0631 \u06a9\u06cc",
-            "english": "The eyes of the martyred one opened wide upon the head."
+            "english": "The eyes of the martyred one opened wide upon the head.",
+            "entity_status": {
+                "\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645": {
+                    "entity": "\u0634\u06c1 \u0645\u0638\u0644\u0648\u0645",
+                    "tag": "DESIGNATION",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u06cc\u0679\u06cc \u067e\u06c1 \u0639\u062c\u0628 \u06cc\u0627\u0633 \u0633\u06d2 \u062d\u0636\u0631\u062a \u0646\u06d2 \u0646\u0638\u0631 \u06a9\u06cc",
             "tagged": "\u0628\u06cc\u0679\u06cc \u067e\u06c1 \u0639\u062c\u0628 \u06cc\u0627\u0633 \u0633\u06d2 <PERSON>\u062d\u0636\u0631\u062a</PERSON> \u0646\u06d2 \u0646\u0638\u0631 \u06a9\u06cc",
-            "english": "With a strange despair, the revered one looked at the daughter."
+            "english": "With a strange despair, the revered one looked at the daughter.",
+            "entity_status": {
+                "\u062d\u0636\u0631\u062a": {
+                    "entity": "\u062d\u0636\u0631\u062a",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u06cc\u0679\u06cc \u0646\u06d2 \u06a9\u06c1\u0627 \u0635\u062f\u0642\u06d2 \u0645\u06cc\u06ba \u0627\u0633 \u067e\u06cc\u0627\u0631 \u06a9\u06d2 \u0628\u0627\u0628\u0627",
             "tagged": "\u0628\u06cc\u0679\u06cc \u0646\u06d2 \u06a9\u06c1\u0627 \u0635\u062f\u0642\u06d2 \u0645\u06cc\u06ba \u0627\u0633 \u067e\u06cc\u0627\u0631 \u06a9\u06d2 \u0628\u0627\u0628\u0627",
-            "english": "The daughter said, 'I sacrifice myself for this dear Father.'"
+            "english": "The daughter said, 'I sacrifice myself for this dear Father.'",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u06c1 \u06a9\u0633 \u0646\u06d2 \u06af\u0644\u0627 \u0622\u067e \u06a9\u0627 \u062a\u0644\u0648\u0627\u0631 \u0633\u06d2 \u06a9\u0627\u0679\u0627",
             "tagged": "\u06cc\u06c1 \u06a9\u0633 \u0646\u06d2 \u06af\u0644\u0627 \u0622\u067e \u06a9\u0627 \u062a\u0644\u0648\u0627\u0631 \u0633\u06d2 \u06a9\u0627\u0679\u0627",
-            "english": "Who has cut your throat with a sword?"
+            "english": "Who has cut your throat with a sword?",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0631 \u062a\u0648 \u06c1\u06d2 \u06cc\u06c1\u0627\u06ba \u0627\u0648\u0631 \u062a\u0646 \u067e\u0631 \u0646\u0648\u0631 \u06c1\u06d2 \u06a9\u0633 \u062c\u0627",
             "tagged": "\u0633\u0631 \u062a\u0648 \u06c1\u06d2 \u06cc\u06c1\u0627\u06ba \u0627\u0648\u0631 \u062a\u0646 \u067e\u0631 \u0646\u0648\u0631 \u06c1\u06d2 \u06a9\u0633 \u062c\u0627",
-            "english": "Your head is here, but where is the body filled with light?"
+            "english": "Your head is here, but where is the body filled with light?",
+            "entity_status": {}
         },
         {
             "original": "\u0648\u06c1 \u0628\u0627\u0632\u0648 \u06a9\u06c1\u0627\u06ba \u06c1\u06cc\u06ba \u062c\u0648 \u0645\u0631\u06d2 \u06c1\u0648\u062a\u06d2 \u062a\u06be\u06d2 \u062a\u06a9\u06cc\u0627",
             "tagged": "\u0648\u06c1 \u0628\u0627\u0632\u0648 \u06a9\u06c1\u0627\u06ba \u06c1\u06cc\u06ba \u062c\u0648 \u0645\u0631\u06d2 \u06c1\u0648\u062a\u06d2 \u062a\u06be\u06d2 \u062a\u06a9\u06cc\u0627",
-            "english": "Where are the arms that used to be my pillow?"
+            "english": "Where are the arms that used to be my pillow?",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0628 \u0645\u0646\u06be \u0633\u06d2 \u0646\u06a9\u0644\u062a\u0627 \u06c1\u06d2 \u06a9\u0644\u06cc\u062c\u06c1 \u0645\u0631\u0627 \u067e\u06be\u0679 \u06a9\u0631",
             "tagged": "\u0627\u0628 \u0645\u0646\u06be \u0633\u06d2 \u0646\u06a9\u0644\u062a\u0627 \u06c1\u06d2 \u06a9\u0644\u06cc\u062c\u06c1 \u0645\u0631\u0627 \u067e\u06be\u0679 \u06a9\u0631",
-            "english": "Now my heart bursts out from my mouth."
+            "english": "Now my heart bursts out from my mouth.",
+            "entity_status": {}
         },
         {
             "original": "\u0648\u06c1 \u0686\u06be\u0627\u062a\u06cc \u06a9\u06c1\u0627\u06ba \u062c\u0633 \u0633\u06d2 \u0645\u06cc\u06ba \u0633\u0648\u062a\u06cc \u062a\u06be\u06cc \u0644\u067e\u0679 \u06a9\u0631",
             "tagged": "\u0648\u06c1 \u0686\u06be\u0627\u062a\u06cc \u06a9\u06c1\u0627\u06ba \u062c\u0633 \u0633\u06d2 \u0645\u06cc\u06ba \u0633\u0648\u062a\u06cc \u062a\u06be\u06cc \u0644\u067e\u0679 \u06a9\u0631",
-            "english": "Where is that chest to which I used to cling while sleeping?"
+            "english": "Where is that chest to which I used to cling while sleeping?",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0633 \u0633\u0646 \u0645\u06cc\u06ba \u06a9\u06c1\u0648\u06ba \u06a9\u06cc\u0627 \u062c\u0648 \u0633\u062a\u0645 \u0645\u06cc\u06ba \u0646\u06d2 \u0627\u0679\u06be\u0627\u0626\u06d2",
             "tagged": "\u0627\u0633 \u0633\u0646 \u0645\u06cc\u06ba \u06a9\u06c1\u0648\u06ba \u06a9\u06cc\u0627 \u062c\u0648 \u0633\u062a\u0645 \u0645\u06cc\u06ba \u0646\u06d2 \u0627\u0679\u06be\u0627\u0626\u06d2",
-            "english": "What shall I say in this age about the atrocities I have endured?"
+            "english": "What shall I say in this age about the atrocities I have endured?",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u0627 \u0634\u0627\u06c1 \u0637\u0645\u0627\u0646\u0686\u06d2 \u0645\u062c\u06be\u06d2 \u0638\u0627\u0644\u0645 \u0646\u06d2 \u0644\u06af\u0627\u0626\u06d2",
             "tagged": "\u06cc\u0627 <PERSON>\u0634\u0627\u06c1</PERSON> \u0637\u0645\u0627\u0646\u0686\u06d2 \u0645\u062c\u06be\u06d2 \u0638\u0627\u0644\u0645 \u0646\u06d2 \u0644\u06af\u0627\u0626\u06d2",
-            "english": "O King, the oppressor has struck me with slaps."
+            "english": "O King, the oppressor has struck me with slaps.",
+            "entity_status": {
+                "\u0634\u0627\u06c1": {
+                    "entity": "\u0634\u0627\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0628\u064f\u0646\u062f\u06d2 \u0645\u0631\u06d2 \u0686\u06be\u06cc\u0646\u06d2 \u0645\u062c\u06be\u06d2 \u0646\u06cc\u0632\u06d2 \u0628\u06be\u06cc \u062f\u06a9\u06be\u0627\u0626\u06d2",
             "tagged": "\u0628\u064f\u0646\u062f\u06d2 \u0645\u0631\u06d2 \u0686\u06be\u06cc\u0646\u06d2 \u0645\u062c\u06be\u06d2 \u0646\u06cc\u0632\u06d2 \u0628\u06be\u06cc \u062f\u06a9\u06be\u0627\u0626\u06d2",
-            "english": "They snatched my belongings and showed me spears."
+            "english": "They snatched my belongings and showed me spears.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0646\u062f\u06be\u06d2 \u06c1\u0648\u0626\u06d2 \u06af\u0631\u062f\u0646 \u0645\u06cc\u06ba \u0631\u0633\u0646 \u06a9\u06be\u06cc\u0646\u0686\u062a\u06d2 \u0644\u0627\u0626\u06d2",
             "tagged": "\u0628\u0627\u0646\u062f\u06be\u06d2 \u06c1\u0648\u0626\u06d2 \u06af\u0631\u062f\u0646 \u0645\u06cc\u06ba \u0631\u0633\u0646 \u06a9\u06be\u06cc\u0646\u0686\u062a\u06d2 \u0644\u0627\u0626\u06d2",
-            "english": "They brought me with a rope tied around my neck."
+            "english": "They brought me with a rope tied around my neck.",
+            "entity_status": {}
         },
         {
             "original": "\u0646\u06d2 \u067e\u0627\u0633 \u06c1\u06cc\u06ba \u0622\u067e \u0627\u0648\u0631 \u0646\u06c1 \u0686\u0686\u0627 \u062c\u0627\u0646 \u06c1\u0645\u0627\u0631\u06d2",
             "tagged": "\u0646\u06d2 \u067e\u0627\u0633 \u06c1\u06cc\u06ba \u0622\u067e \u0627\u0648\u0631 \u0646\u06c1 <PERSON>\u0686\u0686\u0627 \u062c\u0627\u0646</PERSON> \u06c1\u0645\u0627\u0631\u06d2",
-            "english": "You are not here, nor is my uncle."
+            "english": "You are not here, nor is my uncle.",
+            "entity_status": {
+                "\u0686\u0686\u0627 \u062c\u0627\u0646": {
+                    "entity": "\u0686\u0686\u0627 \u062c\u0627\u0646",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0641\u0631\u06cc\u0627\u062f \u06a9\u06c1 \u0645\u062c\u0631\u0648\u062d \u06c1\u0648\u0626\u06d2 \u06a9\u0627\u0646 \u06c1\u0645\u0627\u0631\u06d2",
             "tagged": "\u0641\u0631\u06cc\u0627\u062f \u06a9\u06c1 \u0645\u062c\u0631\u0648\u062d \u06c1\u0648\u0626\u06d2 \u06a9\u0627\u0646 \u06c1\u0645\u0627\u0631\u06d2",
-            "english": "A cry that our ears have been wounded."
+            "english": "A cry that our ears have been wounded.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u062a\u0646\u06d2 \u0645\u06cc\u06ba \u06a9\u06c1\u0627 \u0634\u0645\u0631 \u0633\u062a\u0645 \u06af\u0631 \u0646\u06d2 \u06cc\u06c1 \u0622 \u06a9\u0631",
             "tagged": "\u0627\u062a\u0646\u06d2 \u0645\u06cc\u06ba \u06a9\u06c1\u0627 <PERSON>\u0634\u0645\u0631</PERSON> \u0633\u062a\u0645 \u06af\u0631 \u0646\u06d2 \u06cc\u06c1 \u0622 \u06a9\u0631",
-            "english": "Just then, the tyrant Shimmer came and said this."
+            "english": "Just then, the tyrant Shimmer came and said this.",
+            "entity_status": {
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u06d2 \u062c\u0627\u0624 \u0628\u0633 \u0627\u0628 \u062c\u0644\u062f \u0633\u0631 \u0633\u0628\u0637 \u067e\u06cc\u0645\u0628\u0631",
             "tagged": "\u062f\u06d2 \u062c\u0627\u0624 \u0628\u0633 \u0627\u0628 \u062c\u0644\u062f \u0633\u0631 <PERSON>\u0633\u0628\u0637 \u067e\u06cc\u0645\u0628\u0631</PERSON>",
-            "english": "Hand over the head of the grandson of the Prophet quickly."
+            "english": "Hand over the head of the grandson of the Prophet quickly.",
+            "entity_status": {
+                "\u0633\u0628\u0637 \u067e\u06cc\u0645\u0628\u0631": {
+                    "entity": "\u0633\u0628\u0637 \u067e\u06cc\u0645\u0628\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062d\u0627\u06a9\u0645 \u06a9\u0627 \u0645\u062c\u06be\u06d2 \u062d\u06a9\u0645 \u06cc\u06c1 \u067e\u06c1\u0648\u0646\u0686\u0627 \u06c1\u06d2 \u0645\u06a9\u0631\u0631",
             "tagged": "<PERSON>\u062d\u0627\u06a9\u0645</PERSON> \u06a9\u0627 \u0645\u062c\u06be\u06d2 \u062d\u06a9\u0645 \u06cc\u06c1 \u067e\u06c1\u0648\u0646\u0686\u0627 \u06c1\u06d2 \u0645\u06a9\u0631\u0631",
-            "english": "This order has come to me again from the governor."
+            "english": "This order has come to me again from the governor.",
+            "entity_status": {
+                "\u062d\u0627\u06a9\u0645": {
+                    "entity": "\u062d\u0627\u06a9\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u0645 \u0628\u06be\u0631 \u0633\u06d2 \u0632\u06cc\u0627\u062f\u06c1 \u0646\u06c1 \u0631\u06c1\u06d2 \u06cc\u0627\u06ba \u0633\u0631 \u0633\u0631\u0648\u0631",
             "tagged": "\u062f\u0645 \u0628\u06be\u0631 \u0633\u06d2 \u0632\u06cc\u0627\u062f\u06c1 \u0646\u06c1 \u0631\u06c1\u06d2 \u06cc\u0627\u06ba \u0633\u0631 <PERSON>\u0633\u0631\u0648\u0631</PERSON>",
-            "english": "Do not let the head of the lord remain here for more than a breath."
+            "english": "Do not let the head of the lord remain here for more than a breath.",
+            "entity_status": {
+                "\u0633\u0631\u0648\u0631": {
+                    "entity": "\u0633\u0631\u0648\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0631\u0648\u0646\u06cc \u06c1\u06d2 \u062a\u0648 \u062f\u06a9\u06be\u0644\u0627 \u062f\u0648 \u0630\u0631\u0627 \u0634\u06a9\u0644 \u0628\u062f\u0631 \u06a9\u0648",
             "tagged": "\u0631\u0648\u0646\u06cc \u06c1\u06d2 \u062a\u0648 \u062f\u06a9\u06be\u0644\u0627 \u062f\u0648 \u0630\u0631\u0627 \u0634\u06a9\u0644 <PERSON>\u0628\u062f\u0631</PERSON> \u06a9\u0648",
-            "english": "If you weep, then show me the face of Badr."
+            "english": "If you weep, then show me the face of Badr.",
+            "entity_status": {
+                "\u0628\u062f\u0631": {
+                    "entity": "\u0628\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u067e\u06c1\u0644\u06cc \u06c1\u0648 \u0633\u06a9\u06cc\u0646\u06c1 \u062a\u0648 \u062d\u0648\u0627\u0644\u06d2 \u06a9\u0631\u0648 \u0633\u0631 \u06a9\u0648",
             "tagged": "\u067e\u06c1\u0644\u06cc \u06c1\u0648 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u062a\u0648 \u062d\u0648\u0627\u0644\u06d2 \u06a9\u0631\u0648 \u0633\u0631 \u06a9\u0648",
-            "english": "If it is Sakina, then hand over the head."
+            "english": "If it is Sakina, then hand over the head.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
             "tagged": "<PERSON>\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633</PERSON>",
-            "english": "Elegy of Mir Anees."
+            "english": "Elegy of Mir Anees.",
+            "entity_status": {
+                "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633": {
+                    "entity": "\u0645\u0631\u062b\u06cc\u06c1 \u0645\u06cc\u0631 \u0627\u0646\u06cc\u0633",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
             "tagged": "\u062c\u0644\u062f \u0686\u0647\u0627\u0631\u0645",
-            "english": "Volume fourth."
+            "english": "Volume fourth.",
+            "entity_status": {}
         },
         {
             "original": "\u0646\u0627\u062f\u0627\u06ba \u0646\u06d2 \u0633\u0646\u06cc \u0634\u0645\u0631 \u06a9\u06cc \u0622\u0648\u0627\u0632 \u062c\u0648 \u0627\u06a9 \u0628\u0627\u0631",
             "tagged": "\u0646\u0627\u062f\u0627\u06ba \u0646\u06d2 \u0633\u0646\u06cc <PERSON>\u0634\u0645\u0631</PERSON> \u06a9\u06cc \u0622\u0648\u0627\u0632 \u062c\u0648 \u0627\u06a9 \u0628\u0627\u0631",
-            "english": "The foolish one heard Shimmer's voice just once."
+            "english": "The foolish one heard Shimmer's voice just once.",
+            "entity_status": {
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062a\u0646 \u06a9\u0627\u0646\u067e \u06af\u06cc\u0627 \u0633\u06c1\u0645 \u06af\u0626\u06cc \u0648\u06c1 \u062c\u06af\u0631 \u0627\u0641\u06af\u0627\u0631",
             "tagged": "\u062a\u0646 \u06a9\u0627\u0646\u067e \u06af\u06cc\u0627 \u0633\u06c1\u0645 \u06af\u0626\u06cc \u0648\u06c1 \u062c\u06af\u0631 \u0627\u0641\u06af\u0627\u0631",
-            "english": "Her body trembled, terrified and pained."
+            "english": "Her body trembled, terrified and pained.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u0627\u0646\u0648 \u0633\u06d2 \u0644\u067e\u0679 \u06a9\u06d2 \u06a9\u06c1\u0627 \u0627\u06d2 \u0645\u0627\u062f\u0631 \u063a\u0645 \u062e\u0648\u0627\u0631",
             "tagged": "\u0628\u0627\u0646\u0648 \u0633\u06d2 \u0644\u067e\u0679 \u06a9\u06d2 \u06a9\u06c1\u0627 \u0627\u06d2 <PERSON>\u0645\u0627\u062f\u0631</PERSON> \u063a\u0645 \u062e\u0648\u0627\u0631",
-            "english": "Clinging to the lady, she said, 'O Mother of compassion!'"
+            "english": "Clinging to the lady, she said, 'O Mother of compassion!'",
+            "entity_status": {
+                "\u0645\u0627\u062f\u0631": {
+                    "entity": "\u0645\u0627\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u0627\u06ba \u0627\u067e\u0646\u06cc \u0645\u06cc\u06ba \u062f\u0648\u06ba \u06af\u06cc \u067e\u06c1 \u06cc\u06c1 \u0633\u0631 \u062f\u0648\u06ba \u06af\u06cc \u0646\u06c1 \u0632\u0646\u06c1\u0627\u0631",
             "tagged": "\u062c\u0627\u06ba \u0627\u067e\u0646\u06cc \u0645\u06cc\u06ba \u062f\u0648\u06ba \u06af\u06cc \u067e\u06c1 \u06cc\u06c1 \u0633\u0631 \u062f\u0648\u06ba \u06af\u06cc \u0646\u06c1 \u0632\u0646\u06c1\u0627\u0631",
-            "english": "I will give my life, but I will not give up this head."
+            "english": "I will give my life, but I will not give up this head.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u0631\u062a\u06d2 \u0645\u06cc\u06ba \u0686\u06be\u067e\u0627 \u0644\u06cc\u062a\u06cc \u06c1\u0648\u06ba \u0627\u0633 \u062e\u0648\u06ba \u0628\u06be\u0631\u06d2 \u0633\u0631 \u06a9\u0648",
             "tagged": "\u06a9\u0631\u062a\u06d2 \u0645\u06cc\u06ba \u0686\u06be\u067e\u0627 \u0644\u06cc\u062a\u06cc \u06c1\u0648\u06ba \u0627\u0633 \u062e\u0648\u06ba \u0628\u06be\u0631\u06d2 \u0633\u0631 \u06a9\u0648",
-            "english": "I hide this blood-stained head."
+            "english": "I hide this blood-stained head.",
+            "entity_status": {}
         },
         {
             "original": "\u062f\u06cc\u06a9\u06be\u0627 \u0646\u06c1\u06cc\u06ba \u062c\u06cc \u0628\u06be\u0631 \u06a9\u06d2 \u0627\u0628\u06be\u06cc \u0627\u067e\u0646\u06d2 \u067e\u062f\u0631 \u06a9\u0648",
             "tagged": "\u062f\u06cc\u06a9\u06be\u0627 \u0646\u06c1\u06cc\u06ba \u062c\u06cc \u0628\u06be\u0631 \u06a9\u06d2 \u0627\u0628\u06be\u06cc \u0627\u067e\u0646\u06d2 <PERSON>\u067e\u062f\u0631</PERSON> \u06a9\u0648",
-            "english": "I have not yet seen my father to my heart's content."
+            "english": "I have not yet seen my father to my heart's content.",
+            "entity_status": {
+                "\u067e\u062f\u0631": {
+                    "entity": "\u067e\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0633\u0646 \u0644\u0648 \u06cc\u06c1 \u0648\u0635\u06cc\u062a \u0645\u0631\u06cc \u062a\u0645 \u0633\u0628 \u06a9\u06d2 \u0645\u06cc\u06ba \u0642\u0631\u0628\u0627\u06ba",
             "tagged": "\u0633\u0646 \u0644\u0648 \u06cc\u06c1 \u0648\u0635\u06cc\u062a \u0645\u0631\u06cc \u062a\u0645 \u0633\u0628 \u06a9\u06d2 \u0645\u06cc\u06ba \u0642\u0631\u0628\u0627\u06ba",
-            "english": "Listen to this will, I am sacrificed for you all."
+            "english": "Listen to this will, I am sacrificed for you all.",
+            "entity_status": {}
         },
         {
             "original": "\u062a\u0645 \u0628\u06be\u06cc \u0646\u06c1 \u0627\u0633\u06d2 \u062f\u06cc\u062c\u0648 \u0633\u0631 \u0633\u0631\u0648\u0631\u0650 \u0630\u06cc \u0634\u0627\u06ba",
             "tagged": "\u062a\u0645 \u0628\u06be\u06cc \u0646\u06c1 \u0627\u0633\u06d2 \u062f\u06cc\u062c\u0648 \u0633\u0631 <PERSON>\u0633\u0631\u0648\u0631\u0650 \u0630\u06cc \u0634\u0627\u06ba</PERSON>",
-            "english": "Do not give them the head of my lord."
+            "english": "Do not give them the head of my lord.",
+            "entity_status": {
+                "\u0633\u0631\u0648\u0631\u0650 \u0630\u06cc \u0634\u0627\u06ba": {
+                    "entity": "\u0633\u0631\u0648\u0631\u0650 \u0630\u06cc \u0634\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062c\u06be\u0646\u062c\u06be\u0644\u0627 ke \u0645\u062c\u06be\u06d2 \u0642\u062a\u0644 \u06a9\u0631\u06d2 \u06af\u0631 \u06cc\u06c1 \u0628\u062f \u0627\u06cc\u0645\u0627\u06ba",
             "tagged": "\u062c\u06be\u0646\u062c\u06be\u0644\u0627 \u06a9\u06d2 \u0645\u062c\u06be\u06d2 \u0642\u062a\u0644 \u06a9\u0631\u06d2 \u06af\u0631 \u06cc\u06c1 \u0628\u062f \u0627\u06cc\u0645\u0627\u06ba",
-            "english": "If they harm me, may they be cursed."
+            "english": "If they harm me, may they be cursed.",
+            "entity_status": {}
         },
         {
             "original": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u0631\u06a9\u06be \u062f\u06cc\u062c\u06cc\u0648 \u0645\u0631\u06cc \u0642\u0628\u0631 \u0645\u06cc\u06ba \u0627\u0645\u0651\u0627\u06ba",
             "tagged": "\u0633\u0631 \u0628\u0627\u067e \u06a9\u0627 \u0631\u06a9\u06be \u062f\u06cc\u062c\u06cc\u0648 \u0645\u0631\u06cc \u0642\u0628\u0631 \u0645\u06cc\u06ba <PERSON>\u0627\u0645\u0651\u0627\u06ba</PERSON>",
-            "english": "Place my father's head in my grave, O Mother."
+            "english": "Place my father's head in my grave, O Mother.",
+            "entity_status": {
+                "\u0627\u0645\u0651\u0627\u06ba": {
+                    "entity": "\u0627\u0645\u0651\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06c1\u0648\u06af\u0627 \u0646\u06c1 \u0642\u0644\u0642 \u0631\u0648\u062d \u0645\u0631\u06cc \u0634\u0627\u062f \u0631\u06c1\u06d2 \u06af\u06cc",
             "tagged": "\u06c1\u0648\u06af\u0627 \u0646\u06c1 \u0642\u0644\u0642 \u0631\u0648\u062d \u0645\u0631\u06cc \u0634\u0627\u062f \u0631\u06c1\u06d2 \u06af\u06cc",
-            "english": "My soul will not be troubled; it will remain happy."
+            "english": "My soul will not be troubled; it will remain happy.",
+            "entity_status": {}
         },
         {
             "original": "\u0648\u0627\u0644\u0644\u06c1 \u0645\u0631\u06cc \u06af\u0648\u0631 \u0628\u06be\u06cc \u0622\u0628\u0627\u062f \u0631\u06c1\u06d2 \u06af\u06cc",
             "tagged": "\u0648\u0627\u0644\u0644\u06c1 \u0645\u0631\u06cc \u06af\u0648\u0631 \u0628\u06be\u06cc \u0622\u0628\u0627\u062f \u0631\u06c1\u06d2 \u06af\u06cc",
-            "english": "By God, my grave will also remain prosperous."
+            "english": "By God, my grave will also remain prosperous.",
+            "entity_status": {}
         },
         {
             "original": "\u0688\u06cc\u0648\u0691\u06be\u06cc \u0633\u06d2 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u06cc \u0633\u0646\u06cc \u0634\u0645\u0631 \u0646\u06d2 \u062a\u0642\u0631\u06cc\u0631",
             "tagged": "\u0688\u06cc\u0648\u0691\u06be\u06cc \u0633\u06d2 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u06cc \u0633\u0646\u06cc <PERSON>\u0634\u0645\u0631</PERSON> \u0646\u06d2 \u062a\u0642\u0631\u06cc\u0631",
-            "english": "From the courtyard, Shimmer heard Sakina's speech."
+            "english": "From the courtyard, Shimmer heard Sakina's speech.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u06af\u06cc\u0627 \u0686\u06cc\u06ba \u0628\u06c1 \u062c\u0628\u06cc\u06ba \u062f\u0633\u062a \u0628\u0647 \u0634\u0645\u0634\u06cc\u0631",
             "tagged": "\u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u06af\u06cc\u0627 \u0686\u06cc\u06ba \u0628\u06c1 \u062c\u0628\u06cc\u06ba \u062f\u0633\u062a \u0628\u06c1 \u0634\u0645\u0634\u06cc\u0631",
-            "english": "He entered the prison, hands on the sword."
+            "english": "He entered the prison, hands on the sword.",
+            "entity_status": {}
         },
         {
             "original": "\u062a\u06be\u0631\u0651\u0627\u0626\u06d2 \u062d\u0631\u0645 \u0633\u06c1\u0645 \u06af\u0626\u06cc \u062f\u062e\u062a\u0631 \u0634\u0628\u06cc\u0631",
             "tagged": "\u062a\u06be\u0631\u0651\u0627\u0626\u06d2 \u062d\u0631\u0645 \u0633\u06c1\u0645 \u06af\u0626\u06cc <PERSON>\u062f\u062e\u062a\u0631 \u0634\u0628\u06cc\u0631</PERSON>",
-            "english": "The sacred place trembled, and the daughter of Shabir was terrified."
+            "english": "The sacred place trembled, and the daughter of Shabir was terrified.",
+            "entity_status": {
+                "\u062f\u062e\u062a\u0631 \u0634\u0628\u06cc\u0631": {
+                    "entity": "\u062f\u062e\u062a\u0631 \u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0641\u0631\u0645\u0627\u0646\u06d2 \u0644\u06af\u06d2 \u0627\u064f\u0633 \u0633\u06d2 \u06cc\u06c1 \u062a\u0628 \u0639\u0627\u0628\u062f \u062f\u0644 \u06af\u06cc\u0631",
             "tagged": "\u0641\u0631\u0645\u0627\u0646\u06d2 \u0644\u06af\u06d2 \u0627\u064f\u0633 \u0633\u06d2 \u06cc\u06c1 \u062a\u0628 <PERSON>\u0639\u0627\u0628\u062f</PERSON> \u062f\u0644 \u06af\u06cc\u0631",
-            "english": "He then said to her, the heartbroken worshipper."
+            "english": "He then said to her, the heartbroken worshipper.",
+            "entity_status": {
+                "\u0639\u0627\u0628\u062f": {
+                    "entity": "\u0639\u0627\u0628\u062f",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0633 \u0638\u0644\u0645 \u0631\u0633\u06cc\u062f\u06c1 \u06a9\u0648 \u0646\u06c1 \u0622\u0632\u0627\u0631 \u062f\u06d2 \u0628\u0633 \u06a9\u0631",
             "tagged": "\u0627\u0633 \u0638\u0644\u0645 \u0631\u0633\u06cc\u062f\u06c1 \u06a9\u0648 \u0646\u06c1 \u0622\u0632\u0627\u0631 \u062f\u06d2 \u0628\u0633 \u06a9\u0631",
-            "english": "Stop torturing this one who has been afflicted by such cruelty."
+            "english": "Stop torturing this one who has been afflicted by such cruelty.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0639\u0635\u0648\u0645 \u0633\u06a9\u06cc\u0646\u06c1 \u06a9\u06cc \u06cc\u062a\u06cc\u0645\u06cc \u067e\u06c1 \u062a\u0631\u0633 \u06a9\u0631",
             "tagged": "\u0645\u0639\u0635\u0648\u0645 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u06a9\u06cc \u06cc\u062a\u06cc\u0645\u06cc \u067e\u06c1 \u062a\u0631\u0633 \u06a9\u0631",
-            "english": "Have mercy on the orphaned innocent Sakina."
+            "english": "Have mercy on the orphaned innocent Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0638\u0627\u0644\u0645 \u0646\u06d2 \u0628\u06c1 \u0632\u0648\u0631 \u0627\u0633 \u0633\u06d2 \u0633\u0631 \u0634\u0627\u06c1 \u06a9\u0648 \u0686\u06be\u06cc\u0646\u0627",
             "tagged": "\u0638\u0627\u0644\u0645 \u0646\u06d2 \u0628\u06c1 \u0632\u0648\u0631 \u0627\u0633 \u0633\u06d2 \u0633\u0631 <PERSON>\u0634\u0627\u06c1</PERSON> \u06a9\u0648 \u0686\u06be\u06cc\u0646\u0627",
-            "english": "The oppressor forcefully snatched the head of the king from her."
+            "english": "The oppressor forcefully snatched the head of the king from her.",
+            "entity_status": {
+                "\u0634\u0627\u06c1": {
+                    "entity": "\u0634\u0627\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0648\u0631 \u0644\u06d2 \u06af\u06cc\u0627 \u0632\u0646\u062f\u0627\u06ba \u0633\u06d2 \u0633\u0631 \u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u0627",
             "tagged": "\u0627\u0648\u0631 \u0644\u06d2 \u06af\u06cc\u0627 \u0632\u0646\u062f\u0627\u06ba \u0633\u06d2 \u0633\u0631 <PERSON>\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u0627</PERSON>",
-            "english": "And he took the head of the king of Medina from the prison."
+            "english": "And he took the head of the king of Medina from the prison.",
+            "entity_status": {
+                "\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u0627": {
+                    "entity": "\u0634\u0627\u06c1 \u0645\u062f\u06cc\u0646\u0627",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0631\u0627\u0646\u0688\u06cc\u06ba \u062a\u0648 \u0644\u06af\u06cc \u067e\u06cc\u0679\u0646\u06d2 \u0631\u0648 \u06a9\u0631 \u0633\u0631 \u0648 \u0633\u06cc\u0646\u0627",
             "tagged": "\u0631\u0627\u0646\u0688\u06cc\u06ba \u062a\u0648 \u0644\u06af\u06cc \u067e\u06cc\u0679\u0646\u06d2 \u0631\u0648 \u06a9\u0631 \u0633\u0631 \u0648 \u0633\u06cc\u0646\u0627",
-            "english": "They began to wail and beat their heads and chests."
+            "english": "They began to wail and beat their heads and chests.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0648\u0631 \u0645\u0631 \u06af\u0626\u06cc \u067e\u0633 \u06c1\u0627\u0626\u06d2 \u067e\u062f\u0631 \u06a9\u06c1\u06c1 \u06a9\u06d2 \u0633\u06a9\u06cc\u0646\u0627",
             "tagged": "\u0627\u0648\u0631 \u0645\u0631 \u06af\u0626\u06cc \u067e\u0633 \u06c1\u0627\u0626\u06d2 <PERSON>\u067e\u062f\u0631</PERSON> \u06a9\u06c1\u06c1 \u06a9\u06d2 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON>",
-            "english": "And she died, lamenting 'O Father,' Sakina said."
+            "english": "And she died, lamenting 'O Father,' Sakina said.",
+            "entity_status": {
+                "\u067e\u062f\u0631": {
+                    "entity": "\u067e\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u06a9 \u062f\u06be\u0648\u0645 \u06c1\u0648\u0626\u06cc \u062e\u0627\u0646\u06c1 \u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u0628\u06a9\u0627 \u06a9\u06cc",
             "tagged": "\u0627\u06a9 \u062f\u06be\u0648\u0645 \u06c1\u0648\u0626\u06cc \u062e\u0627\u0646\u06c1 \u0632\u0646\u062f\u0627\u06ba \u0645\u06cc\u06ba \u0628\u06a9\u0627 \u06a9\u06cc",
-            "english": "There was a commotion in the prison of weeping."
+            "english": "There was a commotion in the prison of weeping.",
+            "entity_status": {}
         },
         {
             "original": "\u062a\u06be\u0627 \u0634\u0648\u0631 \u06a9\u06c1 \u0634\u0628\u06cc\u0631 \u06a9\u06cc \u0639\u0627\u0634\u0642 \u0646\u06d2 \u0642\u0636\u0627 \u06a9\u06cc",
             "tagged": "\u062a\u06be\u0627 \u0634\u0648\u0631 \u06a9\u06c1 <PERSON>\u0634\u0628\u06cc\u0631</PERSON> \u06a9\u06cc \u0639\u0627\u0634\u0642 \u0646\u06d2 \u0642\u0636\u0627 \u06a9\u06cc",
-            "english": "There was an uproar that the lover of Shabir had met her fate."
+            "english": "There was an uproar that the lover of Shabir had met her fate.",
+            "entity_status": {
+                "\u0634\u0628\u06cc\u0631": {
+                    "entity": "\u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0627\u06ba \u0628\u0648\u0644\u06cc \u06a9\u06c1 \u0628\u0686\u06cc \u062a\u0631\u06cc \u0635\u0648\u0631\u062a \u06a9\u06d2 \u0645\u06cc\u06ba \u0635\u062f\u0642\u06d2",
             "tagged": "\u0645\u0627\u06ba \u0628\u0648\u0644\u06cc \u06a9\u06c1 \u0628\u0686\u06cc \u062a\u0631\u06cc \u0635\u0648\u0631\u062a \u06a9\u06d2 \u0645\u06cc\u06ba \u0635\u062f\u0642\u06d2",
-            "english": "The mother said, 'I sacrifice myself for your beautiful face.'"
+            "english": "The mother said, 'I sacrifice myself for your beautiful face.'",
+            "entity_status": {}
         },
         {
             "original": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc \u062a\u0648 \u062c\u062f\u0627 \u06c1\u0648 \u06af\u0626\u06cc \u0645\u062c\u06be \u0633\u06d2",
             "tagged": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc \u062a\u0648 \u062c\u062f\u0627 \u06c1\u0648 \u06af\u0626\u06cc \u0645\u062c\u06be \u0633\u06d2",
-            "english": "Alas, my beloved has been separated from me."
+            "english": "Alas, my beloved has been separated from me.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0627\u06ba \u0686\u06be\u0648\u0679\u06cc \u0633\u06cc \u0645\u06cc\u062a \u062a\u0631\u06cc \u06a9\u0646 \u0622\u0646\u06a9\u06be\u0648\u06ba \u0633\u06d2 \u062f\u06cc\u06a9\u06be\u06d2",
             "tagged": "\u0645\u0627\u06ba \u0686\u06be\u0648\u0679\u06cc \u0633\u06cc \u0645\u06cc\u062a \u062a\u0631\u06cc \u06a9\u0646 \u0622\u0646\u06a9\u06be\u0648\u06ba \u0633\u06d2 \u062f\u06cc\u06a9\u06be\u06d2",
-            "english": "O Mother, see your small corpse with these eyes."
+            "english": "O Mother, see your small corpse with these eyes.",
+            "entity_status": {}
         },
         {
             "original": "\u0622\u062e\u0631 \u06c1\u0648\u0626\u06cc\u06ba \u0628\u06cc \u0628\u06cc \u0646\u06c1 \u0627\u064f\u0679\u06be\u0627\u06d2 \u06af\u0626\u06d2 \u0635\u062f\u0645\u06d2",
             "tagged": "\u0622\u062e\u0631 \u06c1\u0648\u0626\u06cc\u06ba \u0628\u06cc \u0628\u06cc \u0646\u06c1 \u0627\u064f\u0679\u06be\u0627\u06d2 \u06af\u0626\u06d2 \u0635\u062f\u0645\u06d2",
-            "english": "Finally, the lady could not bear the sorrows."
+            "english": "Finally, the lady could not bear the sorrows.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0627\u062f\u0631 \u062a\u0631\u06cc \u0645\u0638\u0644\u0648\u0645\u06cc \u06a9\u06d2 \u0642\u0631\u0628\u0627\u0646 \u0633\u06a9\u06cc\u0646\u06c1",
             "tagged": "\u0645\u0627\u062f\u0631 \u062a\u0631\u06cc \u0645\u0638\u0644\u0648\u0645\u06cc \u06a9\u06d2 \u0642\u0631\u0628\u0627\u0646 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON>",
-            "english": "O Mother, I sacrifice myself for your oppression, Sakina."
+            "english": "O Mother, I sacrifice myself for your oppression, Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0639\u0635\u0648\u0645 \u0633\u06a9\u06cc\u0646\u06c1 \u0645\u0631\u06cc \u0646\u0627\u062f\u0627\u0646 \u0633\u06a9\u06cc\u0646\u06c1",
             "tagged": "\u0645\u0639\u0635\u0648\u0645 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON> \u0645\u0631\u06cc \u0646\u0627\u062f\u0627\u0646 <PERSON>\u0633\u06a9\u06cc\u0646\u06c1</PERSON>",
-            "english": "Innocent Sakina, my foolish Sakina."
+            "english": "Innocent Sakina, my foolish Sakina.",
+            "entity_status": {
+                "\u0633\u06a9\u06cc\u0646\u06c1": {
+                    "entity": "\u0633\u06a9\u06cc\u0646\u06c1",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0635\u062f\u0642\u06d2 \u06af\u0626\u06cc \u0627\u0628 \u0631\u0648\u062a\u06cc \u0646\u06c1\u06cc\u06ba \u0634\u0645\u0631 \u06a9\u06d2 \u0688\u0631 \u0633\u06d2",
             "tagged": "\u0635\u062f\u0642\u06d2 \u06af\u0626\u06cc \u0627\u0628 \u0631\u0648\u062a\u06cc \u0646\u06c1\u06cc\u06ba <PERSON>\u0634\u0645\u0631</PERSON> \u06a9\u06d2 \u0688\u0631 \u0633\u06d2",
-            "english": "Gone is my sincerity, now I do not weep for the fear of Shimmer."
+            "english": "Gone is my sincerity, now I do not weep for the fear of Shimmer.",
+            "entity_status": {
+                "\u0634\u0645\u0631": {
+                    "entity": "\u0634\u0645\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06a9\u06c1\u062a\u06cc \u0646\u06c1\u06cc\u06ba \u0627\u0645\u0627\u06ba \u06c1\u0645\u06cc\u06ba \u0645\u0644\u0648\u0627 \u062f\u0648 \u067e\u062f\u0631 \u0633\u06d2",
             "tagged": "\u06a9\u06c1\u062a\u06cc \u0646\u06c1\u06cc\u06ba <PERSON>\u0627\u0645\u0627\u06ba</PERSON> \u06c1\u0645\u06cc\u06ba \u0645\u0644\u0648\u0627 \u062f\u0648 <PERSON>\u067e\u062f\u0631</PERSON> \u0633\u06d2",
-            "english": "She does not say, 'Mother, let us meet our father.'"
+            "english": "She does not say, 'Mother, let us meet our father.'",
+            "entity_status": {
+                "\u0627\u0645\u0627\u06ba": {
+                    "entity": "\u0627\u0645\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u067e\u062f\u0631": {
+                    "entity": "\u067e\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06af\u06be\u0631 \u062f\u0627\u062f\u06cc \u06a9\u06d2 \u062a\u0645 \u0622\u062c \u0686\u0644\u06cc \u06c1\u0648 \u0645\u0631\u06d2 \u06af\u06be\u0631 \u0633\u06d2",
             "tagged": "\u06af\u06be\u0631 <PERSON>\u062f\u0627\u062f\u06cc</PERSON> \u06a9\u06d2 \u062a\u0645 \u0622\u062c \u0686\u0644\u06cc \u06c1\u0648 \u0645\u0631\u06d2 \u06af\u06be\u0631 \u0633\u06d2",
-            "english": "Today you have left my house for grandmother's house."
+            "english": "Today you have left my house for grandmother's house.",
+            "entity_status": {
+                "\u062f\u0627\u062f\u06cc": {
+                    "entity": "\u062f\u0627\u062f\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u0646\u06be \u0645\u0648\u0691 \u06af\u0626\u06cc\u06ba \u0645\u0627\u062f\u0631 \u062a\u0641\u06cc\u062a\u062f\u06c1 \u062c\u06af\u0631 \u0633\u06d2",
             "tagged": "\u0645\u0646\u06be \u0645\u0648\u0691 \u06af\u0626\u06cc\u06ba <PERSON>\u0645\u0627\u062f\u0631</PERSON> \u062a\u0641\u06cc\u062a\u062f\u06c1 \u062c\u06af\u0631 \u0633\u06d2",
-            "english": "The mother has turned away from the wounded heart."
+            "english": "The mother has turned away from the wounded heart.",
+            "entity_status": {
+                "\u0645\u0627\u062f\u0631": {
+                    "entity": "\u0645\u0627\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0645\u06cc\u06ba \u0631\u0648\u062a\u06cc \u06c1\u0648\u06ba \u0628\u06cc\u062f\u0627\u0631 \u0646\u06c1\u06cc\u06ba \u06c1\u0648\u062a\u06cc \u06c1\u0648 \u0628\u06cc \u0628\u06cc",
             "tagged": "\u0645\u06cc\u06ba \u0631\u0648\u062a\u06cc \u06c1\u0648\u06ba \u0628\u06cc\u062f\u0627\u0631 \u0646\u06c1\u06cc\u06ba \u06c1\u0648\u062a\u06cc \u06c1\u0648 <PERSON>\u0628\u06cc \u0628\u06cc</PERSON>",
-            "english": "I cry, but you do not wake, O lady."
+            "english": "I cry, but you do not wake, O lady.",
+            "entity_status": {
+                "\u0628\u06cc \u0628\u06cc": {
+                    "entity": "\u0628\u06cc \u0628\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u067e\u06be\u0631 \u0631\u06a9\u06be \u06a9\u06d2 \u0645\u0646\u06be \u0627\u0633 \u0628\u0686\u06cc \u06a9\u06d2 \u0645\u0646\u06be \u067e\u0631 \u06cc\u06c1 \u067e\u06a9\u0627\u0631\u06cc",
             "tagged": "\u067e\u06be\u0631 \u0631\u06a9\u06be \u06a9\u06d2 \u0645\u0646\u06be \u0627\u0633 \u0628\u0686\u06cc \u06a9\u06d2 \u0645\u0646\u06be \u067e\u0631 \u06cc\u06c1 \u067e\u06a9\u0627\u0631\u06cc",
-            "english": "Then placing this on the mouth of the child, she cried out."
+            "english": "Then placing this on the mouth of the child, she cried out.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0635\u063a\u0631 \u06a9\u06cc \u0637\u0631\u062d \u0686\u06be\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645 \u06c1\u0645\u06cc\u06ba \u0648\u0627\u0631\u06cc",
             "tagged": "\u0627\u0635\u063a\u0631 \u06a9\u06cc \u0637\u0631\u062d \u0686\u06be\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645 \u06c1\u0645\u06cc\u06ba \u0648\u0627\u0631\u06cc",
-            "english": "You left us like Asghar."
+            "english": "You left us like Asghar.",
+            "entity_status": {}
         },
         {
             "original": "\u0628\u06cc \u0628\u06cc \u0645\u06cc\u06ba \u0646\u06c1\u06cc\u06ba \u062c\u06cc\u0646\u06d2 \u06a9\u06cc \u0641\u0631\u0642\u062a \u0645\u06cc\u06ba \u062a\u0645\u06be\u0627\u0631\u06cc",
             "tagged": "<PERSON>\u0628\u06cc \u0628\u06cc</PERSON> \u0645\u06cc\u06ba \u0646\u06c1\u06cc\u06ba \u062c\u06cc\u0646\u06d2 \u06a9\u06cc \u0641\u0631\u0642\u062a \u0645\u06cc\u06ba \u062a\u0645\u06be\u0627\u0631\u06cc",
-            "english": "O lady, I cannot live in separation from you."
+            "english": "O lady, I cannot live in separation from you.",
+            "entity_status": {
+                "\u0628\u06cc \u0628\u06cc": {
+                    "entity": "\u0628\u06cc \u0628\u06cc",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06cc \u0639\u0627\u0634\u0642 \u0645\u0631\u06cc \u0628\u06cc\u06a9\u0633 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
             "tagged": "\u06c1\u06d2 \u06c1\u06d2 \u0645\u0631\u06cc \u0639\u0627\u0634\u0642 \u0645\u0631\u06cc \u0628\u06cc\u06a9\u0633 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
-            "english": "Oh, my beloved, my helpless, my dear."
+            "english": "Oh, my beloved, my helpless, my dear.",
+            "entity_status": {}
         },
         {
             "original": "\u0645\u0627\u062f\u0631 \u0633\u06d2 \u0628\u0691\u06d2 \u0648\u0642\u062a \u0645\u06cc\u06ba \u0645\u0646\u06be \u0645\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645",
             "tagged": "<PERSON>\u0645\u0627\u062f\u0631</PERSON> \u0633\u06d2 \u0628\u0691\u06d2 \u0648\u0642\u062a \u0645\u06cc\u06ba \u0645\u0646\u06be \u0645\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645",
-            "english": "You turned away from the mother after a long time."
+            "english": "You turned away from the mother after a long time.",
+            "entity_status": {
+                "\u0645\u0627\u062f\u0631": {
+                    "entity": "\u0645\u0627\u062f\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u0631\u0648\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0686\u06be\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645",
             "tagged": "\u0627\u0633 \u0642\u06cc\u062f \u0645\u06cc\u06ba \u0631\u0648\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0686\u06be\u0648\u0691 \u06af\u0626\u06cc\u06ba \u062a\u0645",
-            "english": "You left me to weep in this imprisonment."
+            "english": "You left me to weep in this imprisonment.",
+            "entity_status": {}
         },
         {
             "original": "\u0646\u0646\u06be\u06cc \u0633\u06cc \u06a9\u06c1\u0627\u06ba \u0642\u0628\u0631 \u0628\u0646\u0627\u0624\u06ba \u0645\u06cc\u06ba \u062a\u0645\u06be\u0627\u0631\u06cc",
             "tagged": "\u0646\u0646\u06be\u06cc \u0633\u06cc \u06a9\u06c1\u0627\u06ba \u0642\u0628\u0631 \u0628\u0646\u0627\u0624\u06ba \u0645\u06cc\u06ba \u062a\u0645\u06be\u0627\u0631\u06cc",
-            "english": "Where can I make a grave for you, my little one?"
+            "english": "Where can I make a grave for you, my little one?",
+            "entity_status": {}
         },
         {
             "original": "\u0686\u0627\u062f\u0631 \u0628\u06be\u06cc \u0646\u06c1\u06cc\u06ba \u062c\u0633 \u06a9\u0627 \u06a9\u0641\u0646 \u062f\u0648\u06ba \u062a\u0645\u06be\u06cc\u06ba \u0648\u0627\u0631\u06cc",
             "tagged": "\u0686\u0627\u062f\u0631 \u0628\u06be\u06cc \u0646\u06c1\u06cc\u06ba \u062c\u0633 \u06a9\u0627 \u06a9\u0641\u0646 \u062f\u0648\u06ba \u062a\u0645\u06be\u06cc\u06ba \u0648\u0627\u0631\u06cc",
-            "english": "There is not even a shroud to give you, my dear."
+            "english": "There is not even a shroud to give you, my dear.",
+            "entity_status": {}
         },
         {
             "original": "\u067e\u0631\u062f\u06cc\u0633 \u0645\u06cc\u06ba \u06a9\u06cc \u062a\u0648 \u0646\u06d2 \u0642\u0636\u0627 \u0627\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
             "tagged": "\u067e\u0631\u062f\u06cc\u0633 \u0645\u06cc\u06ba \u06a9\u06cc \u062a\u0648 \u0646\u06d2 \u0642\u0636\u0627 \u0627\u06d2 \u0645\u0631\u06cc \u067e\u06cc\u0627\u0631\u06cc",
-            "english": "In the foreign land, you met your fate, O my beloved."
+            "english": "In the foreign land, you met your fate, O my beloved.",
+            "entity_status": {}
         },
         {
             "original": "\u06a9\u06cc\u0627 \u0622\u062e\u0631\u06cc \u062e\u062f\u0645\u062a \u06a9\u0631\u06d2 \u0645\u0627\u06ba \u062f\u0631\u062f \u06a9\u06cc \u0645\u0627\u0631\u06cc",
             "tagged": "\u06a9\u06cc\u0627 \u0622\u062e\u0631\u06cc \u062e\u062f\u0645\u062a \u06a9\u0631\u06d2 <PERSON>\u0645\u0627\u06ba</PERSON> \u062f\u0631\u062f \u06a9\u06cc \u0645\u0627\u0631\u06cc",
-            "english": "What last service can a mother, afflicted with pain, perform?"
+            "english": "What last service can a mother, afflicted with pain, perform?",
+            "entity_status": {
+                "\u0645\u0627\u06ba": {
+                    "entity": "\u0645\u0627\u06ba",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u067e\u0648\u0634\u06cc\u062f\u06c1 \u062a\u06c1\u0650 \u062e\u0627\u06a9 \u062c\u0648 \u062a\u0646 \u06c1\u0648\u06af\u0627 \u062a\u0645\u06be\u0627\u0631\u0627",
             "tagged": "\u067e\u0648\u0634\u06cc\u062f\u06c1 \u062a\u06c1\u0650 \u062e\u0627\u06a9 \u062c\u0648 \u062a\u0646 \u06c1\u0648\u06af\u0627 \u062a\u0645\u06be\u0627\u0631\u0627",
-            "english": "What remains of you will be hidden beneath the soil."
+            "english": "What remains of you will be hidden beneath the soil.",
+            "entity_status": {}
         },
         {
             "original": "\u06cc\u06c1 \u062e\u0648\u06ba \u0628\u06be\u0631\u0627 \u06a9\u0631\u062a\u0627 \u06c1\u06cc \u06a9\u0641\u0646 \u06c1\u0648\u06af\u0627 \u062a\u0645\u06be\u0627\u0631\u0627",
             "tagged": "\u06cc\u06c1 \u062e\u0648\u06ba \u0628\u06be\u0631\u0627 \u06a9\u0631\u062a\u0627 \u06c1\u06cc \u06a9\u0641\u0646 \u06c1\u0648\u06af\u0627 \u062a\u0645\u06be\u0627\u0631\u0627",
-            "english": "This blood-stained cloth will be your shroud."
+            "english": "This blood-stained cloth will be your shroud.",
+            "entity_status": {}
         },
         {
             "original": "\u0627\u0633 \u0628\u06cc\u0646 \u0633\u06d2 \u0628\u0627\u0646\u0648 \u06a9\u06d2 \u06c1\u0648\u0627 \u0634\u0648\u0631 \u0642\u06cc\u0627\u0645\u062a",
             "tagged": "\u0627\u0633 \u0628\u06cc\u0646 \u0633\u06d2 <PERSON>\u0628\u0627\u0646\u0648</PERSON> \u06a9\u06d2 \u06c1\u0648\u0627 \u0634\u0648\u0631 \u0642\u06cc\u0627\u0645\u062a",
-            "english": "The cry of the lady caused a commotion of the Day of Judgment."
+            "english": "The cry of the lady caused a commotion of the Day of Judgment.",
+            "entity_status": {
+                "\u0628\u0627\u0646\u0648": {
+                    "entity": "\u0628\u0627\u0646\u0648",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0627\u0648\u0631 \u0632\u06cc\u0646\u0628 \u0648 \u06a9\u0644\u062b\u0648\u0645 \u0628\u06be\u06cc \u0631\u0648\u062a\u06cc \u062a\u06be\u06cc\u06ba \u0628\u06c1 \u0634\u062f\u062a",
             "tagged": "\u0627\u0648\u0631 <PERSON>\u0632\u06cc\u0646\u0628</PERSON> \u0648 <PERSON>\u06a9\u0644\u062b\u0648\u0645</PERSON> \u0628\u06be\u06cc \u0631\u0648\u062a\u06cc \u062a\u06be\u06cc\u06ba \u0628\u06c1 \u0634\u062f\u062a",
-            "english": "And Zainab and Kulthum were also crying intensely."
+            "english": "And Zainab and Kulthum were also crying intensely.",
+            "entity_status": {
+                "\u0632\u06cc\u0646\u0628": {
+                    "entity": "\u0632\u06cc\u0646\u0628",
+                    "tag": "PERSON",
+                    "user_updated": null
+                },
+                "\u06a9\u0644\u062b\u0648\u0645": {
+                    "entity": "\u06a9\u0644\u062b\u0648\u0645",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u0639\u0627\u0628\u062f \u06a9\u0648 \u0628\u06be\u06cc \u062a\u06be\u06cc \u0686\u06be\u0648\u0679\u06cc \u0628\u06c1\u0646 \u06a9\u06cc \u0628\u0691\u06cc \u0627\u064f\u0644\u0641\u062a",
             "tagged": "\u0639\u0627\u0628\u062f \u06a9\u0648 \u0628\u06be\u06cc \u062a\u06be\u06cc \u0686\u06be\u0648\u0679\u06cc \u0628\u06c1\u0646 \u06a9\u06cc \u0628\u0691\u06cc \u0627\u064f\u0644\u0641\u062a",
-            "english": "Abid also had great affection for his little sister."
+            "english": "Abid also had great affection for his little sister.",
+            "entity_status": {}
         },
         {
             "original": "\u062e\u0627\u0645\u0648\u0634 \u0627\u0646\u06cc\u0633\u0614 \u0622\u06af\u06d2 \u0646\u06c1\u06cc\u06ba \u0644\u06a9\u06be\u0646\u06d2 \u06a9\u06cc \u0637\u0627\u0642\u062a",
             "tagged": "<PERSON>\u0627\u0646\u06cc\u0633\u0614</PERSON> \u062e\u0627\u0645\u0648\u0634 \u0622\u06af\u06d2 \u0646\u06c1\u06cc\u06ba \u0644\u06a9\u06be\u0646\u06d2 \u06a9\u06cc \u0637\u0627\u0642\u062a",
-            "english": "Anis remains silent, unable to write further."
+            "english": "Anis remains silent, unable to write further.",
+            "entity_status": {
+                "\u0627\u0646\u06cc\u0633\u0614": {
+                    "entity": "\u0627\u0646\u06cc\u0633\u0614",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         },
         {
             "original": "\u062f\u0631\u06af\u0627\u06c1\u0650 \u0627\u0644\u06c1\u06cc \u0645\u06cc\u06ba \u06cc\u06c1 \u0627\u0633 \u0648\u0642\u062a \u062f\u0639\u0627 \u06a9\u0631",
             "tagged": "\u062f\u0631\u06af\u0627\u06c1\u0650 \u0627\u0644\u06c1\u06cc \u0645\u06cc\u06ba \u06cc\u06c1 \u0627\u0633 \u0648\u0642\u062a \u062f\u0639\u0627 \u06a9\u0631",
-            "english": "Pray at the divine court at this time."
+            "english": "Pray at the divine court at this time.",
+            "entity_status": {}
         },
         {
             "original": "\u0632\u0627\u0626\u0631 \u06c1\u0645\u06cc\u06ba \u0634\u0628\u06cc\u0631 \u06a9\u0627 \u0627\u06d2 \u0628\u0627\u0631\u0650 \u062e\u062f\u0627 \u06a9\u0631",
             "tagged": "\u0632\u0627\u0626\u0631 \u06c1\u0645\u06cc\u06ba <PERSON>\u0634\u0628\u06cc\u0631</PERSON> \u06a9\u0627 \u0627\u06d2 \u0628\u0627\u0631\u0650 \u062e\u062f\u0627 \u06a9\u0631",
-            "english": "O God, let the visitor remember Shabeer."
+            "english": "O God, let the visitor remember Shabeer.",
+            "entity_status": {
+                "\u0634\u0628\u06cc\u0631": {
+                    "entity": "\u0634\u0628\u06cc\u0631",
+                    "tag": "PERSON",
+                    "user_updated": null
+                }
+            }
         }
     ]
 }

@@ -303,7 +303,7 @@ def get_ner_tags(
     print("Using chunk size:", chunk_size)
     print("Number of chunks:", len(chunked_messages))
     
-    with open('dataset/tagged_lines.json') as f:
+    with open('dataset/test_data.json') as f:
         return json.load(f)
     
     llm = LLM(model=model_id, response_format=TaggedElements)
