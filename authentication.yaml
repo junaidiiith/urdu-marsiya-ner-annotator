@@ -1,0 +1,19 @@
+cookie:
+  expiry_days: 1
+  key: dsfjkdsh9032ur0923yr7982y39823ybc1837f2189bvc1ugc8b
+  name: streamlit_auth
+credentials:
+  usernames:
+    saniya:
+      email: sin22197@gmail.com
+      name: Saniya Irfan
+      password: '$2b$12$D8NYk2N/UfLehb4PWUqPhenXq53G8.8UiDpmMBV4ALz19w3wsDa5q'
+      roles: 
+        - viewer
+
+    junaid:
+      email: syed.juned.ali@tuwien.ac.at
+      name: Junaid Ali
+      password: '$2b$12$D8NYk2N/UfLehb4PWUqPhenXq53G8.8UiDpmMBV4ALz19w3wsDa5q'
+      roles:
+      - admin
