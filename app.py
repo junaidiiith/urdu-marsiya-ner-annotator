@@ -18,6 +18,7 @@ if st.session_state['authentication_status']:
     pages = [
         st.Page("app_pages/upload_and_tagging.py", title="New Upload and NER Tagging"),
         st.Page("app_pages/reviewing.py", title="LLM NER Tags Reviewing"),
+        st.Page("app_pages/llm_judging.py", title="LLM-As-A-Judge")
     ]
 
     run_pages(pages)

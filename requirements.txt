@@ -25,8 +25,10 @@ chromadb==1.0.4
 click==8.1.8
 coloredlogs==15.0.1
 comm==0.2.2
+contourpy==1.3.2
 crewai==0.114.0
 cryptography==44.0.2
+cycler==0.12.1
 debugpy==1.8.14
 decorator==5.2.1
 deprecated==1.2.18
@@ -39,6 +41,7 @@ extra-streamlit-components==0.1.80
 fastapi==0.115.9
 filelock==3.18.0
 flatbuffers==25.2.10
+fonttools==4.57.0
 frozenlist==1.5.0
 fsspec==2025.3.2
 gitdb==4.0.12
@@ -63,6 +66,7 @@ ipywidgets==8.1.6
 jedi==0.19.2
 jinja2==3.1.6
 jiter==0.8.2
+joblib==1.4.2
 json-repair==0.41.1
 json5==0.12.0
 jsonpickle==4.0.5
@@ -72,10 +76,12 @@ jsonschema-specifications==2024.10.1
 jupyter-client==8.6.3
 jupyter-core==5.7.2
 jupyterlab-widgets==3.0.14
+kiwisolver==1.4.8
 kubernetes==32.0.1
 litellm==1.60.2
 markdown-it-py==3.0.0
 markupsafe==3.0.2
+matplotlib==3.10.1
 matplotlib-inline==0.1.7
 mdurl==0.1.2
 mmh3==5.1.0
@@ -127,6 +133,7 @@ pydantic-core==2.33.1
 pydeck==0.9.1
 pygments==2.19.1
 pyjwt==2.10.1
+pyparsing==3.2.3
 pypdfium2==4.30.1
 pypika==0.48.9
 pyproject-hooks==1.2.0
@@ -143,6 +150,8 @@ requests-oauthlib==2.0.0
 rich==13.9.4
 rpds-py==0.24.0
 rsa==4.9.1
+scikit-learn==1.6.1
+scipy==1.15.2
 shellingham==1.5.4
 six==1.17.0
 smmap==5.0.2
@@ -153,6 +162,7 @@ streamlit==1.44.1
 streamlit-authenticator==0.4.2
 sympy==1.13.3
 tenacity==9.1.2
+threadpoolctl==3.6.0
 tiktoken==0.9.0
 tokenizers==0.21.1
 toml==0.10.2

@@ -3,6 +3,8 @@ import pandas as pd
 import hashlib
 import json
 
+from ner_annotator.constants import UPLOAD_DIR
+
 
 
 def get_all_files(dataset_dir: str):
@@ -57,3 +59,44 @@ def get_llm_configs():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     llm_configs = json.load(open(f"{current_dir}/llms.json"))
     return llm_configs
+
+
+def save_file_data(data):
+    text_hash = calculate_hash(data['text'])
+    with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
+        json.dump(data, f, indent=4)
+    print("Test hash:", text_hash)
+    print("File saved successfully.")
+    
+    
+def save_ner_tags(text, ner_tags):
+    text_hash = calculate_hash(text)
+    with open(f"{UPLOAD_DIR}/{text_hash}.json", "r") as f:
+        data = json.load(f)
+        data["tagged_elements"] = ner_tags
+        data["tagged"] = True
+    
+    with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
+        json.dump(data, f, indent=4)
+    
+    return data
+
+
+def save_text_with_hash(text: str):
+    os.makedirs(UPLOAD_DIR, exist_ok=True)
+    text_hash = calculate_hash(text)
+    if not os.path.exists(f"{UPLOAD_DIR}/{text_hash}.json"):
+        with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
+            data = {
+                "text": text,
+                "tagged": False,
+            }
+            json.dump(data, f, indent=4)
+        print("Text saved successfully.")
+        return data
+    else:
+        print("Text already exists.")
+        with open(f"{UPLOAD_DIR}/{text_hash}.json", "r") as f:
+            data = json.load(f)
+        print("Data loaded successfully.")
+    return data
