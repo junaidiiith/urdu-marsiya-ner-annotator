@@ -8,8 +8,9 @@ from sklearn.metrics import (
 )
 
 from app_pages.common import (
-    get_data, 
-    add_entity_status
+    get_current_data, 
+    add_entity_status,
+    set_text_session_data
 )
 
 import numpy as np
@@ -23,8 +24,11 @@ from stqdm import stqdm
 
 
 def has_judgment_data():
-    data = get_data()
-    return all(c in data for c in ['tagged_elements', 'llm_judgement'])
+    # set_text_session_data(**{'llm_judgement': st.session_state['evaluated_data']})
+    data = get_current_data()
+    # print("Judgment data:", data)
+    # print(st.session_state['evaluated_data'])
+    return all(c in data and data[c] for c in ['tagged_elements', 'llm_judgement'])
 
 
 def set_judgment_configuration():
@@ -63,18 +67,13 @@ def set_judgment_configuration():
 
 def evaluate_models():
     
-    if st.session_state.get('evaluated_data'):
-        st.balloons()
-        return 
-    
-    if has_judgment_data():
-        st.session_state['evaluated_data'] = get_data()['llm_judgement']
-        st.success("Judgment data already exists. You can view the results.")
-        st.balloons()
-        return
+    # if has_judgment_data():
+    #     st.success("Judgment data already exists. You can view the results.")
+    #     st.balloons()
+    #     return
         
     if st.button("Run LLM-As-A-Judge Evaluation"):
-        tagged_data = get_data()['tagged_elements']
+        tagged_data = get_current_data()['tagged_elements']
         selected_models = st.session_state.get('selected_models')
         sentence_chunk_size = st.session_state.get('sentence_chunk_size')
         context_size = st.session_state.get('context_size')
@@ -88,7 +87,8 @@ def evaluate_models():
                 tqdm=stqdm
             )
             st.success("Evaluation completed!")
-            save_llm_judgement(get_data()['text'], st.session_state['evaluated_data'])
+            save_llm_judgement(get_current_data()['text'], st.session_state['evaluated_data'])
+            set_text_session_data(**{'llm_judgement': st.session_state['evaluated_data']})
             st.balloons()
             st.rerun()
 
@@ -183,7 +183,7 @@ def main():
             st.markdown("**Note:** You can select or deselect models to include in the comparison.")
             st.markdown("---")
         
-        if st.session_state.get('evaluated_data', None):
+        if has_judgment_data():
             show_results()
         else:
             evaluate_models()

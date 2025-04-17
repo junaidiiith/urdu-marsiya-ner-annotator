@@ -315,7 +315,7 @@ def get_ner_tags(
     print("Using chunk size:", chunk_size)
     print("Number of chunks:", len(chunked_messages))
 
-    # with open('uploads/d10c212fe139910e18cc77f9d45a4226.json') as f:
+    # with open('uploads/43d947ead8a5412ba2e5fcc8c046f489.json') as f:
     #     return json.load(f)['tagged_elements']
 
     llm = LLM(model=model_id, response_format=TaggedElements)

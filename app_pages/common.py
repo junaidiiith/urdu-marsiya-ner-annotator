@@ -2,15 +2,6 @@ import streamlit as st
 import re
 
 
-# Initial data
-def get_data():
-    if 'data' not in st.session_state:
-        st.error("No data found. Please upload a file or start a new session.")
-        return None
-    
-    return st.session_state['data']
-
-
 # Helper Functions
 def extract_entities(tagged_text):
     pattern = r"<(.*?)>(.*?)</\1>"
@@ -18,7 +9,7 @@ def extract_entities(tagged_text):
 
 
 def add_entity_status():
-    data = get_data()
+    data = get_current_data()
     if not data:
         st.error("No data found. Please upload a file or start a new session.")
         return False
@@ -40,5 +31,40 @@ def add_entity_status():
             }
             data['tagged_elements'][i]['entity_status'] = entities_status
             
-    st.session_state['data'] = data
+    set_text_session_data(**data)
     return True
+
+
+def set_current_text_hash(text_hash):
+    st.session_state['current_hash'] = text_hash
+
+def get_current_text_hash():
+    
+    if 'current_hash' not in st.session_state:
+        st.error("You have not set the text to work with yet. Please go to the upload page.")
+        return 
+    
+    return st.session_state['current_hash']
+
+def get_current_data():
+    current_hash = get_current_text_hash()
+    if current_hash is None:
+        st.error("No data found. Please upload a file or start a new session.")
+        return 
+    return st.session_state[current_hash]
+
+def init_session_state(text, text_hash):
+    st.session_state[text_hash] = dict()
+    st.session_state[text_hash] = {
+        'text': text,
+        'tagged_elements': [],
+        'tagged': False,
+        'llm_judgement': [],
+    }
+    
+
+def set_text_session_data(**kwargs):
+    current_hash = get_current_text_hash()
+    current_data = st.session_state[current_hash]
+    current_data.update(kwargs)
+    st.session_state[current_hash] = current_data
