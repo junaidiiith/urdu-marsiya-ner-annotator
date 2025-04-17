@@ -357,13 +357,15 @@ def run_evaluation(
     context_size=CONTEXT_LENGTH,
     tqdm=tqdm
 ) -> list:
-    # return json.load(open('judge_responses.json'))
+    # import json
+    # results = json.load(open('judge_responses.json'))
     all_message_chunks = get_evaluation_data(data, sentence_chunk_size, context_size)
     print("Total chunks:", len(all_message_chunks))
     results = judge_message_chunks(all_message_chunks, llm_names, tqdm=tqdm)
     
     rows = []
     for run in results:
+        # print("RUN", run)
         for model_name, result in run.items():
             result = format_llm_response(result)
             for pred in result["predictions"]:
