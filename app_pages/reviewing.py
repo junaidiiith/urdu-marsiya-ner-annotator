@@ -101,6 +101,8 @@ def save_tags():
     )
     set_current_entities_status(current_entity_status)
     print("Tags at line: ", st.session_state["current_line"], "saved successfully.")
+    # print(current_entity_status)
+    # print(get_current_data()['tagged_elements'][st.session_state["current_line"] - 1])
 
 
 def manual_tagging():
@@ -157,6 +159,7 @@ def tags_review():
 
 def show_file_statistics():
     stats = get_stats(get_current_data())
+    
 
     # Header with button floated right
     header_col, _, btn_col = st.columns([4, 1, 1])
