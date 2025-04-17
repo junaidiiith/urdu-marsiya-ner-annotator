@@ -1,10 +1,13 @@
-import json
 import streamlit as st
 import re
+from app_pages.common import (
+    extract_entities, 
+    get_data, 
+    add_entity_status
+)
 
-from ner_annotator.constants import UPLOAD_DIR
 from ner_annotator.stats import get_stats
-from ner_annotator.utils import calculate_hash
+from ner_annotator.utils import save_file_data
 
 
 
@@ -21,36 +24,6 @@ TAG_COLORS = {
 
 # Entity tags
 TAGS = list(TAG_COLORS.keys())
-
-
-# Initial data
-def get_data():
-    if 'data' not in st.session_state:
-        st.error("No data found. Please upload a file or start a new session.")
-    
-    return st.session_state['data']
-
-
-def add_entity_status():
-    data = get_data()
-    if 'tagged_elements' not in data:
-        st.error("No tagged elements found in the data. ")
-        return
-    
-    for i, item in enumerate(data['tagged_elements']):
-        if 'entity_status' not in item:
-            entities = extract_entities(item["tagged"])
-            entities_status = {
-                entity: {
-                    'entity': entity,
-                    'tag': tag,
-                    'user_updated': None,
-                }
-                for tag, entity in entities    
-            }
-            data['tagged_elements'][i]['entity_status'] = entities_status
-            
-    st.session_state['data'] = data
 
 
 def get_current_line():
@@ -79,11 +52,6 @@ def set_new_entity_tag_current_entities_status(entity, new_tag):
         st.error(f"Entity '{entity}' not found in the current line.")
 
 
-# Helper Functions
-def extract_entities(tagged_text):
-    pattern = r"<(.*?)>(.*?)</\1>"
-    return [(match[0], match[1]) for match in re.findall(pattern, tagged_text)]
-
 def render_tagged_text():
     display_text: str = get_current_line()["tagged"]
     entities = extract_entities(display_text)
@@ -108,12 +76,8 @@ def set_new_tag(entity, old_tag, new_tag):
     st.rerun()
     
     
-def save_file_data():
-    text_hash = calculate_hash(get_data()['text'])
-    with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
-        json.dump(get_data(), f, indent=4)
-    # print(get_data()['tagged_elements'][0].keys())
-    print("File saved successfully.")
+def save_all_data():
+    save_file_data(get_data())
     
 
 def save_tags():
@@ -141,7 +105,6 @@ def manual_tagging():
                 set_new_tag(selected_text, None, new_tag_type)
             else:
                 st.error("Selected words are not part of the original text.")
-
 
 
 def tags_review():
@@ -195,43 +158,35 @@ def show_file_statistics():
 # Initialize session state
 def main():
     
-    add_entity_status()
     st.title("📜 LLM-based NER Manual Review")
+    if add_entity_status():
+        
+        st.subheader("Named Entity Categories")
+        legend_html = ""
+        for tag, color in TAG_COLORS.items():
+            legend_html += f'<span style="background-color: {color}; padding: 4px; margin:4px; border-radius:4px;">{tag}</span> '
+        st.markdown(legend_html, unsafe_allow_html=True)
+        st.markdown("---")
+        max_lines = len(get_data()['tagged_elements'])
+        st.number_input(f"Select Line Number / {max_lines}", min_value=1, max_value=max_lines, value=1, key="current_line")
+        cols = st.columns([1, 2, 1])
+        with cols[0]:
+            st.subheader("Original Text")
+        with cols[-1]:
+            st.button("Save Annotations", key="save_changes", on_click=save_file_data)
+        st.write(get_current_line()["original"])
 
-    # Display Legend
-    st.subheader("Named Entity Categories")
-    legend_html = ""
-    for tag, color in TAG_COLORS.items():
-        legend_html += f'<span style="background-color: {color}; padding: 4px; margin:4px; border-radius:4px;">{tag}</span> '
-    st.markdown(legend_html, unsafe_allow_html=True)
-    st.markdown("---")
-    max_lines = len(get_data()['tagged_elements'])
-    st.number_input(f"Select Line Number / {max_lines}", min_value=1, max_value=max_lines, value=1, key="current_line")
-    # cols = st.columns([1, 2, 1])
-    # with cols[0]:
-    #     st.number_input("Select Line Number", min_value=1, max_value=len(get_data()['tagged_elements']), value=1, key="current_line")
-    # with cols[2]:
-    #     st.button("Save Annotations", key="save_changes", on_click=save_file_data)
-    
-    # Display original and translated text
-    cols = st.columns([1, 2, 1])
-    with cols[0]:
-        st.subheader("Original Text")
-    with cols[-1]:
-        st.button("Save Annotations", key="save_changes", on_click=save_file_data)
-    st.write(get_current_line()["original"])
-
-    st.subheader("English Translation")
-    st.write(get_current_line()["english"])
+        st.subheader("English Translation")
+        st.write(get_current_line()["english"])
 
 
-    # Display tagged text
-    st.subheader("Tagged Text")
-    render_tagged_text()
-    st.markdown("---")
-    tags_review()
-    manual_tagging()
-    st.markdown("---")
-    show_file_statistics()
+        # Display tagged text
+        st.subheader("Tagged Text")
+        render_tagged_text()
+        st.markdown("---")
+        tags_review()
+        manual_tagging()
+        st.markdown("---")
+        show_file_statistics()
 
 main()
