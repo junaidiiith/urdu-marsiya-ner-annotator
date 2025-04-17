@@ -1,7 +1,8 @@
-import json
 import time
 from crewai import LLM
 import concurrent.futures
+
+from ner_annotator.utils import format_llm_response
 from settings import MAX_CONCURRENT_REQUESTS
 from typing import List, Dict
 from tqdm.auto import tqdm
@@ -276,7 +277,7 @@ def query_llms(messages: List[Dict[str, str]], llm_names: List[str]) -> List[str
     return responses
 
 
-def judge_message_chunks(all_message_chunks: List[List[Dict[str, str]]], llm_names: List[str]) -> Dict[str, List[str]]:
+def judge_message_chunks(all_message_chunks: List[List[Dict[str, str]]], llm_names: List[str], tqdm = tqdm) -> Dict[str, List[str]]:
     """
     Judge the messages using the LLM and return the responses.
     
@@ -296,7 +297,7 @@ def judge_message_chunks(all_message_chunks: List[List[Dict[str, str]]], llm_nam
         for future in tqdm(
             concurrent.futures.as_completed(futures),
             total=len(futures),
-            desc="Extracting NER Tags",
+            desc="Judging NER Chunks by LLMs",
         ):
             idx = futures[future]
             try:
@@ -308,6 +309,14 @@ def judge_message_chunks(all_message_chunks: List[List[Dict[str, str]]], llm_nam
                 
     # Remove any None results (if desired)
     extracted_results = [res for res in extracted_results if res is not None]
+    
+    # print("Evaluation completed!")
+    # print("Total results:", len(extracted_results))
+    # print("Results:", extracted_results)
+    # import json
+    # with open('judge_responses_1.json', 'w') as f:
+    #     json.dump(extracted_results, f, indent=4)
+        
     return extracted_results
 
 
@@ -315,10 +324,22 @@ def run_evaluation(
     data, 
     llm_names, 
     sentence_chunk_size=SENTENCES_CHUNK, 
-    context_size=CONTEXT_LENGTH
-):
-    return json.load(open('judge_responses.json'))
-    # all_message_chunks = get_evaluation_data(data, sentence_chunk_size, context_size)
-    # print("Total chunks:", len(all_message_chunks))
-    # return judge_message_chunks(all_message_chunks)
+    context_size=CONTEXT_LENGTH,
+    tqdm=tqdm
+) -> list:
+    # return json.load(open('judge_responses.json'))
+    all_message_chunks = get_evaluation_data(data, sentence_chunk_size, context_size)
+    print("Total chunks:", len(all_message_chunks))
+    results = judge_message_chunks(all_message_chunks, llm_names, tqdm=tqdm)
     
+    rows = []
+    for run in results:
+        for model_name, result in run.items():
+            result = format_llm_response(result)
+            for pred in result["predictions"]:
+                rows.append({
+                    "model": model_name,
+                    "correct": int(pred["correct"])
+                })
+
+    return rows

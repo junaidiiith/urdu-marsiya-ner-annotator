@@ -77,7 +77,9 @@ def set_new_tag(entity, old_tag, new_tag):
     
     
 def save_all_data():
-    save_file_data(get_data())
+    data = get_data()
+    text = data['text']
+    save_file_data(text, data)
     
 
 def save_tags():
@@ -173,7 +175,7 @@ def main():
         with cols[0]:
             st.subheader("Original Text")
         with cols[-1]:
-            st.button("Save Annotations", key="save_changes", on_click=save_file_data)
+            st.button("Save Annotations", key="save_changes", on_click=save_all_data)
         st.write(get_current_line()["original"])
 
         st.subheader("English Translation")
