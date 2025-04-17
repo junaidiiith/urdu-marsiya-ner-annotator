@@ -61,8 +61,8 @@ def get_llm_configs():
     return llm_configs
 
 
-def save_file_data(data):
-    text_hash = calculate_hash(data['text'])
+def save_file_data(text, data):
+    text_hash = calculate_hash(text)
     with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
         json.dump(data, f, indent=4)
     print("Test hash:", text_hash)
@@ -100,3 +100,29 @@ def save_text_with_hash(text: str):
             data = json.load(f)
         print("Data loaded successfully.")
     return data
+
+
+def save_llm_judgement(text: str, judgement_data: str):
+    text_hash = calculate_hash(text)
+    with open(f"{UPLOAD_DIR}/{text_hash}.json", "r") as f:
+        data = json.load(f)
+        data["llm_judgement"] = judgement_data
+    
+    with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
+        json.dump(data, f, indent=4)
+    
+    return data
+
+
+def format_llm_response(response: str):
+    try:
+        response = json.loads(response)
+    except json.JSONDecodeError:
+        import ast
+        try:
+            response = ast.literal_eval(response)
+            return response
+        except Exception as e:
+            print(f"Error parsing response: {e}")
+            return None
+    return response

@@ -264,7 +264,7 @@ def get_ner_prompt_messages_per_chunk(
 
 
 def extract_named_entites_from_chunks(
-    llm: LLM, chunks: List[List[Dict[str, str]]]
+    llm: LLM, chunks: List[List[Dict[str, str]]], tqdm=tqdm
 ) -> List[TaggedElement]:
     """
     Extract named entities from chunks of text using the specified NER mode.
@@ -308,16 +308,17 @@ def get_ner_tags(
     mode=NERMode.MARSIYA,
     model_id: str = "openai/gpt-4o-mini",
     chunk_size: int = CHUNK_SIZE,
+    tqdm=tqdm,
 ) -> TaggedElements:
     chunked_messages = get_ner_prompt_messages_per_chunk(text, chunk_size, mode)
     print("Using model:", model_id)
     print("Using chunk size:", chunk_size)
     print("Number of chunks:", len(chunked_messages))
 
-    with open('uploads/d10c212fe139910e18cc77f9d45a4226.json') as f:
-        return json.load(f)['tagged_elements']
+    # with open('uploads/d10c212fe139910e18cc77f9d45a4226.json') as f:
+    #     return json.load(f)['tagged_elements']
 
     llm = LLM(model=model_id, response_format=TaggedElements)
     # responses = [llm.call(cm) for cm in tqdm(chunked_messages, desc="Processing chunks")]
-    responses = extract_named_entites_from_chunks(llm, chunked_messages)
+    responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
     return sum([json.loads(r)["tagged_elements"] for r in responses], [])

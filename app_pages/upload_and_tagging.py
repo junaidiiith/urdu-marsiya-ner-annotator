@@ -7,6 +7,7 @@ from ner_annotator.utils import (
 )
 from ner_annotator.constants import DATASET_DIR
 from ner_annotator.llm_tagger import get_ner_tags
+from stqdm import stqdm
 
 
 text_states = {
@@ -27,7 +28,7 @@ def start_ner_tagging(text):
         chunk_size = st.session_state.get("chunk_size")
         with st.spinner("LLM-based NER Tagging...Will take a while for large texts."):
             show_message(message="Tagging in progress...")
-            ner_tags = get_ner_tags(text, model_id=model_id, chunk_size=chunk_size)
+            ner_tags = get_ner_tags(text, model_id=model_id, chunk_size=chunk_size, tqdm=stqdm)
         print("Total NER Tags:", len(ner_tags))
         set_tagged_result(text, ner_tags)
 
@@ -71,9 +72,8 @@ def initiate_ner_tagging(text):
     print("Starting NER tagging on...")
     print(text[:50])
     print("Total length:", len(text))
-    with st.spinner("Tagging…"):
-        if add_text_if_not_exists(text):
-            start_ner_tagging(text)
+    if add_text_if_not_exists(text):
+        start_ner_tagging(text)
 
 def show_message(message, message_type="info"):
     if message_type == "info":
@@ -117,8 +117,8 @@ def main():
             )
             if st.session_state.get("uploaded_file_text"):
                 show_message(message=text_states[2], message_type="success")
-                if st.button("🖋️ Tag this file", key="tag_file"):
-                    initiate_ner_tagging(text)
+                # if st.button("🖋️ Tag this file", key="tag_file"):
+                #     initiate_ner_tagging(text)
             else:
                 show_message(message=text_states[1])
                 
@@ -147,7 +147,7 @@ def main():
             st.info(f"Selected Marsiya: {selected_file} {'(Tagged)' if all_marsiya_files[selected_file]['tagged'] else ''}")
             content = f"{selected_file}\nContent: {all_marsiya_files[selected_file]['content']}"
             st.text_area("Marsiya Content", value=content, height=300)
-            if st.button("🖋️ Tag this file", key="tag_existing_file"):
-                initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
+            # if st.button("🖋️ Tag this file", key="tag_existing_file"):
+            #     initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
 
 main()

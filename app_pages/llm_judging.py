@@ -15,8 +15,16 @@ from app_pages.common import (
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 from ner_annotator.llm_judge import run_evaluation
+from ner_annotator.utils import save_llm_judgement
 from settings import SUPPORTED_LLM_JUDGE_MODELS
+from stqdm import stqdm
+
+
+def has_judgment_data():
+    data = get_data()
+    return all(c in data for c in ['tagged_elements', 'llm_judgement'])
 
 
 def set_judgment_configuration():
@@ -54,6 +62,17 @@ def set_judgment_configuration():
         
 
 def evaluate_models():
+    
+    if st.session_state.get('evaluated_data'):
+        st.balloons()
+        return 
+    
+    if has_judgment_data():
+        st.session_state['evaluated_data'] = get_data()['llm_judgement']
+        st.success("Judgment data already exists. You can view the results.")
+        st.balloons()
+        return
+        
     if st.button("Run LLM-As-A-Judge Evaluation"):
         tagged_data = get_data()['tagged_elements']
         selected_models = st.session_state.get('selected_models')
@@ -65,23 +84,18 @@ def evaluate_models():
                 return
             st.session_state['evaluated_data'] = run_evaluation(
                 tagged_data, selected_models, 
-                sentence_chunk_size, context_size
+                sentence_chunk_size, context_size,
+                tqdm=stqdm
             )
             st.success("Evaluation completed!")
+            save_llm_judgement(get_data()['text'], st.session_state['evaluated_data'])
+            st.balloons()
+            st.rerun()
 
 
 def show_results():
     st.subheader("Evaluation Results")
-    results = st.session_state['evaluated_data']
-    rows = []
-    for run in results:
-        for model_name, result in run.items():
-            for pred in result["predictions"]:
-                rows.append({
-                    "model": model_name,
-                    "correct": int(pred["correct"])
-                })
-
+    rows = st.session_state['evaluated_data']
     df = pd.DataFrame(rows)
 
     # --- 3) Compute metrics per model ---
@@ -156,10 +170,11 @@ def main():
                 st.markdown(f"- {model}")
             st.markdown("**Note:** You can select or deselect models to include in the comparison.")
             st.markdown("---")
-            evaluate_models()
         
         if st.session_state.get('evaluated_data', None):
             show_results()
+        else:
+            evaluate_models()
 
-        
+        st.markdown("---")
 main()
