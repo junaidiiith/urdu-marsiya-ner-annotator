@@ -95,31 +95,30 @@ def evaluate_models():
 
 def show_results():
     st.subheader("Evaluation Results")
+
+    # --- 1) Build dataframe of all predictions ---
     rows = st.session_state['evaluated_data']
     df = pd.DataFrame(rows)
 
+    # --- 2) Show total entities count ---
+    total_entities = len(df)
+    st.metric("Total Entities Evaluated", total_entities)
+
     # --- 3) Compute metrics per model ---
-    metrics = {}
+    model_metrics = {}
     for model_name, grp in df.groupby("model"):
-        y_true = [1] * len(grp)            # assume every prediction SHOULD be correct
-        y_pred = grp["correct"].tolist()  # 1 if model was correct, 0 otherwise
-
-        # avoid division-by-zero if no positive predictions
-        precision = precision_score(y_true, y_pred, zero_division=0)
-        recall    = recall_score(y_true, y_pred, zero_division=0)
-        f1        = f1_score(y_true, y_pred, zero_division=0)
-        acc       = accuracy_score(y_true, y_pred)
-
-        metrics[model_name] = {
-            "accuracy": acc,
-            "precision": precision,
-            "recall": recall,
-            "f1": f1
+        y_true = [1] * len(grp)
+        y_pred = grp["correct"].tolist()
+        model_metrics[model_name] = {
+            "accuracy": accuracy_score(y_true, y_pred),
+            "precision": precision_score(y_true, y_pred, zero_division=0),
+            "recall": recall_score(y_true, y_pred, zero_division=0),
+            "f1": f1_score(y_true, y_pred, zero_division=0),
         }
 
     # --- 4) Display each model’s metrics ---
     st.subheader("Model Metrics")
-    for model_name, m in metrics.items():
+    for model_name, m in model_metrics.items():
         st.markdown(f"**{model_name}**")
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Accuracy",    f"{m['accuracy']:.2%}")
@@ -128,33 +127,46 @@ def show_results():
         c4.metric("F1 Score",    f"{m['f1']:.2%}")
         st.markdown("---")
 
+    # bar‑chart of model metrics
+    df_model = pd.DataFrame(model_metrics).T
+    models    = df_model.index.tolist()
+    metrics_n = df_model.columns.tolist()
+    x = np.arange(len(metrics_n))
+    width = 0.8 / len(models)
 
-    st.subheader("Judgment Comparison Across Different LLMs")
-
-    df_metrics = pd.DataFrame(metrics).T
-    models    = df_metrics.index.tolist()
-    metrics_n = df_metrics.columns.tolist()
-    n_models  = len(models)
-    n_metrics = len(metrics_n)
-
-    x     = np.arange(n_metrics)
-    width = 0.8 / n_models
-
-    # make the figure smaller: e.g. 6" wide by 3.5" tall
     fig, ax = plt.subplots(figsize=(6, 3.5))
-
     for i, model in enumerate(models):
-        vals = df_metrics.loc[model].values
+        vals = df_model.loc[model].values
         ax.bar(x + i * width, vals, width, label=model)
-
-    ax.set_xticks(x + width * (n_models - 1) / 2)
+    ax.set_xticks(x + width*(len(models)-1)/2)
     ax.set_xticklabels(metrics_n)
     ax.set_ylabel("Score")
     ax.set_ylim(0, 1)
     ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
-
     st.pyplot(fig)
-    
+
+    # --- 5) Compute metrics per tag type ---
+    tag_metrics = {}
+    for tag, grp in df.groupby("original"):
+        y_true = [1] * len(grp)
+        y_pred = grp["correct"].tolist()
+        tag_metrics[tag] = {
+            "accuracy": accuracy_score(y_true, y_pred),
+            "precision": precision_score(y_true, y_pred, zero_division=0),
+            "recall": recall_score(y_true, y_pred, zero_division=0),
+            "f1": f1_score(y_true, y_pred, zero_division=0),
+        }
+
+    # --- 6) Display tag‑level metrics ---
+    st.subheader("Metrics by Tag Type")
+    for tag, m in tag_metrics.items():
+        st.markdown(f"**{tag}**")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Accuracy",    f"{m['accuracy']:.2%}")
+        c2.metric("Precision",   f"{m['precision']:.2%}")
+        c3.metric("Recall",      f"{m['recall']:.2%}")
+        c4.metric("F1 Score",    f"{m['f1']:.2%}")
+        st.markdown("---")
 
 
 def main():
@@ -176,5 +188,4 @@ def main():
         else:
             evaluate_models()
 
-        st.markdown("---")
 main()

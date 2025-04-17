@@ -9,9 +9,9 @@ from tqdm.auto import tqdm
 from pydantic import BaseModel, Field
 
 
-
 class Entity(BaseModel):
     entity: str = Field(description="Entity text")
+    tag: str = Field(description="Original Entity tag")
     correct: bool = Field(description="Is the entity correctly tagged?")
     alternative: str = Field(description="Alternative entity text if correctness is false")
 
@@ -147,60 +147,90 @@ Output:
   "predictions": [
     {
       "entity": "میر انیس",
+      "tag": "PERSON",
       "correct": true,
       "alternative": "PERSON"
     },
     {
       "entity": "دربار حسینی",
+      "tag": "LOCATION",
       "correct": true,
       "alternative": "LOCATION"
     },
     {
       "entity": "علم دار حسینی",
+      "tag": "PERSON",
       "correct": false,
       "alternative": "DESIGNATION"
     },
     {
       "entity": "عباس علی",
+      "tag": "PERSON",
       "correct": true,
       "alternative": "PERSON"
     },
     {
       "entity": "اختر",
+      "tag": "PERSON",
       "correct": true,
       "alternative": "PERSON"
     },
     {
       "entity": "اقبال علی",
+      "tag": "PERSON",
       "correct": true,
       "alternative": "PERSON"
     },
     {
       "entity": "حشمت",
-      "correct": true,
-      "alternative": "DESIGNATION"
+      "tag": "DESIGNATION",
+      "correct": false,
+      "alternative": "PERSON"
     },
     {
       "entity": "واجلال",
-      "correct": true,
-      "alternative": "DESIGNATION"
+      "tag": "DESIGNATION",
+      "correct": false,
+      "alternative": "PERSON"
     },
     {
       "entity": "درِّ نجف",
+      "tag": "LOCATION",
       "correct": true,
       "alternative": "LOCATION"
     },
     {
       "entity": "سردار",
+      "tag": "DESIGNATION",
       "correct": true,
       "alternative": "DESIGNATION"
     },
     {
       "entity": "جرار",
-      "correct": true,
+      "tag": "DESIGNATION",
+      "correct": false,
+      "alternative": "PERSON"
+    },
+    {
+      "entity": "اولو العزم",
+      "tag": "ORGANIZATION",
+      "correct": false,
+      "alternative": "PERSON"
+    },
+    {
+      "entity": "محبوب الٰی",
+      "tag": "PERSON",
+      "correct": false,
       "alternative": "DESIGNATION"
+    },
+    {
+      "entity": "شہ",
+      "tag": "DESIGNATION",
+      "correct": false,
+      "alternative": "PERSON"
     }
-]
+  ]
+}
 
 """
 
@@ -339,7 +369,9 @@ def run_evaluation(
             for pred in result["predictions"]:
                 rows.append({
                     "model": model_name,
-                    "correct": int(pred["correct"])
+                    "correct": int(pred["correct"]),
+                    "original": pred["tag"],
+                    "alternative": pred["alternative"],
                 })
 
     return rows
