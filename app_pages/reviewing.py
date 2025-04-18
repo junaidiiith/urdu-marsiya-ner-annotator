@@ -1,6 +1,7 @@
 import streamlit as st
 import re
 from app_pages.common import (
+    download_ner_tags_data,
     extract_entities, 
     get_current_data, 
     add_entity_status, 
@@ -284,6 +285,16 @@ def main():
         manual_tagging()
         st.markdown("---")
         show_file_statistics()
+        
+        st.markdown("**Download Review Results**")
+        st.markdown("Download the review results as an Excel file.")
+        st.download_button(
+            ":arrow_down: Download Review Data",
+            data=download_ner_tags_data(),
+            file_name=f"{st.session_state["selected_model_id"]}_ner_tagged_data.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            key="download_llm_judgement"
+        )
 
 
 main()

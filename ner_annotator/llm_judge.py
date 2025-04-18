@@ -372,6 +372,7 @@ def run_evaluation(
             for pred in result["predictions"]:
                 rows.append({
                     "model": model_name,
+                    "entity": pred["entity"],
                     "correct": int(pred["correct"]),
                     "original": pred["tag"],
                     "alternative": pred["alternative"],

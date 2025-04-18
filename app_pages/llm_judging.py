@@ -8,6 +8,7 @@ from sklearn.metrics import (
 )
 
 from app_pages.common import (
+    download_llm_judgement_data,
     get_current_data, 
     add_entity_status,
     set_text_session_data
@@ -185,6 +186,16 @@ def main():
         
         if has_judgment_data():
             show_results()
+            st.markdown("---")
+            st.markdown("**Download Evaluation Results**")
+            st.markdown("Download the evaluation results as an Excel file.")
+            st.download_button(
+                ":arrow_down: Download Evaluation Results",
+                data=download_llm_judgement_data(),
+                file_name="llm_judgement.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                key="download_llm_judgement"
+            )
         else:
             evaluate_models()
 
