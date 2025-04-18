@@ -172,9 +172,17 @@ def show_results():
 
 def main():
 
+    st.title("📝 Urdu NER LLM-As-A-Judge")
+    st.markdown("""
+    This page allows you to evaluate the performance of different LLMs on Urdu NER tasks.
+    You can select the models you want to compare and run the evaluation.
+    The evaluation results will be displayed below.
+    """)
+    st.markdown("**Note:** You can select or deselect models to include in the comparison.")
+    st.markdown("---")
+    
     if add_entity_status():
-        st.title("📝 Urdu NER LLM-As-A-Judge")
-        st.markdown("This page uses different LLMs as Judges to evaluate LLM-based on Urdu NER tagging. ")
+        
         set_judgment_configuration()
 
         if selected_models := st.session_state.get('selected_models'):
