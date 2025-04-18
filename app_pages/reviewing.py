@@ -25,6 +25,26 @@ TAG_COLORS = {
 # Entity tags
 TAGS = list(TAG_COLORS.keys())
 
+st.markdown(
+    """
+    <style>
+    /* target only our Clear button by wrapping it in .delete-btn-container */
+    .delete-btn-container > button {
+        background-color: #e74c3c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 0.5em 1em !important;
+        font-size: 1em !important;
+    }
+    .delete-btn-container > button:hover {
+        background-color: #c0392b !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 def get_current_line():
     tagged_data = get_current_data()["tagged_elements"]
@@ -60,7 +80,11 @@ def set_new_entity_tag_current_entities_status(entity, new_tag):
         )
         set_current_entities_status(current_entities_status)
     else:
-        st.error(f"Entity '{entity}' not found in the current line.")
+        current_entities_status[entity] = {
+            "entity": entity,
+            "tag": None,
+            "user_updated": new_tag,
+        }
 
 
 def render_tagged_text():
@@ -68,7 +92,6 @@ def render_tagged_text():
     entities = extract_entities(display_text)
     for tag, text in entities:
         color = TAG_COLORS.get(tag.upper(), "#E5E7E9")  # Default light grey
-        # print("Tag:", tag, "Text:", text)
         replacement = f'<span style="background-color: {color}; padding: 2px;" title="{tag}">{text}</span>'
         display_text = display_text.replace(f"<{tag}>{text}</{tag}>", replacement)
     st.markdown(display_text, unsafe_allow_html=True)
@@ -82,6 +105,7 @@ def set_new_tag(entity, old_tag, new_tag):
         st.session_state["current_line"], tagged_text.replace(pattern, replacement)
     )
     set_new_entity_tag_current_entities_status(entity, new_tag)
+    save_tags()
     st.success(f"Tagged '{entity}' as {new_tag}")
     st.rerun()
 
@@ -101,33 +125,64 @@ def save_tags():
     )
     set_current_entities_status(current_entity_status)
     print("Tags at line: ", st.session_state["current_line"], "saved successfully.")
-    # print(current_entity_status)
-    # print(get_current_data()['tagged_elements'][st.session_state["current_line"] - 1])
+    print("Current Entity Status: ", current_entity_status)
+    print("Tagged elements: ", get_current_data()['tagged_elements'][st.session_state["current_line"] - 1])
 
+
+def remove_newly_added_tag(entity):
+    current_entities_status = get_current_entities_status()
+    if entity in current_entities_status:
+        tag = current_entities_status[entity]["user_updated"]
+        del current_entities_status[entity]
+        tagged_text = get_current_line()["tagged"]
+        pattern = f"<{tag}>{entity}</{tag}>"
+        replacement = entity
+        print("Ts", tagged_text)
+        print("tag", tag)
+        set_current_line(
+            st.session_state["current_line"], 
+            tagged_text.replace(pattern, replacement)
+        )
+        set_current_entities_status(current_entities_status)
+        
+        save_tags()
+        st.rerun()
+        # st.success(f"Removed tag for '{entity}'")
+    else:
+        st.error(f"No tag found for '{entity}'")
+    
 
 def manual_tagging():
     st.subheader("Tag Untagged Words")
     words = re.sub(r"<.*?>", "", get_current_line()["original"]).split()
 
-    selected_words = st.multiselect(
-        "Select words to tag", words, placeholder="Select words from dropdown"
+    # print("Current tagged line: ", get_current_line()["tagged"])
+    st.multiselect(
+        "Select words to tag", 
+        words, 
+        placeholder="Select words from dropdown",
+        key='manual_tagging_words'
     )
-    new_tag_type = st.selectbox("Select tag", TAGS)
+    st.selectbox("Select tag", TAGS, key="new_tag_type")
     if st.button("Add Tag"):
-        if selected_words:
-            selected_text = " ".join(selected_words)
+        if st.session_state["manual_tagging_words"]:
+            selected_text = " ".join(st.session_state["manual_tagging_words"])
             entities = extract_entities(get_current_line()["tagged"])
             if any(selected_text in entity for _, entity in entities):
                 st.warning("This phrase is already tagged.")
             elif selected_text in get_current_line()["original"]:
+                new_tag_type = st.session_state["new_tag_type"]
                 set_new_tag(selected_text, None, new_tag_type)
+                st.session_state["manual_tagging_words"] = []
+                st.session_state["new_tag_type"] = None
             else:
                 st.error("Selected words are not part of the original text.")
 
 
 def tags_review():
     # Review tagged entities
-    entities = extract_entities(get_current_line()["tagged"])
+    current_entity_status = get_current_entities_status()
+    entities = [e for e in current_entity_status if e != 'user_verified']
     cols = st.columns([6, 1])
     with cols[0]:
         st.subheader("Review Existing Tags")
@@ -137,17 +192,26 @@ def tags_review():
     if not entities:
         st.write("No tagged entities found in this line.")
         return
-    entities = extract_entities(get_current_line()["tagged"])
-    for i, (tag, entity) in enumerate(entities):
+    for i, entity in enumerate(entities):
+        tag = current_entity_status[entity]["tag"]
         col1, col2, col3 = st.columns([3, 2, 3])
         with col1:
             st.write(f"**{entity}**")
         with col2:
-            correct = st.radio(
-                f"Is '{entity}' correctly tagged as {tag}?",
-                ["Yes", "No"],
-                key=f"correct_{i}",
-            )
+            if current_entity_status[entity]["tag"] is not None:
+                tag = current_entity_status[entity]["tag"]
+                correct = st.radio(
+                    f"Is '{entity}' correctly tagged as {tag}?",
+                    ["Yes", "No"],
+                    key=f"correct_{i}",
+                )
+            else:
+                ### Show Option to delete the tag
+                st.markdown('<div class="delete-btn-container">', unsafe_allow_html=True)
+                if st.button("🗑️", key=f"clear_{entity}"):
+                    remove_newly_added_tag(entity)
+                st.markdown('</div>', unsafe_allow_html=True)
+                
         with col3:
             if correct == "No":
                 new_tag = st.selectbox(
