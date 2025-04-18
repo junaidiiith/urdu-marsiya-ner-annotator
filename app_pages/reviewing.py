@@ -193,6 +193,7 @@ def tags_review():
         st.write("No tagged entities found in this line.")
         return
     for i, entity in enumerate(entities):
+        correct = None
         tag = current_entity_status[entity]["tag"]
         col1, col2, col3 = st.columns([3, 2, 3])
         with col1:
