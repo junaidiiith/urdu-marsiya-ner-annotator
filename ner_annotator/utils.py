@@ -1,3 +1,4 @@
+import io
 import os
 import pandas as pd
 import hashlib
@@ -126,3 +127,54 @@ def format_llm_response(response: str):
             print(f"Error parsing response: {e}")
             return None
     return response
+
+
+def get_ner_tags_excel(tagged_elements):
+    """
+    Convert tagged elements to a DataFrame.
+    """
+    ner_tags = []
+    for item in tagged_elements:
+        user_verified = item.get("user_verified", False)
+        if "entity_status" in item:
+            for entity, status in item["entity_status"].items():
+                ner_tags.append({
+                    "Entity": entity,
+                    "LLM-Tag": status["tag"],
+                    "Reviewed": user_verified,
+                    "Correct": status['user_updated'] is not None,
+                    "User Corrected": status["user_updated"] if status['user_updated'] is not None else "NA",
+                    "Sentence": item['original'],
+                    "NER Tagged": item["tagged"],
+                    "English": item['english'],
+                })
+                
+    df = pd.DataFrame(ner_tags)
+    return encode_df(df, "NER Tags")
+
+
+
+def get_llm_judgment_excel(llm_judgement):
+    """
+    Convert LLM judgement to a DataFrame.
+    """
+    llm_judgement = [
+        {
+            "LLM": item["model"],
+            "Entity": item["entity"],
+            "Original": item["original"],
+            "Correct": item["correct"],
+            "Alternative": item["alternative"] if item["correct"] else "NA",
+        }
+        for item in llm_judgement
+    ]
+    df = pd.DataFrame(llm_judgement)
+    return encode_df(df, "LLM Judgement")
+
+
+def encode_df(df: pd.DataFrame, sheet_name: str):
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        df.to_excel(writer, index=False, sheet_name=sheet_name)
+    output.seek(0)  # reset pointer to the start
+    return output

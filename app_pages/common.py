@@ -1,6 +1,11 @@
 import streamlit as st
 import re
 
+from ner_annotator.utils import (
+    get_llm_judgment_excel, 
+    get_ner_tags_excel
+)
+
 
 # Helper Functions
 def extract_entities(tagged_text):
@@ -68,3 +73,20 @@ def set_text_session_data(**kwargs):
     current_data = st.session_state[current_hash]
     current_data.update(kwargs)
     st.session_state[current_hash] = current_data
+    
+
+def download_ner_tags_data():
+    current_data = get_current_data()
+    ner_tags_excel = get_ner_tags_excel(current_data['tagged_elements'])
+    return ner_tags_excel
+
+
+def download_llm_judgement_data():
+    current_data = get_current_data()
+    if 'llm_judgement' in current_data:
+        llm_judgement_excel = get_llm_judgment_excel(current_data['llm_judgement'])
+        return llm_judgement_excel
+    else:
+        st.error("No LLM judgement data found.")
+        return None
+    
