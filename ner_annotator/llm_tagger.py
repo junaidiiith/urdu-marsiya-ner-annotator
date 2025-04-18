@@ -319,6 +319,5 @@ def get_ner_tags(
     #     return json.load(f)['tagged_elements']
 
     llm = LLM(model=model_id, response_format=TaggedElements)
-    # responses = [llm.call(cm) for cm in tqdm(chunked_messages, desc="Processing chunks")]
     responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
     return sum([json.loads(r)["tagged_elements"] for r in responses], [])
