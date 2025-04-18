@@ -6,7 +6,9 @@ def get_stats(data):
     tagged_lines = data['tagged_elements']
     entity_status = [d['entity_status'] for d in tagged_lines]
     total_entities = [v for es in entity_status for k, v in es.items() if k != 'user_verified']
-    per_category_count = dict(Counter([t['tag'] for t in total_entities if t['tag']]))
+    per_category_count = dict(Counter([t['user_updated']  if t['user_updated'] else t['tag'] for t in total_entities]))
+    # remove none counts
+    per_category_count = {k: v for k, v in per_category_count.items() if k is not None}
 
     total_verified = sum(len(es)-1 if 'user_verified' in es else 0 for es in entity_status)
     # print("entity status: ", entity_status)
