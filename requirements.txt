@@ -109,7 +109,7 @@ opentelemetry-semantic-conventions==0.53b1
 opentelemetry-util-http==0.53b1
 orjson==3.10.16
 overrides==7.7.0
-packaging==25.0
+packaging==24.2
 pandas==2.2.3
 parso==0.8.4
 pdfminer-six==20250327
