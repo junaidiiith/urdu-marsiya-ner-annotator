@@ -143,8 +143,8 @@ def main():
             )
             if st.session_state.get("uploaded_file_text"):
                 show_message(message=text_states[2], message_type="success")
-                # if st.button("🖋️ Tag this file", key="tag_file"):
-                #     initiate_ner_tagging(text)
+                if st.button("🖋️ Tag this file", key="tag_file"):
+                    initiate_ner_tagging(st.session_state["uploaded_file_text"])
             else:
                 show_message(message=text_states[1])
 
@@ -190,8 +190,8 @@ def main():
                 key="existing_file_text", 
                 kwargs={"key": "existing_file_text", "filename": selected_file}
             )
-            # if st.button("🖋️ Tag this file", key="tag_existing_file"):
-            #     initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
+            if st.button("🖋️ Tag this file", key="tag_existing_file"):
+                initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
 
     print("File upload and tagging completed in", time.time() - start_time, "seconds.")
     
