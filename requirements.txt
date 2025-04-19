@@ -42,7 +42,7 @@ fastapi==0.115.9
 filelock==3.18.0
 flatbuffers==25.2.10
 fonttools==4.57.0
-frozenlist==1.5.0
+frozenlist==1.6.0
 fsspec==2025.3.2
 gitdb==4.0.12
 gitpython==3.1.44
@@ -52,7 +52,7 @@ grpcio==1.71.0
 h11==0.14.0
 httpcore==1.0.8
 httptools==0.6.4
-httpx==0.27.2
+httpx==0.28.1
 huggingface-hub==0.30.2
 humanfriendly==10.0
 idna==3.10
@@ -65,7 +65,7 @@ ipython-pygments-lexers==1.1.1
 ipywidgets==8.1.6
 jedi==0.19.2
 jinja2==3.1.6
-jiter==0.8.2
+jiter==0.9.0
 joblib==1.4.2
 json-repair==0.41.1
 json5==0.12.0
@@ -78,7 +78,7 @@ jupyter-core==5.7.2
 jupyterlab-widgets==3.0.14
 kiwisolver==1.4.8
 kubernetes==32.0.1
-litellm==1.60.2
+litellm==1.66.3
 markdown-it-py==3.0.0
 markupsafe==3.0.2
 matplotlib==3.10.1
@@ -94,7 +94,7 @@ networkx==3.4.2
 numpy==2.2.4
 oauthlib==3.2.2
 onnxruntime==1.21.0
-openai==1.74.0
+openai==1.75.0
 openpyxl==3.1.5
 opentelemetry-api==1.32.1
 opentelemetry-exporter-otlp-proto-common==1.32.1
@@ -109,7 +109,7 @@ opentelemetry-semantic-conventions==0.53b1
 opentelemetry-util-http==0.53b1
 orjson==3.10.16
 overrides==7.7.0
-packaging==24.2
+packaging==25.0
 pandas==2.2.3
 parso==0.8.4
 pdfminer-six==20250327
@@ -187,5 +187,5 @@ websocket-client==1.8.0
 websockets==15.0.1
 widgetsnbextension==4.0.14
 wrapt==1.17.2
-yarl==1.19.0
+yarl==1.20.0
 zipp==3.21.0
