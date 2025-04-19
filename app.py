@@ -1,3 +1,4 @@
+import time
 import streamlit as st
 from ner_annotator.auth import authenticate
 from settings import auth_file
@@ -7,10 +8,12 @@ def run_pages(pages):
     pg = st.navigation(pages)
     pg.run()
 
+start_time = time.time()
+authentication_status = st.session_state.get('authentication_status', None)
 authenticate(auth_file=auth_file)
+print("Authentication completed in", time.time() - start_time, "seconds.")
 
-if st.session_state['authentication_status']:
-    # print("Authentication status: Now", st.session_state['authentication_status'])
+if authentication_status:
     username = st.session_state['username']
     name = st.session_state['name']  
     roles = st.session_state['roles']
@@ -22,3 +25,6 @@ if st.session_state['authentication_status']:
     ]
 
     run_pages(pages)
+    print("Pages loaded successfully.")
+    print("Pages loaded in", time.time() - start_time, "seconds.")
+    

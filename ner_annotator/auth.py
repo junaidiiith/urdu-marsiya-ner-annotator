@@ -37,6 +37,9 @@ def authenticate(auth_file):
         if st.session_state['authentication_status']:
             name = st.session_state['name']
             st.sidebar.title(f'Welcome {name}!')
+            if "admin" in st.session_state['roles']:
+                st.sidebar.title("Admin Panel")
+                st.sidebar.write("You have admin access.")
         else:
             print("Re-running...")
             st.cache_data.clear()

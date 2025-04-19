@@ -1,21 +1,15 @@
+import time
 import streamlit as st
 import pandas as pd
-from sklearn.metrics import (
-    precision_score, 
-    recall_score, 
-    f1_score, 
-    accuracy_score
-)
 
 from app_pages.common import (
+    download_all_llm_judgement_data,
     download_llm_judgement_data,
     get_current_data, 
     add_entity_status,
+    get_judgment_stats,
     set_text_session_data
 )
-
-import numpy as np
-import matplotlib.pyplot as plt
 
 
 from ner_annotator.llm_judge import run_evaluation
@@ -64,7 +58,15 @@ def set_judgment_configuration():
             help="Number of before and after sentences to include as context for each sentence.",
             key="context_size"
         )
-        
+        st.number_input(
+            "Judgment Threshold",
+            min_value=0.0,
+            max_value=1.0,
+            value=0.75,
+            step=0.05,
+            help="Threshold for judgment. If the prediction by these many LLMs out of all judges is judged 'Correct', the prediction is considered correct.",
+            key="judgment_threshold"
+        )
 
 def evaluate_models():
     
@@ -72,7 +74,6 @@ def evaluate_models():
     #     st.success("Judgment data already exists. You can view the results.")
     #     st.balloons()
     #     return
-        
     if st.button("Run LLM-As-A-Judge Evaluation"):
         tagged_data = get_current_data()['tagged_elements']
         selected_models = st.session_state.get('selected_models')
@@ -97,81 +98,113 @@ def evaluate_models():
 def show_results():
     st.subheader("Evaluation Results")
 
-    # --- 1) Build dataframe of all predictions ---
-    rows = st.session_state['evaluated_data']
-    df = pd.DataFrame(rows)
+    threshold = st.session_state.get('judgment_threshold')
+    results = get_judgment_stats(st.session_state['evaluated_data'], threshold)
+    overall_acc = results['overall_accuracy']
+    model_acc = results['model_accuracy']
+    tag_acc = results['entity_type_accuracy']
+    tag_model_acc = results['model_entity_type_accuracy']
+    
+    
+    # Top‑level metrics
+    st.metric(f"Accuracy Entities ≥ {threshold:.0%}", f"{overall_acc:.2f}%")
+    st.markdown("---")
 
-    # --- 2) Show total entities count ---
-    total_entities = len(df)
-    st.metric("Total Entities Evaluated", total_entities)
+    # 4) Per‑model accuracy
+    st.subheader("2. Accuracy per Model")
+    df_mod = pd.DataFrame.from_dict(model_acc, orient="index", columns=["Accuracy"])
+    df_mod = df_mod.sort_values("Accuracy", ascending=False)
+    st.dataframe(df_mod.style.format("{:.2%}"), use_container_width=True)
+    st.bar_chart(df_mod["Accuracy"], use_container_width=True)
 
-    # --- 3) Compute metrics per model ---
-    model_metrics = {}
-    for model_name, grp in df.groupby("model"):
-        y_true = [1] * len(grp)
-        y_pred = grp["correct"].tolist()
-        model_metrics[model_name] = {
-            "accuracy": accuracy_score(y_true, y_pred),
-            "precision": precision_score(y_true, y_pred, zero_division=0),
-            "recall": recall_score(y_true, y_pred, zero_division=0),
-            "f1": f1_score(y_true, y_pred, zero_division=0),
-        }
+    st.markdown("---")
 
-    # --- 4) Display each model’s metrics ---
-    st.subheader("Model Metrics")
-    for model_name, m in model_metrics.items():
-        st.markdown(f"**{model_name}**")
-        c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Accuracy",    f"{m['accuracy']:.2%}")
-        c2.metric("Precision",   f"{m['precision']:.2%}")
-        c3.metric("Recall",      f"{m['recall']:.2%}")
-        c4.metric("F1 Score",    f"{m['f1']:.2%}")
-        st.markdown("---")
+    # 5) Per‑tag accuracy
+    st.subheader("3. Accuracy per Entity Type (Tag)")
+    df_tag = pd.DataFrame.from_dict(tag_acc, orient="index", columns=["Accuracy"])
+    df_tag = df_tag.sort_values("Accuracy", ascending=False)
+    st.dataframe(df_tag.style.format("{:.2%}"), use_container_width=True)
+    st.bar_chart(df_tag["Accuracy"], use_container_width=True)
 
-    # bar‑chart of model metrics
-    df_model = pd.DataFrame(model_metrics).T
-    models    = df_model.index.tolist()
-    metrics_n = df_model.columns.tolist()
-    x = np.arange(len(metrics_n))
-    width = 0.8 / len(models)
+    st.markdown("---")
 
-    fig, ax = plt.subplots(figsize=(6, 3.5))
-    for i, model in enumerate(models):
-        vals = df_model.loc[model].values
-        ax.bar(x + i * width, vals, width, label=model)
-    ax.set_xticks(x + width*(len(models)-1)/2)
-    ax.set_xticklabels(metrics_n)
-    ax.set_ylabel("Score")
-    ax.set_ylim(0, 1)
-    ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
-    st.pyplot(fig)
+    # 6) Per‑tag‑per‑model accuracy
+    st.subheader("4. Accuracy per Type per Model")
+    df_tm = pd.DataFrame(tag_model_acc)
+    st.dataframe(df_tm.style.format("{:.2%}"), use_container_width=True)
 
-    # --- 5) Compute metrics per tag type ---
-    tag_metrics = {}
-    for tag, grp in df.groupby("original"):
-        y_true = [1] * len(grp)
-        y_pred = grp["correct"].tolist()
-        tag_metrics[tag] = {
-            "accuracy": accuracy_score(y_true, y_pred),
-            "precision": precision_score(y_true, y_pred, zero_division=0),
-            "recall": recall_score(y_true, y_pred, zero_division=0),
-            "f1": f1_score(y_true, y_pred, zero_division=0),
-        }
 
-    # --- 6) Display tag‑level metrics ---
-    st.subheader("Metrics by Tag Type")
-    for tag, m in tag_metrics.items():
-        st.markdown(f"**{tag}**")
-        c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Accuracy",    f"{m['accuracy']:.2%}")
-        c2.metric("Precision",   f"{m['precision']:.2%}")
-        c3.metric("Recall",      f"{m['recall']:.2%}")
-        c4.metric("F1 Score",    f"{m['f1']:.2%}")
-        st.markdown("---")
+def download_data():
+    def prepare_download(key):
+        st.session_state[key] = download_llm_judgement_data(st.session_state["current_hash"])
+
+    def prepare_download_all(key):
+        st.session_state[key] = download_all_llm_judgement_data()
+        
+    def unset_download_data(key):
+        if key in st.session_state:
+            del st.session_state[key]
+        else:
+            st.warning("No LLM Judgement data to clear.")
+
+    
+    st.markdown("**Download LLM Judgment Results**")
+    st.markdown(
+        "Click the button to generate the file. After the file is generated, you can download it."
+    )
+    cols = st.columns([6, 6])
+    with cols[0]:
+        st.markdown(
+            "Download the LLM Judgment for current file"
+        )
+        judgment_data_key = "judgment_data_key"
+        if judgment_data_key not in st.session_state:
+            st.button(
+                label="Generate LLM Judgment Data",
+                on_click=prepare_download,
+                kwargs={"key": judgment_data_key},
+                help="Click to build the Excel file before downloading"
+            )
+        else:
+            st.download_button(
+                label=":arrow_down: Download LLM Judgment Data",
+                data=st.session_state[judgment_data_key],
+                file_name="llm_judgment_data.xlsx",
+                mime="application/vnd.openxmlformats-officedocument-spreadsheetml.sheet",
+                key="download_llm_judgement",
+                help="Your Excel file is ready—click to save it locally!",
+                on_click=unset_download_data,
+                kwargs={"key": judgment_data_key},
+            )
+    
+    with cols[-1]:
+        judgment_data_key_all = "judgment_data_key_all"
+        st.markdown(
+            "Download the results of all files"
+        )
+        if judgment_data_key_all not in st.session_state:
+            st.button(
+                label="Generate Data for All Files",
+                on_click=prepare_download_all,
+                kwargs={"key": judgment_data_key_all},
+                help="Click to build the Excel file before downloading"
+            )
+        else:
+            st.download_button(
+                label=":arrow_down: Download All Judgment Data",
+                data=st.session_state[judgment_data_key_all],
+                file_name="all_judgment_data.xlsx",
+                mime="application/vnd.openxmlformats-officedocument-spreadsheetml.sheet",
+                key="download_all_llm_judgement",
+                help="Your Excel file is ready—click to save it locally!",
+                on_click=unset_download_data,
+                kwargs={"key": judgment_data_key_all},
+            )
+    
 
 
 def main():
-
+    start_time = time.time()
     st.title("📝 Urdu NER LLM-As-A-Judge")
     st.markdown("""
     This page allows you to evaluate the performance of different LLMs on Urdu NER tasks.
@@ -195,16 +228,9 @@ def main():
         if has_judgment_data():
             show_results()
             st.markdown("---")
-            st.markdown("**Download Evaluation Results**")
-            st.markdown("Download the evaluation results as an Excel file.")
-            st.download_button(
-                ":arrow_down: Download Evaluation Results",
-                data=download_llm_judgement_data(),
-                file_name="llm_judgement.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                key="download_llm_judgement"
-            )
+            download_data()
         else:
             evaluate_models()
+        print("Judgment page loaded in", time.time() - start_time, "seconds.")
 
 main()
