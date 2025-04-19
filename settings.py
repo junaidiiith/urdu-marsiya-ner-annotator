@@ -10,8 +10,8 @@ MAX_CONCURRENT_REQUESTS = 5
 
 SUPPORTED_LLM_JUDGE_MODELS = [
     ("openai/gpt-4o-mini", True),
-    ("openai/gpt-4.1-mini", False),
+    ("openai/gpt-4.1-mini", True),
     ("openai/o3-mini", False),
     ("anthropic/claude-3-7-sonnet-20250219", True),
-    ("anthropic/claude-3-5-haiku-20241022", False),
+    ("anthropic/claude-3-5-haiku-20241022", True),
 ]

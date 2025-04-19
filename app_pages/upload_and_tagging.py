@@ -1,5 +1,8 @@
 import streamlit as st
-from app_pages.common import init_session_state, set_current_text_hash, set_text_session_data
+from app_pages.common import (
+    init_session_state, 
+    set_text_session_data
+)
 from ner_annotator.utils import (
     get_all_files,
     get_llm_configs,
@@ -9,7 +12,7 @@ from ner_annotator.utils import (
 from ner_annotator.constants import DATASET_DIR
 from ner_annotator.llm_tagger import get_ner_tags
 from stqdm import stqdm
-
+import time
 
 text_states = {
     1: "File received. Please wait until the contents show in the text box. Loading...",
@@ -85,7 +88,7 @@ def initiate_ner_tagging(text):
     print("Starting NER tagging on...")
     print(text[:50])
     print("Total length:", len(text))
-    set_current_hash(text)
+    # set_current_hash(text)
     
     if add_text_if_not_exists(text):
         start_ner_tagging(text)
@@ -104,19 +107,19 @@ def show_message(message, message_type="info"):
         st.write(message)
 
 
-def set_current_hash(key):
+def set_current_hash(key, filename):
     text = st.session_state.get(key)
     if text:
         text_hash = hash(text)
-        init_session_state(text, text_hash)
-        set_current_text_hash(text_hash)
+        init_session_state(text, text_hash, filename)
 
 
 def main():
+    start_time = time.time()
     st.title("📜 LLM-based Marsiya Named Entity Tagging")
 
     select_ner_config()
-
+    print("Configurations loaded in", time.time() - start_time, "seconds.")
     st.markdown("### Choose your input method:")
 
     # Tabs for three options
@@ -136,7 +139,7 @@ def main():
                 height=300, 
                 on_change=set_current_hash,
                 key="uploaded_file_text", 
-                kwargs={"key": "uploaded_file_text"}
+                kwargs={"key": "uploaded_file_text", "filename": uploaded_file.name}
             )
             if st.session_state.get("uploaded_file_text"):
                 show_message(message=text_states[2], message_type="success")
@@ -151,7 +154,7 @@ def main():
             height=300, 
             on_change=set_current_hash, 
             key="pasted_text", 
-            kwargs={"key": "pasted_text"}
+            kwargs={"key": "pasted_text", "filename": "Pasted Text"}
         )
         if pasted_text:
             show_message(message=text_states[3], message_type="success")
@@ -185,10 +188,11 @@ def main():
                 height=300,
                 on_change=set_current_hash,
                 key="existing_file_text", 
-                kwargs={"key": "existing_file_text"}
+                kwargs={"key": "existing_file_text", "filename": selected_file}
             )
             # if st.button("🖋️ Tag this file", key="tag_existing_file"):
             #     initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
 
-
+    print("File upload and tagging completed in", time.time() - start_time, "seconds.")
+    
 main()

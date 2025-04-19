@@ -300,7 +300,7 @@ def query_llms(messages: List[Dict[str, str]], llm_names: List[str]) -> List[str
             start_time = time.time()
             resp = llm.call(messages)
             print(f"Response time for {llm.model}: {time.time() - start_time:.2f} seconds")
-            responses[llm.model] = resp
+            responses[llm.model] = format_llm_response(resp)
         except Exception as e:
             print(f"Error querying {llm.model}: {e}")
     
@@ -358,24 +358,10 @@ def run_evaluation(
     tqdm=tqdm
 ) -> list:
     # import json
-    # results = json.load(open('uploads/6d88202f9d2cd623bfc5584d2c2f58e7.json'))['llm_judgement']
-    # return results
+    # import time
+    # time.sleep(5)
+    # results = json.load(open('judge_responses.json'))
     all_message_chunks = get_evaluation_data(data, sentence_chunk_size, context_size)
     print("Total chunks:", len(all_message_chunks))
     results = judge_message_chunks(all_message_chunks, llm_names, tqdm=tqdm)
-    
-    rows = []
-    for run in results:
-        print("RUN", run)
-        for model_name, result in run.items():
-            result = format_llm_response(result)
-            for pred in result["predictions"]:
-                rows.append({
-                    "model": model_name,
-                    "entity": pred["entity"],
-                    "correct": int(pred["correct"]),
-                    "original": pred["tag"],
-                    "alternative": pred["alternative"],
-                })
-
-    return rows
+    return results
