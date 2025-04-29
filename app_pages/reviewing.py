@@ -248,11 +248,12 @@ def show_file_statistics():
             col.metric(tag.capitalize(), cnt)
         
         def print_stats(scores):
-            st.markdown("**Classification Scores**")
-            c1, c2, c3 = st.columns(3)
-            c1.metric("Precision", f"{scores['precision']:.2%}")
-            c2.metric("Recall",    f"{scores['recall']:.2%}")
-            c3.metric("F1-Score",  f"{scores['f1']:.2%}")
+            if scores:
+                st.markdown("**Classification Scores**")
+                c1, c2, c3 = st.columns(3)
+                c1.metric("Precision", f"{scores['precision']:.2%}")
+                c2.metric("Recall",    f"{scores['recall']:.2%}")
+                c3.metric("F1-Score",  f"{scores['f1']:.2%}")
         
         print_stats(stats['micro_scores'])
         print_stats(stats['macro_scores'])
@@ -261,11 +262,12 @@ def show_file_statistics():
         st.markdown(
             "This table shows the classification scores for each entity type. You can sort and filter the table to find specific entity types."
         )
-        st.dataframe(stats['df_per_type'].style.format({
-            'Precision': '{:.2%}',
-            'Recall':    '{:.2%}',
-            'F1-Score':  '{:.2%}',
-        }))
+        if stats['df_per_type']:
+            st.dataframe(stats['df_per_type'].style.format({
+                'Precision': '{:.2%}',
+                'Recall':    '{:.2%}',
+                'F1-Score':  '{:.2%}',
+            }))
         
         print(f"Statistics calculated in {time.time() - start_time:.2f} seconds.")
 
