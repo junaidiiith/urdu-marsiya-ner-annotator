@@ -203,6 +203,7 @@ def main():
             set_current_hash("existing_file_text", selected_file)
             if st.button("🖋️ Tag this file", key="tag_existing_file"):
                 print("Initiating NER tagging for selected file:", selected_file)
+                content = st.session_state.get("existing_file_text")
                 initiate_ner_tagging(content)
 
 
