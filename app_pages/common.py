@@ -52,8 +52,9 @@ def get_current_text_hash():
     if 'current_hash' not in st.session_state:
         st.error("You have not set the text to work with yet. Please go to the upload page.")
         return 
-    
+    print("Current hash:", st.session_state['current_hash'])
     return st.session_state['current_hash']
+
 
 def get_current_data(text_hash=None):
     current_hash = get_current_text_hash() if not text_hash else text_hash
@@ -64,6 +65,7 @@ def get_current_data(text_hash=None):
 
 
 def init_session_state(text, text_hash, filename):
+    st.session_state['current_hash'] = text_hash
     st.session_state[text_hash] = dict()
     st.session_state[text_hash] = {
         "filename": filename,
@@ -86,7 +88,6 @@ def set_text_session_data(**kwargs):
     st.session_state[current_hash] = current_data
     
 
-# st.cache_data(max_entries=10)
 def download_ner_tags_data(text_hash):
     current_data = get_current_data(text_hash=text_hash) 
     file_name = current_data.get('filename')   

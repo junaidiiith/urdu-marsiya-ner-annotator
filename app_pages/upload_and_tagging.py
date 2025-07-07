@@ -1,13 +1,11 @@
 import streamlit as st
-from app_pages.common import (
-    init_session_state, 
-    set_text_session_data
-)
+from app_pages.common import init_session_state, set_text_session_data
 from ner_annotator.utils import (
     get_all_files,
     get_llm_configs,
     save_ner_tags,
     save_text_with_hash,
+    calculate_hash
 )
 from ner_annotator.constants import DATASET_DIR
 from ner_annotator.llm_tagger import get_ner_tags
@@ -27,6 +25,7 @@ def set_tagged_result(text, ner_tags):
 
 
 def start_ner_tagging(text):
+    print("Starting NER tagging...1234567890")
     if text:
         model_id = st.session_state.get("selected_model_id")
         chunk_size = st.session_state.get("chunk_size")
@@ -46,8 +45,11 @@ def add_text_if_not_exists(text):
     """
 
     data = save_text_with_hash(text)
+    current_hash = calculate_hash(text)
+    print("Setting current hash:", current_hash)
+    st.session_state["current_hash"] = current_hash
     set_text_session_data(**data)
-    
+    print("Data: ", data)
     if "tagged" in data and data["tagged"]:
         st.success("Tags already exists. You can now proceed to reviewing tags.")
         return False
@@ -65,6 +67,8 @@ def select_ner_config():
         model_ids = llm_configs[selected_provider]["models"]
         model_ids = list({m["model_id"] for m in model_ids})
         default_model_idx = model_ids.index(default_model_id)
+        # import os
+        # print("API Key:", os.environ.get("OPENAI_API_KEY", "Not Set"))
 
         selected_model = st.selectbox(
             "Select Model", model_ids, key="model_id", index=default_model_idx
@@ -89,7 +93,7 @@ def initiate_ner_tagging(text):
     print(text[:50])
     print("Total length:", len(text))
     # set_current_hash(text)
-    
+
     if add_text_if_not_exists(text):
         start_ner_tagging(text)
 
@@ -108,9 +112,13 @@ def show_message(message, message_type="info"):
 
 
 def set_current_hash(key, filename):
+    print("Setting current hash for key:", key)
+    print("Filename:", filename)
     text = st.session_state.get(key)
     if text:
-        text_hash = hash(text)
+        text_hash = calculate_hash(text)
+        print("Text hash: ", text_hash)
+        st.session_state["current_hash"] = text_hash
         init_session_state(text, text_hash, filename)
 
 
@@ -134,12 +142,12 @@ def main():
 
             # now show the text
             st.text_area(
-                "Uploaded Content", 
-                value=text, 
-                height=300, 
+                "Uploaded Content",
+                value=text,
+                height=300,
                 on_change=set_current_hash,
-                key="uploaded_file_text", 
-                kwargs={"key": "uploaded_file_text", "filename": uploaded_file.name}
+                key="uploaded_file_text",
+                kwargs={"key": "uploaded_file_text", "filename": uploaded_file.name},
             )
             if st.session_state.get("uploaded_file_text"):
                 show_message(message=text_states[2], message_type="success")
@@ -150,11 +158,11 @@ def main():
 
     with tab2:
         pasted_text = st.text_area(
-            "Paste Marsiya Text Below and then press cmd+Enter:", 
-            height=300, 
-            on_change=set_current_hash, 
-            key="pasted_text", 
-            kwargs={"key": "pasted_text", "filename": "Pasted Text"}
+            "Paste Marsiya Text Below and then press cmd+Enter:",
+            height=300,
+            on_change=set_current_hash,
+            key="pasted_text",
+            kwargs={"key": "pasted_text", "filename": "Pasted Text"},
         )
         if pasted_text:
             show_message(message=text_states[3], message_type="success")
@@ -178,21 +186,27 @@ def main():
 
         if selected_file:
             # In a real app, this would load content from a file or DB
+                
             st.info(
                 f"Selected Marsiya: {selected_file} {'(Tagged)' if all_marsiya_files[selected_file]['tagged'] else ''}"
             )
             content = f"{selected_file}\nContent: {all_marsiya_files[selected_file]['content']}"
+                
             st.text_area(
-                "Marsiya Content", 
-                value=content, 
+                "Marsiya Content",
+                value=content,
                 height=300,
                 on_change=set_current_hash,
-                key="existing_file_text", 
-                kwargs={"key": "existing_file_text", "filename": selected_file}
+                key="existing_file_text",
+                kwargs={"key": "existing_file_text", "filename": selected_file},
             )
+            set_current_hash("existing_file_text", selected_file)
             if st.button("🖋️ Tag this file", key="tag_existing_file"):
-                initiate_ner_tagging(all_marsiya_files[selected_file]['content'])
+                print("Initiating NER tagging for selected file:", selected_file)
+                initiate_ner_tagging(content)
+
 
     print("File upload and tagging completed in", time.time() - start_time, "seconds.")
-    
+
+
 main()

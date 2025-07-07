@@ -11,6 +11,7 @@ import enum
 from typing import Dict, List
 from crewai import LLM
 import concurrent.futures
+from ner_annotator.utils import get_crew_api_key
 
 
 class NERMode(enum.Enum):
@@ -275,6 +276,7 @@ def extract_named_entites_from_chunks(
     Returns:
         List[TaggedElement]: List of extracted named entities, in the same order as the input chunks.
     """
+    print("LLM: ", llm.model, " API Key: ", llm.api_key)
     extracted_results = [None] * len(chunks)
 
     with concurrent.futures.ThreadPoolExecutor(
@@ -306,7 +308,7 @@ def extract_named_entites_from_chunks(
 def get_ner_tags(
     text: str,
     mode=NERMode.MARSIYA,
-    model_id: str = "openai/gpt-4o-mini",
+    model_id: str = "openai/o3-mini",
     chunk_size: int = CHUNK_SIZE,
     tqdm=tqdm,
 ) -> TaggedElements:
@@ -317,7 +319,10 @@ def get_ner_tags(
 
     # with open('uploads/1ce96d97cfd6ebebe655bb60aabf1022.json') as f:
     #     return json.load(f)['tagged_elements']
-
-    llm = LLM(model=model_id, response_format=TaggedElements)
+    import os
+    print("OPENAI API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
+    print("Text: ", chunked_messages[0])  # Print first 1000 characters for debugging
+    llm = LLM(model=model_id, response_format=TaggedElements, api_key=get_crew_api_key(model_id.split("/")[0]))
+    print("Extracting named entities from chunks...")
     responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
     return sum([json.loads(r)["tagged_elements"] for r in responses], [])

@@ -14,6 +14,7 @@ from sklearn.metrics import (
 
 from ner_annotator.constants import UPLOAD_DIR
 
+print("Utils API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
 
 
 def get_all_files(dataset_dir: str):
@@ -54,8 +55,6 @@ def update_file_status(file_path: str):
     df = pd.read_csv(f"{file_path}/status.csv")
     df.loc[df['path'] == file_path, 'tagged'] = True
     df.to_csv(f"{file_path}/status.csv", index=False)
-
-
 
 
 def calculate_hash(text: str) -> str:
@@ -367,3 +366,16 @@ def get_llm_judgment_stats(responses_data, threshold=None):
         "entity_type_accuracy": compute_accuracy_per_entity_type(entity_predictions, threshold),
         "model_entity_type_accuracy": compute_accuracy_per_type_per_model(entity_predictions, threshold),    
     }
+    
+    
+    
+def get_crew_api_key(provider):
+    """
+    Get the API key for the specified provider.
+    """
+    if provider == "anthropic":
+        return os.environ.get("ANTHROPIC_API_KEY", None)
+    elif provider == "openai":
+        return os.environ.get("OPENAI_API_KEY", None)
+    else:
+        raise ValueError(f"Unknown provider: {provider}")
