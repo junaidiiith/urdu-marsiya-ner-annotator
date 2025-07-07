@@ -308,7 +308,7 @@ def extract_named_entites_from_chunks(
 def get_ner_tags(
     text: str,
     mode=NERMode.MARSIYA,
-    model_id: str = "openai/o3-mini",
+    model_id: str = "openai/gpt-4o-mini",
     chunk_size: int = CHUNK_SIZE,
     tqdm=tqdm,
 ) -> TaggedElements:

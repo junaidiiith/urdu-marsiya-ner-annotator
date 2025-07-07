@@ -1,7 +1,7 @@
 {
     "OpenAI": {
         "prefix": "openai",
-        "default": "o3-mini",
+        "default": "gpt-4o-mini",
         "models": [
             {
                 "name": "GPT4o Mini",
