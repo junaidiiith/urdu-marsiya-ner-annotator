@@ -248,7 +248,7 @@ def show_file_statistics():
             col.metric(tag.capitalize(), cnt)
         
         def print_stats(scores):
-            if scores:
+            if scores is not None:
                 st.markdown("**Classification Scores**")
                 c1, c2, c3 = st.columns(3)
                 c1.metric("Precision", f"{scores['precision']:.2%}")
@@ -262,7 +262,7 @@ def show_file_statistics():
         st.markdown(
             "This table shows the classification scores for each entity type. You can sort and filter the table to find specific entity types."
         )
-        if stats['df_per_type']:
+        if stats['df_per_type'] is not None:
             st.dataframe(stats['df_per_type'].style.format({
                 'Precision': '{:.2%}',
                 'Recall':    '{:.2%}',
