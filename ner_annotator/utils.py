@@ -212,12 +212,14 @@ def get_stats(tagged_data_elements):
     )
     y_t = [get_true_verified(v) for v in total_verified]
     y_p = [get_predicted_verified(v) for v in total_verified]
-    
+    print("True Verified:", y_t)
+    print("Predicted Verified:", y_p)
+    print("Labels:", per_category_count)
 
     print(f"  Accuracy:  {balanced_accuracy_score(y_t, y_p):.3f}")
-    print(f"  Precision: {precision_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys())):.3f}")
-    print(f"  Recall:    {recall_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys())):.3f}")
-    print(f"  F1-score:  {f1_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys())):.3f}\n")
+    print(f"  Macro Precision: {precision_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys()), average='macro'):.3f}")
+    print(f"  Recall:    {recall_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys()), average='macro'):.3f}")
+    print(f"  F1-score:  {f1_score(y_t, y_p, zero_division=0, labels=list(per_category_count.keys()), average='macro'):.3f}\n")
 
     
     # print("entity status: ", entity_status)
