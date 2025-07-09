@@ -79,7 +79,7 @@ jupyter-core==5.7.2
 jupyterlab-widgets==3.0.14
 kiwisolver==1.4.8
 kubernetes==32.0.1
-litellm==1.74.0.post1
+litellm==1.74.0
 markdown-it-py==3.0.0
 markupsafe==3.0.2
 matplotlib==3.10.1
