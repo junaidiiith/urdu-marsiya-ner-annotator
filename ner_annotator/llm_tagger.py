@@ -276,7 +276,7 @@ def extract_named_entites_from_chunks(
     Returns:
         List[TaggedElement]: List of extracted named entities, in the same order as the input chunks.
     """
-    # print("LLM: ", llm.model, " API Key: ", llm.api_key)
+    print("LLM: ", llm.model, " API Key: ", llm.api_key)
     extracted_results = [None] * len(chunks)
 
     with concurrent.futures.ThreadPoolExecutor(
@@ -319,9 +319,9 @@ def get_ner_tags(
 
     # with open('uploads/1ce96d97cfd6ebebe655bb60aabf1022.json') as f:
     #     return json.load(f)['tagged_elements']
-    # import os
-    # print("OPENAI API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
-    # print("Text: ", chunked_messages[0])  # Print first 1000 characters for debugging
+    import os
+    print("OPENAI API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
+    print("Text: ", chunked_messages[0])  # Print first 1000 characters for debugging
     llm = LLM(model=model_id, response_format=TaggedElements, api_key=get_crew_api_key(model_id.split("/")[0]))
     print("Extracting named entities from chunks...")
     responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
