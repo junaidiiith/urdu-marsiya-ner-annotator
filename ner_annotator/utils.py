@@ -14,7 +14,7 @@ from sklearn.metrics import (
 
 from ner_annotator.constants import UPLOAD_DIR
 
-print("Utils API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
+# print("Utils API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
 
 
 def get_all_files(dataset_dir: str):
