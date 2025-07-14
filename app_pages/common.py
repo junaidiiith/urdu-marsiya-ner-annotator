@@ -65,6 +65,10 @@ def get_current_data(text_hash=None):
 
 
 def init_session_state(text, text_hash, filename):
+    assert 'model_id' in st.session_state, "Model ID must be set before initializing session state."
+    assert 'ner_mode' in st.session_state, "NER mode must be set before initializing session state."
+    model_id = st.session_state['model_id']
+    ner_mode = st.session_state['ner_mode']
     st.session_state['current_hash'] = text_hash
     st.session_state[text_hash] = dict()
     st.session_state[text_hash] = {
@@ -73,6 +77,8 @@ def init_session_state(text, text_hash, filename):
         'tagged_elements': [],
         'tagged': False,
         'llm_judgement': [],
+        'model_id': model_id,
+        'ner_mode': ner_mode,
     }
     
     st.session_state['all_hashes'] = st.session_state.get('all_hashes', [])

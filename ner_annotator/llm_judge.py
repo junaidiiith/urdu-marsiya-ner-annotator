@@ -12,6 +12,8 @@ from pydantic import BaseModel, Field
 class Entity(BaseModel):
     entity: str = Field(description="Entity text")
     tag: str = Field(description="Original Entity tag")
+    score: float = Field(default=1.0, description="Confidence score of the entity")
+    justification: str = Field(description="Justification for the entity tagging")
     correct: bool = Field(description="Is the entity correctly tagged?")
     alternative: str = Field(description="Alternative entity text if correctness is false")
 
@@ -22,6 +24,93 @@ class LLMJudgement(BaseModel):
 
 CONTEXT_LENGTH = 3
 SENTENCES_CHUNK = 10
+
+
+NER_JUDGE_SYSTEM_PROMPT_REFINED = """
+You are an expert Urdu linguist and Marsiya poet, and your task is to **evaluate** a set of predicted Named Entity tags on Urdu Marsiya text. 
+For each extracted entity you must decide if its **Predicted NER Tag** is correct, and if not supply the correct one.
+
+**Output Schema**
+Return **only** this JSON structure:
+
+```json
+{
+  "predictions": [
+    {
+      "entity": "…",            
+      "tag": "…",               
+      "correct": true|false,    
+      "alternative": "…"        
+    },
+    …
+  ]
+}
+```
+
+* **entity**: the exact Urdu string tagged
+* **tag**: the model's predicted tag (one of PERSON, LOCATION, DATE, TIME, ORGANIZATION, DESIGNATION, NUMBER)
+* **score**: confidence score (default 1.0)
+* **justification**: a brief explanation of why the tag is correct or incorrect
+* **correct**: `true` if the prediction is valid, else `false`
+* **alternative**: if `correct=true`, repeat the same tag; if `false`, give the one correct tag
+
+---
+
+### Evaluation Rules
+
+1. **General**
+
+   * Do **not** invent entities or tags; only judge the provided predictions.
+   * No overlapping or nested entities.
+   * If an entity spans multiple words (e.g. titles + names), treat as one.
+
+2. **Urdu-Specific**
+
+   * Honorific prefixes/suffixes (حضرت, علیہ السلام) attach to PERSON.
+   * Loanwords (شعیب, یزید) are PERSON if names.
+   * ZWNJ and diacritics may split tokens—treat them correctly.
+
+3. **Marsiya-Specific**
+
+   * Battle-of-Karbala participants (حسین، عباس، زینب) are always PERSON.
+   * Shrines and holy precincts (حرمِ امام حسین) are LOCATION.
+   * Poetic epithets (سیدِ شہداء) → PERSON if attached to a name, else DESIGNATION.
+   * Marsiya dates (محرم, صفر, لیلة القدر) → DATE.
+   * Archaic time expressions (“شامِ غریباں”, “پہرِ صیام”) → TIME.
+
+4. **Category Quick-Reference**
+
+   * **PERSON**: full names, epithets, honorifics + name
+   * **LOCATION**: cities, rivers, shrines, battlefields
+   * **DATE**: calendar dates, years (هجری/میلادی), religious commemoration days
+   * **TIME**: clock-times, parts of day when specific
+   * **ORGANIZATION**: formal bodies (majlis, انجمن, political/religious orders)
+   * **DESIGNATION**: standalone titles/ranks not prefixed by a name
+   * **NUMBER**: numerals, spelled-out counts/durations
+
+---
+
+### Example Evaluation
+
+```text
+Entity: علم دار حسینی
+Predicted NER Tag: PERSON
+```
+
+* This is a **poetic epithet** (“Standard-Bearer of Husayn”), not a personal name.
+* **Output**:
+
+  ```json
+  {
+    "entity": "علم دار حسینی",
+    "tag": "PERSON",
+    "correct": false,
+    "alternative": "DESIGNATION"
+  }
+  ```
+
+Now evaluate the full list below according to these rules and return the JSON.
+"""
 
 
 NER_JUDGE_SYSTEM_PROMPT = """
@@ -244,11 +333,16 @@ NER_USER_PROMPT = """
 """
 
 
-def get_evaluation_data(tagged_data, sentence_chunk_size=SENTENCES_CHUNK, context_size=CONTEXT_LENGTH):
+def get_evaluation_data(
+  tagged_data, 
+  sentence_chunk_size=SENTENCES_CHUNK, 
+  context_size=CONTEXT_LENGTH,
+  system_prompt=NER_JUDGE_SYSTEM_PROMPT_REFINED,
+):
     def build_sentences_prompt(tagged_sentences):
         ner_prompt = ""
         count = 0
-        for i, s in enumerate(tagged_sentences):
+        for _, s in enumerate(tagged_sentences):
             ner_prompt += "Original Urdu Text, with tags:\n"
             ner_prompt += f"{s['tagged']}\n"
             ner_prompt += f"Context:\n{s['context']}\n\n"
@@ -261,7 +355,7 @@ def get_evaluation_data(tagged_data, sentence_chunk_size=SENTENCES_CHUNK, contex
             ner_prompt += "\n"
         
         messages = [
-            {"role": "system", "content": NER_JUDGE_SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": NER_USER_PROMPT.format(sentences=ner_prompt)}
         ]
         
@@ -269,7 +363,10 @@ def get_evaluation_data(tagged_data, sentence_chunk_size=SENTENCES_CHUNK, contex
     
     all_sentences_data = list()
     for i, d in enumerate(tagged_data):
-        context = "\n".join([i['original'] for i in tagged_data[max(0, i-context_size):min(len(tagged_data), i+context_size)]])
+        context = "\n".join([
+            i['original'] 
+            for i in tagged_data[max(0, i-context_size):min(len(tagged_data), i+context_size)]
+        ])
         original = d['original']
         tagged = d['tagged']
         entities = [v for k, v in d['entity_status'].items() if k != 'user_verified' and len(v) > 0]
@@ -337,16 +434,8 @@ def judge_message_chunks(all_message_chunks: List[List[Dict[str, str]]], llm_nam
             except Exception as e:
                 print(f"Error processing chunk {idx}: {e}")
                 
-    # Remove any None results (if desired)
     extracted_results = [res for res in extracted_results if res is not None]
     
-    # print("Evaluation completed!")
-    # print("Total results:", len(extracted_results))
-    # print("Results:", extracted_results)
-    # import json
-    # with open('judge_responses_1.json', 'w') as f:
-    #     json.dump(extracted_results, f, indent=4)
-        
     return extracted_results
 
 
@@ -357,11 +446,9 @@ def run_evaluation(
     context_size=CONTEXT_LENGTH,
     tqdm=tqdm
 ) -> list:
-    # import json
-    # import time
-    # time.sleep(5)
-    # results = json.load(open('judge_responses.json'))
+
     all_message_chunks = get_evaluation_data(data, sentence_chunk_size, context_size)
     print("Total chunks:", len(all_message_chunks))
     results = judge_message_chunks(all_message_chunks, llm_names, tqdm=tqdm)
     return results
+  

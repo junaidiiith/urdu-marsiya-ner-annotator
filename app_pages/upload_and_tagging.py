@@ -8,7 +8,7 @@ from ner_annotator.utils import (
     calculate_hash
 )
 from ner_annotator.constants import DATASET_DIR
-from ner_annotator.llm_tagger import get_ner_tags
+from ner_annotator.llm_tagger import NERMode, get_ner_tags
 from stqdm import stqdm
 import time
 
@@ -18,9 +18,17 @@ text_states = {
     3: "Text received.",
 }
 
+def get_file_suffix():
+    """
+    Get the file suffix based on the selected model and NER mode.
+    """
+    model_id = st.session_state.get("selected_model_id")
+    ner_mode = st.session_state.get("ner_mode", NERMode.MARSIYA_ADVANCED)
+    return f"_{model_id.replace('.', '_')}_{ner_mode.value}.json"
 
-def set_tagged_result(text, ner_tags):
-    set_text_session_data(**save_ner_tags(text, ner_tags))
+
+def set_tagged_result(text, ner_tags, suffix=None):
+    set_text_session_data(**save_ner_tags(text, ner_tags, suffix=suffix))
     st.success("NER tagging completed. Now you can move to reviewing the results.")
 
 
@@ -29,13 +37,18 @@ def start_ner_tagging(text):
     if text:
         model_id = st.session_state.get("selected_model_id")
         chunk_size = st.session_state.get("chunk_size")
+        st.text(f"Using model: {model_id}")
         with st.spinner("LLM-based NER Tagging...Will take a while for large texts."):
             show_message(message="Tagging in progress...")
             ner_tags = get_ner_tags(
-                text, model_id=model_id, chunk_size=chunk_size, tqdm=stqdm
+                text, 
+                mode=NERMode.MARSIYA_ADVANCED,
+                model_id=model_id, 
+                chunk_size=chunk_size, 
+                tqdm=stqdm
             )
         print("Total NER Tags:", len(ner_tags))
-        set_tagged_result(text, ner_tags)
+        set_tagged_result(text, ner_tags, suffix=get_file_suffix())
 
 
 def add_text_if_not_exists(text):
@@ -49,7 +62,7 @@ def add_text_if_not_exists(text):
     print("Setting current hash:", current_hash)
     st.session_state["current_hash"] = current_hash
     set_text_session_data(**data)
-    print("Data: ", data)
+    # print("Data: ", data)
     if "tagged" in data and data["tagged"]:
         st.success("Tags already exists. You can now proceed to reviewing tags.")
         return False
@@ -82,6 +95,13 @@ def select_ner_config():
             value=40,
             step=5,
             key="chunk_size",
+        )
+        st.selectbox(
+            "NER Mode",
+            options=[mode.value for mode in NERMode],
+            index=0,
+            key="ner_mode",
+            help="Select the NER mode to use for tagging.",
         )
 
 
@@ -186,12 +206,13 @@ def main():
 
         if selected_file:
             # In a real app, this would load content from a file or DB
-                
+            
             st.info(
-                f"Selected Marsiya: {selected_file} {'(Tagged)' if all_marsiya_files[selected_file]['tagged'] else ''}"
+                f"Selected Marsiya: {selected_file} {'(Tagged)' 
+                if all_marsiya_files[selected_file]['tagged'] else ''}"
             )
             content = f"{selected_file}\nContent: {all_marsiya_files[selected_file]['content']}"
-                
+            content = f"{all_marsiya_files[selected_file]['content']}"
             st.text_area(
                 "Marsiya Content",
                 value=content,

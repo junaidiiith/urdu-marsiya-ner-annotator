@@ -22,8 +22,9 @@ TAG_COLORS = {
     "DATE": "#FCF3CF",  # Light Yellow
     "TIME": "#FADBD8",  # Light Pink
     "ORGANIZATION": "#F9E79F",  # Light Orange
-    "DESGINATION": "#D5DBDB",  # Light Gray
+    "DESGINATION": "#8BE1E1",  # Light Gray
     "NUMBER": "#D7BDE2",  # Light Purple
+    "N/A": "#E5E7E9",  # Default light grey for untagged
 }
 
 # Entity tags
@@ -94,6 +95,7 @@ def set_new_entity_tag_current_entities_status(entity, new_tag):
 def render_tagged_text():
     display_text: str = get_current_line()["tagged"]
     entities = extract_entities(display_text)
+    print("Entities found:", entities)
     for tag, text in entities:
         color = TAG_COLORS.get(tag.upper(), "#E5E7E9")  # Default light grey
         replacement = f'<span style="background-color: {color}; padding: 2px;" title="{tag}">{text}</span>'
@@ -286,6 +288,7 @@ def show_file_statistics():
             "This table shows the statistics of all the files in the dataset. You can sort and filter the table to find specific files."
         )
         show_stats(all_files_stats, stats_id='all_files_stats')
+
 
 def download_data():
     def prepare_download(key):

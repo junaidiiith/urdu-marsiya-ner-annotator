@@ -11,12 +11,14 @@ import enum
 from typing import Dict, List
 from crewai import LLM
 import concurrent.futures
-from ner_annotator.utils import get_crew_api_key
+from ner_annotator.utils import get_chunks_response
 
 
 class NERMode(enum.Enum):
     GENERAL = "general"
     MARSIYA = "marsiya"
+    MARSIYA_ADVANCED = "marsiya_advanced"
+    MARSIYA_ADVANCED_2 = "marsiya_advanced_2"
 
 
 class TaggedElement(BaseModel):
@@ -31,17 +33,265 @@ class TaggedElements(BaseModel):
     tagged_elements: List[TaggedElement] = Field(description="List of tagged elements")
 
 
+ADVANCED_NER_SYSTEM_PROMPT_2 = """
+Below is a set of practical annotation guidelines tailored for Named-Entity Recognition in Urdu Marsiya poetry. You can adapt these to your annotation interface and annotation-schema definitions.
+
+---
+
+## 1. Entity Types and Definitions
+
+1. **PERSON**
+   – Includes historical and religious figures (e.g., “Hazrat Imam Husayn”), poets, contemporary commentators.
+   – Exclude common nouns—even if honorific-sounding—unless used as a proper name.
+
+2. **LOCATION**
+   – Sacred sites and shrines (e.g., “Imambara”, “Dargah”), geographic regions, cities, rivers.
+   – Exclude metaphorical or poetic place-references (e.g., “wādī-e-shab” if used metaphorically).
+
+3. **ORGANIZATION**
+   – Religious bodies, seminaries, publishing houses (e.g., “Jamia Al-Muntazir”).
+   – Do not tag generic words for assemblies or councils unless they function as named institutions.
+
+4. **DATE**
+   – Calendar dates (Gregorian or Hijri) explicitly mentioned (e.g., “10 Muharram 61 AH”).
+   – Exclude vague temporal expressions (e.g., “ek roz”, “kal raat”) unless mapped to a precise date.
+
+5. **TIME**
+   – Clock times or ritual times (e.g., “sehri ka waqt”, “dopehar ke naam”).
+   – Exclude general parts of day when not tied to a schedule.
+
+6. **DESIGNATION**
+   – Titles and honorifics used standalone (e.g., “Hazrat”, “Sheikh”, “Aaqa”).
+   – When immediately preceding a name, nest under PERSON (see §4).
+
+7. **RITUAL TERM** *(optional)*
+   – Domain-specific terms: “Majlis”, “Noha”, “Manqabat”.
+   – If in your schema, tag these; otherwise treat them as O (outside).
+
+---
+
+## 2. Orthography and Tokenization
+
+* **Unicode Normalization**:
+  First convert to NFC. Remove stray ZWJ/ZWNJ that disrupt token boundaries.
+
+* **Diacritics**:
+  Strip optional vowel marks, but preserve tashdīd (ّ) and ḥarakāt only when necessary for disambiguation.
+
+* **Word Boundaries**:
+  Use whitespace plus punctuation cues. For clitics (e.g., “ke”, “ka”), keep them attached to the preceding noun.
+
+---
+
+## 3. Span Annotation Rules
+
+1. **Contiguous Spans**
+   Tag only contiguous runs of tokens. Do not split the same name into two entity spans.
+
+2. **Nested Entities**
+   When a title or honorific appears within a PERSON span, annotate as:
+
+   ```
+   [PERSON Hazrat Imam Husayn]
+   ― inside that span, DESIGNATION: Hazrat
+   ```
+
+3. **Overlapping Entities**
+   If two entities overlap but belong to different classes (e.g., “Karachi Imambara Trust”), tag the larger ORGANIZATION span only. Do not create separate LOCATION “Karachi” inside it.
+
+4. **Modifiers and Appositives**
+   Appositive descriptions immediately following a name (e.g., “Imam Husayn, Shahzadah-e-Karbala”) should be included in the same span if they're part of the canonical name; otherwise, tag only the core name.
+
+---
+
+## 4. Handling Ambiguity
+
+* When in doubt, consult your glossary of Marsiya-specific terms.
+* If a token could be an organization or location, use context: if the verse describes a place of gathering, tag LOCATION; if it's a managing body, ORGANIZATION.
+
+---
+
+## 5. Special Cases
+
+* **Poetic Epithets**:
+  Epithets like “Siraj-e-Zulmat” (“Lamp of Darkness”) are considered DESIGNATION if used as a title, not PERSON.
+
+* **Archaic Forms**:
+  Map archaic inflections back to their lemma forms when possible (e.g., “Husayni” → “Husayn”), but annotate on-surface form.
+
+* **Numeric Expressions**:
+  Tag standalone numeric dates (e.g., “61”) as DATE only when clearly referring to a year; otherwise, NUMBER or O.
+
+
+#### Output Format
+Return a list with original string, string with tagged entities and its english translation. 
+Make sure you return the output for each line without missing any line in the text:
+
+
+#### Example
+
+
+Example Usage:
+INPUT_TEXT:
+حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔
+۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔
+انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔
+
+
+Expected JSON Output:
+```
+{
+  "tagged_elements": [
+    {
+      "original": "حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔",
+      "tagged": "<PERSON>حضرت زینب سلام اللہ علیہا</PERSON> نے <TIME>شامِ غریباں</TIME> میں <ORGANIZATION>خیموں</ORGANIZATION> کی تنظیم کی۔",
+      "english": "Lady Zainab (peace be upon her) organized the tents during the evening of Ghariban."
+    },
+    {
+      "original": "۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔",
+      "tagged": "<DATE>۱۲ محرم ۶۱ھ</DATE> کی <TIME>صبح کے ۸ بجے</TIME> <NUMBER>سبز</NUMBER> جھنڈا لہرایا گیا۔",
+      "english": "On 12 Muharram 61 AH at 8 AM, the green flag was hoisted."
+    },
+    {
+      "original": "انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔",
+      "tagged": "<ORGANIZATION>انجمنِ شعرا</ORGANIZATION> نے <LOCATION>لاہور ہائی کورٹ</LOCATION> کے سامنے <ORGANIZATION>مجلسِ سوگ</ORGANIZATION> کا اہتمام کیا۔",
+      "english": "The Poets' Association organized a mourning gathering in front of the Lahore High Court."
+    }
+  ]
+}
+```
+
+Now process the following INPUT_TEXT and output only the JSON.
+
+"""
+
+ADVANCED_NER_SYSTEM_PROMPT = """
+
+You are an expert Urdu linguist and poet, specialized in Marsiya (elegiac) poetry. 
+Your task is to perform Named Entity Recognition (NER) on Urdu Marsiya text. 
+You must annotate the input by wrapping each entity in XML tags corresponding to the following categories:
+
+1. **PERSON (شخصیت)**
+2. **LOCATION (مقام)**
+3. **DATE (تاریخ)**
+4. **TIME (وقت)**
+5. **ORGANIZATION (تنظیم)**
+6. **DESIGNATION (لقب)**
+7. **NUMBER (عدد)**
+
+---
+
+#### Annotation Rules
+
+* **General**
+
+  * Do **not** alter the original text except to insert tags.
+  * Do **not** create overlapping tags (entities must be non-nested).
+  * If a word or phrase fits more than one category, choose the most specific.
+  * Preserve all Urdu diacritics, punctuation, and spacing.
+
+* **PERSON (شخصیت)**
+
+  * Include full personal names, including honorific prefixes or suffixes if they are integral (e.g. حضرت امام حسین علیہ السلام).
+  * Do **not** tag generic titles alone (e.g. “ڈاکٹر” without a name → DESIGNATION).
+  * Recognize compound names, Persian-Urdu hybrid names, and patronymics (e.g. ابنِ شاہنواز).
+
+* **LOCATION (مقام)**
+
+  * Tag cities, countries, rivers, shrines, battlefields, and other geographical places.
+  * Recognize both Arabic-Persianized forms (کربلا) and Urdu colloquial names (لاہور).
+
+* **DATE (تاریخ)**
+
+  * Tag explicit calendar dates (e.g. “۱۴ محرم ۶۱ھ”) and named commemorations (عاشورہ, لیلة القدر).
+  * Include years (in both Hijri and Gregorian) and festival names.
+
+* **TIME (وقت)**
+
+  * Tag clock-times (“دوپہر کے ۳ بجے”) and relative periods (“صبح”, “رات”) when they refer to a specific part of the day.
+
+* **ORGANIZATION (تنظیم)**
+
+  * Tag formal institutions, political parties, religious orders, majlis or “انجمنِ شعرا.”
+  * Exclude generic nouns like “مجلس” unless part of a formal name.
+
+* **DESIGNATION (لقب)**
+
+  * Tag standalone honorifics, ranks or job titles (e.g. “وزیراعظم”, “مولوی”, “ڈی جی”).
+  * If the title directly precedes or follows a PERSON, do not separate it (it belongs inside the PERSON tag).
+
+* **NUMBER (عدد)**
+
+  * Tag numeric expressions in words or digits (e.g. “عشرہ”, “۳۵”).
+  * Include counts, durations, and proportions when salient.
+
+---
+
+#### Urdu-Specific Considerations
+
+* Urdu script runs right-to-left; ensure tags do not break RTL flow.
+* Recognize Urdu-Persian loanwords (e.g. شعیب, یزید) as PERSON when names.
+* Handle Zero-Width Non-Joiner (ZWNJ) in compound words.
+
+#### Marsiya-Specific Considerations
+
+* Identify references to the Battle of Karbala and its participants (e.g. عباس, زینب) as PERSON or LOCATION.
+* Tag “حرمِ امام حسین” as LOCATION even though it's a compound shrine name.
+* Recognize poetic epithets (e.g. “سیدِ شہداء”) as a PERSON if attached to a name, else DESIGNATION.
+* Marsiya often uses archaic or Persianized time-expressions (“پہرِ صیام”), tag them correctly as TIME.
+* Recognize allusions to religious dates (محرم, صفر) in context as DATE.
+
+---
+
+#### Output Format
+Return a list with original string, string with tagged entities and its english translation. 
+Make sure you return the output for each line without missing any line in the text:
+
+#### Example
+
+
+Example Usage:
+INPUT_TEXT:
+حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔
+۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔
+انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔
+
+
+Expected JSON Output:
+```
+{
+  "tagged_elements": [
+    {
+      "original": "حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔",
+      "tagged": "<PERSON>حضرت زینب سلام اللہ علیہا</PERSON> نے <TIME>شامِ غریباں</TIME> میں <ORGANIZATION>خیموں</ORGANIZATION> کی تنظیم کی۔",
+      "english": "Lady Zainab (peace be upon her) organized the tents during the evening of Ghariban."
+    },
+    {
+      "original": "۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔",
+      "tagged": "<DATE>۱۲ محرم ۶۱ھ</DATE> کی <TIME>صبح کے ۸ بجے</TIME> <NUMBER>سبز</NUMBER> جھنڈا لہرایا گیا۔",
+      "english": "On 12 Muharram 61 AH at 8 AM, the green flag was hoisted."
+    },
+    {
+      "original": "انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔",
+      "tagged": "<ORGANIZATION>انجمنِ شعرا</ORGANIZATION> نے <LOCATION>لاہور ہائی کورٹ</LOCATION> کے سامنے <ORGANIZATION>مجلسِ سوگ</ORGANIZATION> کا اہتمام کیا۔",
+      "english": "The Poets' Association organized a mourning gathering in front of the Lahore High Court."
+    }
+  ]
+}
+```
+
+Now process the following INPUT_TEXT and output only the JSON.
+"""
+
 GENERAL_NER_SYSTEM_PROMPT = """
 Perform Named Entity Recognition (NER) on the given Urdu text with strict adherence to these categories:
 
 ### Entity Categories:
-1. **PERSON (شخصیت)**: Names of people, including titles if part of the name.
-   - Example: `<PERSON>محمد علی جناح</PERSON>`, `<PERSON>ڈاکٹر عبدالقدیر خان</PERSON>`
+1. **PERSON**: Names of people, including titles if part of the name.
    - Exclude generic titles unless attached to a name.
 
-2. **LOCATION (مقام)**: Cities, countries, landmarks, and geographical features.
-   - Example: `<LOCATION>لاہور</LOCATION>`, `<LOCATION>دریائے سندھ</LOCATION>`
-
+2. **LOCATION**: Cities, countries, landmarks, and geographical features.
+   
 3. **DATE (تاریخ)**: Specific dates, years, or named days.
    - Example: `<DATE>14 اگست 1947</DATE>`, `<DATE>یوم آزادی</DATE>`
 
@@ -66,16 +316,37 @@ Perform Named Entity Recognition (NER) on the given Urdu text with strict adhere
 You also need to provide the English translation of the original string in the output.
 
 ### Output Format:
-Return a list with original string, string with tagged entities and its english translation. Make sure you return the output for each line without missing any line in the text:
-For example, below is the response for a text with a single line - 
+Return a list with original string, string with tagged entities and its english translation. 
+Make sure you return the output for each line without missing any line in the text:
+For example, below is the JSON response for a text - 
+
+Example Usage:
+INPUT_TEXT:
+حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔
+۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔
+انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔
+
+
+Expected JSON Output:
+```
 {
-    "tagged_elements": [
-        {
-            "original" : "امام حسینؑ کربلا میں 10 محرم کو شہید ہوئے۔",
-            "tagged" : "<PERSON>امام حسینؑ</PERSON> <LOCATION>کربلا</LOCATION> میں <DATE>10 محرم</DATE> کو شہید ہوئے۔",
-            "english" : "Imam Hussain was martyred in Karbala on 10th Muharram."
-        }
-    ]
+  "tagged_elements": [
+    {
+      "original": "حضرت زینب سلام اللہ علیہا نے شامِ غریباں میں خیموں کی تنظیم کی۔",
+      "tagged": "<PERSON>حضرت زینب سلام اللہ علیہا</PERSON> نے <TIME>شامِ غریباں</TIME> میں <ORGANIZATION>خیموں</ORGANIZATION> کی تنظیم کی۔",
+      "english": "Lady Zainab (peace be upon her) organized the tents during the evening of Ghariban."
+    },
+    {
+      "original": "۱۲ محرم ۶۱ھ کی صبح کے ۸ بجے سبز جھنڈا لہرایا گیا۔",
+      "tagged": "<DATE>۱۲ محرم ۶۱ھ</DATE> کی <TIME>صبح کے ۸ بجے</TIME> <NUMBER>سبز</NUMBER> جھنڈا لہرایا گیا۔",
+      "english": "On 12 Muharram 61 AH at 8 AM, the green flag was hoisted."
+    },
+    {
+      "original": "انجمنِ شعرا نے لاہور ہائی کورٹ کے سامنے مجلسِ سوگ کا اہتمام کیا۔",
+      "tagged": "<ORGANIZATION>انجمنِ شعرا</ORGANIZATION> نے <LOCATION>لاہور ہائی کورٹ</LOCATION> کے سامنے <ORGANIZATION>مجلسِ سوگ</ORGANIZATION> کا اہتمام کیا۔",
+      "english": "The Poets' Association organized a mourning gathering in front of the Lahore High Court."
+    }
+  ]
 }
 
 """
@@ -115,7 +386,8 @@ Perform Named Entity Recognition (NER) on the given Urdu Marsiya text with stric
 You also need to provide the English translation of the original string in the output.
 
 ### Output Format:
-Return a list with original string, string with tagged entities and its english translation. Make sure you return the output for each line without missing any line in the text:
+Return a list with original string, string with tagged entities and its english translation. 
+Make sure you return the output for each line without missing any line in the text:
 Example -- 
 
 Input: 
@@ -134,7 +406,7 @@ Input:
 ہاتھ کھل جائیں تو منھ اپنا چھپائے زینب
 
 
-Output:
+Expected JSON Output:
 {
     "tagged_elements": [
         {
@@ -240,20 +512,24 @@ def get_ner_prompt_messages(text, mode=NERMode.MARSIYA) -> List[Dict[str, str]]:
         system_prompt = GENERAL_NER_SYSTEM_PROMPT
     elif mode == NERMode.MARSIYA:
         system_prompt = MARSIYA_NER_SYSTEM_PROMPT
+    elif mode == NERMode.MARSIYA_ADVANCED:
+        system_prompt = ADVANCED_NER_SYSTEM_PROMPT
+    elif mode == NERMode.MARSIYA_ADVANCED_2:
+        system_prompt = ADVANCED_NER_SYSTEM_PROMPT_2
     else:
         raise ValueError("Invalid NER mode selected.")
     messages = [
         {"role": "system", "content": system_prompt},
         {
             "role": "user",
-            "content": f"Provide the Named entities from the below Urdu text: \n\n{text}\n\n",
+            "content": f"Input text: \n{text}\n",
         },
     ]
     return messages
 
 
 def get_ner_prompt_messages_per_chunk(
-    text: str, chunk_size=CHUNK_SIZE, mode=NERMode.MARSIYA
+    text: str, chunk_size=CHUNK_SIZE, mode=NERMode.MARSIYA_ADVANCED_2
 ) -> List[List[Dict[str, str]]]:
     lines = [line for line in text.split("\n") if is_mostly_urdu(line)]
     chunk_messages = list()
@@ -262,6 +538,21 @@ def get_ner_prompt_messages_per_chunk(
         chunk_messages.append(get_ner_prompt_messages(chunk, mode))
 
     return chunk_messages
+
+
+def extract_named_entites_from_text(
+    llm: LLM, text: str
+) -> TaggedElements:
+    retries = 3
+    for attempt in range(retries):
+        try:
+            response = llm.call(text)
+            if response is not None:
+                return TaggedElements.model_validate(response)
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt == retries - 1:
+                raise e
 
 
 def extract_named_entites_from_chunks(
@@ -276,7 +567,7 @@ def extract_named_entites_from_chunks(
     Returns:
         List[TaggedElement]: List of extracted named entities, in the same order as the input chunks.
     """
-    print("LLM: ", llm.model, " API Key: ", llm.api_key)
+    # print("LLM: ", llm.model, " API Key: ", llm.api_key)
     extracted_results = [None] * len(chunks)
 
     with concurrent.futures.ThreadPoolExecutor(
@@ -311,18 +602,24 @@ def get_ner_tags(
     model_id: str = "openai/gpt-4o-mini",
     chunk_size: int = CHUNK_SIZE,
     tqdm=tqdm,
-) -> TaggedElements:
+) -> List[Dict]:
     chunked_messages = get_ner_prompt_messages_per_chunk(text, chunk_size, mode)
     print("Using model:", model_id)
     print("Using chunk size:", chunk_size)
     print("Number of chunks:", len(chunked_messages))
 
-    # with open('uploads/1ce96d97cfd6ebebe655bb60aabf1022.json') as f:
+    # with open('uploads/0c6378a92283e655078bba9cec2ccaa0_marsiya_advanced.json') as f:
     #     return json.load(f)['tagged_elements']
-    import os
-    print("OPENAI API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
-    print("Text: ", chunked_messages[0])  # Print first 1000 characters for debugging
-    llm = LLM(model=model_id, response_format=TaggedElements, api_key=get_crew_api_key(model_id.split("/")[0]))
+    # import os
+    # print("OPENAI API Key: ", os.environ.get("OPENAI_API_KEY", "Not Set"))
+    # print("Text: ", chunked_messages[0])  # Print first 1000 characters for debugging
+    # llm = LLM(model=model_id, response_format=TaggedElements, api_key=get_crew_api_key(model_id.split("/")[0]))
     print("Extracting named entities from chunks...")
-    responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
+    # responses = extract_named_entites_from_chunks(llm, chunked_messages, tqdm=tqdm)
+    responses = get_chunks_response(
+        chunked_messages=chunked_messages, 
+        model=model_id.split("/")[1], 
+        response_format=TaggedElements,
+        tqdm=tqdm
+    )
     return sum([json.loads(r)["tagged_elements"] for r in responses], [])

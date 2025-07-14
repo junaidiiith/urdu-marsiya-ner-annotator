@@ -18,6 +18,10 @@
             {
                 "name": "GPT4o",
                 "model_id": "gpt-4o"
+            },
+            {
+                "name": "O4-Mini",
+                "model_id": "o4-mini"
             }
         ]
     },

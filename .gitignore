@@ -180,3 +180,5 @@ testing.ipynb
 .gitignore
 urdu-ner-pem.pem
 judge_responses.json
+uploads*
+1.ipynb
