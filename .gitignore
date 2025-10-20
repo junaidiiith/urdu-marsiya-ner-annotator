@@ -186,3 +186,6 @@ big_files*
 
 Paper*
 dataset*
+
+
+.streamlit*
