@@ -22,9 +22,9 @@ def get_file_suffix():
     """
     Get the file suffix based on the selected model and NER mode.
     """
-    model_id = st.session_state.get("selected_model_id")
-    ner_mode = st.session_state.get("ner_mode", NERMode.MARSIYA_ADVANCED)
-    return f"_{model_id.replace('.', '_')}_{ner_mode.value}.json"
+    model_id = st.session_state.get("selected_model_id").replace("/", "_").replace(".", "_")
+    ner_mode = st.session_state.get("ner_mode", NERMode.MARSIYA_ADVANCED.value)
+    return f"_{model_id}_{ner_mode}.json"
 
 
 def set_tagged_result(text, ner_tags, suffix=None):
@@ -38,6 +38,7 @@ def start_ner_tagging(text):
         model_id = st.session_state.get("selected_model_id")
         chunk_size = st.session_state.get("chunk_size")
         st.text(f"Using model: {model_id}")
+        print("Prefix: ", get_file_suffix())
         with st.spinner("LLM-based NER Tagging...Will take a while for large texts."):
             show_message(message="Tagging in progress...")
             ner_tags = get_ner_tags(
@@ -56,8 +57,8 @@ def add_text_if_not_exists(text):
     Process the text for NER tagging.
     This function should be replaced with the actual NER processing logic.
     """
-
-    data = save_text_with_hash(text)
+    print(f"Prefix: {get_file_suffix()}")
+    data = save_text_with_hash(text, suffix=get_file_suffix())
     current_hash = calculate_hash(text)
     print("Setting current hash:", current_hash)
     st.session_state["current_hash"] = current_hash

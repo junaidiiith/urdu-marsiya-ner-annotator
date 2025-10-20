@@ -182,3 +182,7 @@ urdu-ner-pem.pem
 judge_responses.json
 uploads*
 1.ipynb
+big_files*
+
+Paper*
+dataset*

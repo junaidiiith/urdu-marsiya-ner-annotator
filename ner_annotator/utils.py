@@ -115,12 +115,13 @@ def save_ner_tags(text, ner_tags, suffix=".json"):
     return data
 
 
-def save_text_with_hash(text: str):
+def save_text_with_hash(text: str, suffix: str = ""):
     os.makedirs(UPLOAD_DIR, exist_ok=True)
     text_hash = calculate_hash(text)
     print("Checking if text already exists with hash:", text_hash)
-    if not os.path.exists(f"{UPLOAD_DIR}/{text_hash}.json"):
-        with open(f"{UPLOAD_DIR}/{text_hash}.json", "w") as f:
+    save_pth = f"{UPLOAD_DIR}/{text_hash}{suffix}"
+    if not os.path.exists(save_pth):
+        with open(save_pth, "w") as f:
             data = {
                 "text": text,
                 "tagged": False,
@@ -130,7 +131,7 @@ def save_text_with_hash(text: str):
         return data
     else:
         print("Text already exists.")
-        with open(f"{UPLOAD_DIR}/{text_hash}.json", "r") as f:
+        with open(save_pth, "r") as f:
             data = json.load(f)
         print("Data loaded successfully.")
     return data

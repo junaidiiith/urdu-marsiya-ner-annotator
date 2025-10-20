@@ -226,6 +226,22 @@ def tags_review():
                 )
                 if st.button("Update Tag", key=f"btn_update_{i}"):
                     set_new_tag(entity, tag, new_tag)
+        
+        if 'justification' in current_entity_status[entity]:
+            justification = current_entity_status[entity]['justification']
+            st.text_area(
+                f"Justification for {entity} ({tag})",
+                value=justification,
+                key=f"justification_{i}",
+                placeholder="Enter justification for this tag"
+            )
+            st.button(
+                "Save Justification",
+                key=f"save_justification_{i}",
+                on_click=lambda e=entity, j=st.session_state[f"justification_{i}"]: set_current_entities_status(
+                    {**current_entity_status, e: {**current_entity_status[e], 'justification': j}}
+                )
+            )
 
 
 def show_file_statistics():
