@@ -189,3 +189,5 @@ dataset*
 
 
 .streamlit*
+
+.DS_Store

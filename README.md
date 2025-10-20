@@ -105,3 +105,7 @@ The application uses secure authentication to protect research data. Users are a
 - Supports concurrent processing for faster analysis
 - Implements a three-stage workflow: automated tagging → human verification → model evaluation
 - Data is stored in structured JSON format for easy analysis
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes.
+
